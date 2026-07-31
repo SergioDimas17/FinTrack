@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["total_sent", "total_received", "count_sent", "count_received", "net"],
+  "properties": {
+    "total_sent": { "type": "string" },
+    "total_received": { "type": "string" },
+    "count_sent": { "type": "integer", "minimum": 0 },
+    "count_received": { "type": "integer", "minimum": 0 },
+    "net": { "type": "string" },
+    "period": {
+      "type": "object",
+      "properties": {
+        "from": { "type": ["string", "null"] },
+        "to": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

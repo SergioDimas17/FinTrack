@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  api-automation:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+    environment:
+      - KARATE_ENV=qa
+      - TEST_USER_EMAIL=${TEST_USER_EMAIL:-pruebasQA@gmail.com}
+      - TEST_USER_PASSWORD=${TEST_USER_PASSWORD:-TuPassword123}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI}
+    volumes:
+      - ../api-automation/target:/app/target
+    profiles: ["api", "all"]
+
+  web-automation:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.web
+    environment:
+      - TEST_USER_EMAIL=${TEST_USER_EMAIL:-pruebasQA@gmail.com}
+      - TEST_USER_PASSWORD=${TEST_USER_PASSWORD:-TuPassword123}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+    volumes:
+      - ../web-automation/target:/app/target
+    profiles: ["web", "all"]
+
+  performance:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.performance
+    environment:
+      - K6_ANON_KEY=${SUPABASE_ANON_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI}
+      - K6_TEST_EMAIL=${TEST_USER_EMAIL:-pruebasQA@gmail.com}
+      - K6_TEST_PASSWORD=${TEST_USER_PASSWORD:-TuPassword123}
+    volumes:
+      - ../performance/reports:/app/reports
+    profiles: ["performance", "all"]
+
+  security:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.security
+    environment:
+      - ZAP_TARGET_URL=https://wlsxfjlaxxwgnbhmtgmw.supabase.co
+    volumes:
+      - ../security/zap/reports:/zap/wrk/reports
+    profiles: ["security", "all"]

@@ -1,0 +1,51 @@
+name: Web Smoke Tests
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'web-automation/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web-automation/**'
+  workflow_dispatch:
+
+jobs:
+  web-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Install Playwright
+        working-directory: web-automation
+        run: mvn exec:java@playwright-install -B
+
+      - name: Run Smoke Tests
+        working-directory: web-automation
+        env:
+          TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
+          TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: mvn clean test -Dtest=SmokeTest -B
+
+      - name: Upload Playwright Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: web-automation/target/playwright-report/
+
+      - name: Upload Screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-web
+          path: web-automation/target/screenshots/

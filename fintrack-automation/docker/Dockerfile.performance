@@ -1,0 +1,11 @@
+FROM grafana/k6:0.49.0
+
+WORKDIR /app
+
+COPY performance/scripts ./scripts
+COPY performance/data ./data
+
+ENV K6_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+ENV K6_TEST_EMAIL=pruebasQA@gmail.com
+
+CMD ["run", "/app/scripts/smoke.js"]

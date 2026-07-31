@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  zap-policy.xml
+  ZAP scan policy for the FinTrack security module.
+
+  This policy enables a basic set of active scan rules with a MEDIUM threshold.
+  Adjust the <strength> and <threshold> values to tune scan depth and noise.
+-->
+<scanPolicy>
+    <name>FinTrack Baseline Policy</name>
+    <description>
+        Basic active scan policy for the FinTrack API. Medium threshold to
+        balance coverage and false positives during QA runs.
+    </description>
+
+    <!-- Global defaults applied to all rules unless overridden below -->
+    <defaultThreshold>medium</defaultThreshold>
+    <defaultStrength>medium</defaultStrength>
+
+    <rules>
+        <!-- ============================================================
+             Injection rules
+             ============================================================ -->
+        <rule>
+            <id>40018</id> <!-- SQL Injection -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>40019</id> <!-- OS Command Injection -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>40014</id> <!-- Cross Site Scripting (Reflected) -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+
+        <!-- ============================================================
+             Server / configuration rules
+             ============================================================ -->
+        <rule>
+            <id>10010</id> <!-- Cookie No HttpOnly Flag -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>10011</id> <!-- Cookie Without Secure Flag -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>10038</id> <!-- Content Security Policy (CSP) Header Not Set -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>10020</id> <!-- Anti-CSRF Tokens Check -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+
+        <!-- ============================================================
+             Authentication / session rules
+             ============================================================ -->
+        <rule>
+            <id>10202</id> <!-- Absence of Anti-CSRF Tokens -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>10104</id> <!-- User Controllable HTML Element Attribute -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+
+        <!-- ============================================================
+             Information disclosure rules
+             ============================================================ -->
+        <rule>
+            <id>10021</id> <!-- X-Content-Type-Options Header Missing -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+        <rule>
+            <id>10017</id> <!-- Big Redirect Detected -->
+            <enabled>true</enabled>
+            <threshold>medium</threshold>
+            <strength>medium</strength>
+        </rule>
+    </rules>
+</scanPolicy>

@@ -1,0 +1,31 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'security/**'
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run ZAP Baseline Scan
+        working-directory: security/zap
+        env:
+          ZAP_TARGET_URL: https://wlsxfjlaxxwgnbhmtgmw.supabase.co
+        run: |
+          chmod +x scripts/run-zap-scan.sh
+          ./scripts/run-zap-scan.sh $ZAP_TARGET_URL
+
+      - name: Upload ZAP Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zap-report
+          path: security/zap/reports/

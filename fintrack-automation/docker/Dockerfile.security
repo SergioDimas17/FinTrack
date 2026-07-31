@@ -1,0 +1,10 @@
+FROM owasp/zap2docker-stable:latest
+
+WORKDIR /zap/wrk
+
+COPY security/zap/scripts ./scripts
+COPY security/zap/config ./config
+
+ENV ZAP_TARGET_URL=https://wlsxfjlaxxwgnbhmtgmw.supabase.co
+
+CMD ["sh", "/zap/wrk/scripts/run-zap-scan.sh", "https://wlsxfjlaxxwgnbhmtgmw.supabase.co"]

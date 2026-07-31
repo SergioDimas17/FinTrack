@@ -1,0 +1,4 @@
+baseUrl: "http://localhost:5173"
+supabaseUrl: "https://wlsxfjlaxxwgnbhmtgmw.supabase.co"
+supabaseAnonKey: "${SUPABASE_ANON_KEY}"
+webUrl: "http://localhost:5173"

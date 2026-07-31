@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["accounts"],
+  "properties": {
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "account_number", "holder_name", "balance", "status"],
+        "properties": {
+          "id": { "type": "string", "format": "uuid" },
+          "account_number": { "type": "string", "pattern": "^FT-\\d{7}$" },
+          "holder_name": { "type": "string" },
+          "balance": { "type": "number", "minimum": 0 },
+          "status": { "type": "string", "enum": ["active", "frozen"] }
+        }
+      }
+    }
+  }
+}

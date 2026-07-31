@@ -1,0 +1,4 @@
+baseUrl: "https://fintrack.example.com"
+supabaseUrl: "https://wlsxfjlaxxwgnbhmtgmw.supabase.co"
+supabaseAnonKey: "${SUPABASE_ANON_KEY}"
+webUrl: "https://fintrack.example.com"
