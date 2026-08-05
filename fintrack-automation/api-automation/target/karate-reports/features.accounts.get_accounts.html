@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2b22845d-0693-470c-8d7f-70a83ca8876a",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.accounts.get_accounts</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>qa</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-08-05 01:24:44 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Listar cuentas del usuario autenticado</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:20]"><span>[2:20]</span> <span>Listar cuentas sin token de autenticacion</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/accounts/get_accounts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener cuentas del usuario</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">accounts</a><a class="badge badge-primary" href="karate-tags.html">positive</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Listar cuentas del usuario autenticado</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2363</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:24:41.557 Usando configuración por defecto. 
+13:24:41.560 Ambiente activo: qa 
+13:24:41.561 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Invocación limpia de la capa helper</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1590</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.create_user</div>
+      </div>
+      <div class="time-cell passed">1576</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1015</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">551</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.0.call.0.12">13:24:42.598 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_b46d5f20@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:24:43.146 response time in milliseconds: 546
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:24:43 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d71cfc465997-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: b4dvu
+1 &lt; sb-auth-session-id: 44ea2f25-9550-44aa-8904-a11b87c5aa63
+1 &lt; sb-auth-user-id: d4719960-6ef0-4e2a-900e-ae91c5784502
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32b-ae1e-7ac3-8ace-cc8d8e2b48f4
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 107
+1 &lt; set-cookie: __cf_bm=LSj5pzoqnNzJkFJjXZ.KvneMfAWoT_SVkfj4Rgh8cR8-1785954283.0357435-1.0.1.1-jZKHanPnubT4DkMXoVDHz7.XhIZviU55ogn.VHvEn3Dd2Tde25NNJ41RLz0vhJ2lhKUIlRRJj001jFekBm8PQ5W3RoN__WHXMt4C7GTlzo1SzqWtED1fMGCU3Pc5EgiN; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:54:43 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=LSj5pzoqnNzJkFJjXZ.KvneMfAWoT_SVkfj4Rgh8cR8-1785954283.0357435-1.0.1.1-jZKHanPnubT4DkMXoVDHz7.XhIZviU55ogn.VHvEn3Dd2Tde25NNJ41RLz0vhJ2lhKUIlRRJj001jFekBm8PQ5W3RoN__WHXMt4C7GTlzo1SzqWtED1fMGCU3Pc5EgiN; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:54:43 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkNDcxOTk2MC02ZWYwLTRlMmEtOTAwZS1hZTkxYzU3ODQ1MDIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3ODgzLCJpYXQiOjE3ODU5NTQyODMsImVtYWlsIjoidXNlcl9iNDZkNWYyMEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9iNDZkNWYyMEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJkNDcxOTk2MC02ZWYwLTRlMmEtOTAwZS1hZTkxYzU3ODQ1MDIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDI4M31dLCJzZXNzaW9uX2lkIjoiNDRlYTJmMjUtOTU1MC00NGFhLTg5MDQtYTExYjg3YzVhYTYzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.teI7yWjKI-FZv9nCj0qPfPNTxrWSoBNYyXoF7DHZ4sUGnP-zRgMc9Az8mb7Fv6cSbJ27eqTUVgGI45i06JKm1A&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957883,&quot;refresh_token&quot;:&quot;b4dvu7lgs2oa&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;d4719960-6ef0-4e2a-900e-ae91c5784502&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_b46d5f20@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:24:43.188485632Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:24:43.19106047Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_b46d5f20@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;d4719960-6ef0-4e2a-900e-ae91c5784502&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;a5245811-4299-411f-97af-4fa60b7da7fd&quot;,&quot;id&quot;:&quot;d4719960-6ef0-4e2a-900e-ae91c5784502&quot;,&quot;user_id&quot;:&quot;d4719960-6ef0-4e2a-900e-ae91c5784502&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_b46d5f20@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;d4719960-6ef0-4e2a-900e-ae91c5784502&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:24:43.183134696Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:43.183191Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:24:43.183191Z&quot;,&quot;email&quot;:&quot;user_b46d5f20@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:24:43.173456Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:24:43.193122Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.0.call">
+    <div class="step-container" id="0.10.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = user.authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">771</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">13:24:43.156 request:
+1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/accounts
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkNDcxOTk2MC02ZWYwLTRlMmEtOTAwZS1hZTkxYzU3ODQ1MDIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3ODgzLCJpYXQiOjE3ODU5NTQyODMsImVtYWlsIjoidXNlcl9iNDZkNWYyMEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9iNDZkNWYyMEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJkNDcxOTk2MC02ZWYwLTRlMmEtOTAwZS1hZTkxYzU3ODQ1MDIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDI4M31dLCJzZXNzaW9uX2lkIjoiNDRlYTJmMjUtOTU1MC00NGFhLTg5MDQtYTExYjg3YzVhYTYzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.teI7yWjKI-FZv9nCj0qPfPNTxrWSoBNYyXoF7DHZ4sUGnP-zRgMc9Az8mb7Fv6cSbJ27eqTUVgGI45i06JKm1A
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:24:43.925 response time in milliseconds: 768
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:24:44 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d7203dc1707c-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; endpoint-load-metrics: application_utilization:8,named_metrics.queue_depth:8
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32b-b028-7b2d-9825-89b19827bcd6
+1 &lt; x-deno-execution-id: d4fd1eb0-4de5-4b4f-89ad-4b7b31e1e17a
+1 &lt; x-sb-edge-region: us-east-1
+1 &lt; x-served-by: supabase-edge-runtime
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; set-cookie: __cf_bm=lXTd7fusEYS9L7EAf70cuhatGNZHuRLtMLi1tSpx__U-1785954283.5569863-1.0.1.1-6kb9BrZ9EahwN_pka93PU1zvKDSbKOCJPmsubKMnLOa96GqrtIjI74UxhdyMUAhN.1vTDVJWqJrd2oi5NNXjNl_447EaXOu.iquUzP3zt438MaqDtbywfrMqriXiWKH_; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:54:44 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=lXTd7fusEYS9L7EAf70cuhatGNZHuRLtMLi1tSpx__U-1785954283.5569863-1.0.1.1-6kb9BrZ9EahwN_pka93PU1zvKDSbKOCJPmsubKMnLOa96GqrtIjI74UxhdyMUAhN.1vTDVJWqJrd2oi5NNXjNl_447EaXOu.iquUzP3zt438MaqDtbywfrMqriXiWKH_; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:54:44 GMT
+{&quot;accounts&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { accounts: &#39;#array&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">negative</a><a class="badge badge-primary" href="karate-tags.html">regression</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">accounts</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:20]</span>
+                <span class="scenario-name">Listar cuentas sin token de autenticacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>811</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:24:43.937 Usando configuración por defecto. 
+13:24:43.938 Ambiente activo: qa 
+13:24:43.938 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">810</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">13:24:43.941 request:
+1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/accounts
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:24:44.747 response time in milliseconds: 804
+1 &lt; 401
+1 &lt; Date: Wed, 05 Aug 2026 18:24:44 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d72779462b07-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; access-control-allow-headers: authorization, x-client-info, apikey
+1 &lt; sb-error-code: UNAUTHORIZED_NO_AUTH_HEADER
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32b-b4ab-7efe-beef-d56f5a90c49a
+1 &lt; x-sb-edge-region: us-east-1
+1 &lt; x-served-by: supabase-edge-runtime
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; set-cookie: __cf_bm=ngIH9vqN9VukuIsnVWVz.XI2zgN.5sEtO6c1mvmuEmY-1785954284.7116435-1.0.1.1-v8glfloa49KgfETPpXtP1AtjvKqkcLc5EOHTu5u7ErO9xQKCns5Fic5CLNcgPFkexf51Li9axSpKrTS81eW24XDORX90r6xyL9xmS94X2irkLkQ01rf9MkypTpSsQvZn; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:54:44 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=ngIH9vqN9VukuIsnVWVz.XI2zgN.5sEtO6c1mvmuEmY-1785954284.7116435-1.0.1.1-v8glfloa49KgfETPpXtP1AtjvKqkcLc5EOHTu5u7ErO9xQKCns5Fic5CLNcgPFkexf51Li9axSpKrTS81eW24XDORX90r6xyL9xmS94X2irkLkQ01rf9MkypTpSsQvZn; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:54:44 GMT
+{&quot;code&quot;:&quot;UNAUTHORIZED_NO_AUTH_HEADER&quot;,&quot;message&quot;:&quot;Missing authorization header&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { message: &#39;#notnull&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

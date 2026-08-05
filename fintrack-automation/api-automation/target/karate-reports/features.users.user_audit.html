@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2b22845d-0693-470c-8d7f-70a83ca8876a",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.users.user_audit</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>qa</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-08-05 01:25:55 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Listar eventos de auditoria</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:18]"><span>[2:18]</span> <span>Listar eventos filtrados por severidad</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:29]"><span>[3:29]</span> <span>Listar eventos con paginacion</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/users/user_audit.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Eventos de auditoria</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">sanity</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">users</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Listar eventos de auditoria</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3716</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = callonce read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1440</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:25:49.122 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/helpers/create_user.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.create_user</div>
+      </div>
+      <div class="time-cell passed">1433</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1007</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.5">13:25:47.680 Usando configuración por defecto. 
+13:25:47.682 Ambiente activo: qa 
+13:25:47.682 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+13:25:47.684 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/helpers/create_user.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">420</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.12">13:25:48.702 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_e927b755@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:25:49.119 response time in milliseconds: 415
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:49 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8b97e33ffac-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: 3wgou
+1 &lt; sb-auth-session-id: 9e73b11f-83a1-4b12-b566-fd8eb1ef92c6
+1 &lt; sb-auth-user-id: 31bd3b01-6096-44f3-8c3b-e7013bff3ddb
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-afea-7f06-b2a4-b0f4bfc8d55a
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 89
+1 &lt; set-cookie: __cf_bm=ETOjNODiUVJionpTmMDVm0xGniK23p1s4yGBI6oezyQ-1785954349.0318584-1.0.1.1-u6BR.DUdnV5WvbLfgGkw8ZcMCNcCeBWMuEnvYFIzJMes_x461rOhsNR3WjGeRy_E9HjwJ74POav9Iq2XG3z5B_k6BQ1iY.xiHZfWChrgzllBxfsQxyU0GIUapRbRsc26; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:49 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=ETOjNODiUVJionpTmMDVm0xGniK23p1s4yGBI6oezyQ-1785954349.0318584-1.0.1.1-u6BR.DUdnV5WvbLfgGkw8ZcMCNcCeBWMuEnvYFIzJMes_x461rOhsNR3WjGeRy_E9HjwJ74POav9Iq2XG3z5B_k6BQ1iY.xiHZfWChrgzllBxfsQxyU0GIUapRbRsc26; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:49 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzMWJkM2IwMS02MDk2LTQ0ZjMtOGMzYi1lNzAxM2JmZjNkZGIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTQ5LCJpYXQiOjE3ODU5NTQzNDksImVtYWlsIjoidXNlcl9lOTI3Yjc1NUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9lOTI3Yjc1NUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIzMWJkM2IwMS02MDk2LTQ0ZjMtOGMzYi1lNzAxM2JmZjNkZGIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM0OX1dLCJzZXNzaW9uX2lkIjoiOWU3M2IxMWYtODNhMS00YjEyLWI1NjYtZmQ4ZWIxZWY5MmM2IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.mq4Ii37ccfv0WpiUT_Tn4_fVVyI4JT9FRDLudWeZYcf_RQtrjXHGZSxpqx4kbIEUVsZpqzMPTGHgDlCjdLdw4g&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957949,&quot;refresh_token&quot;:&quot;3wgour67thr7&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;31bd3b01-6096-44f3-8c3b-e7013bff3ddb&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_e927b755@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:25:49.168188896Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:49.170169066Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_e927b755@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;31bd3b01-6096-44f3-8c3b-e7013bff3ddb&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;6d864471-a750-4f0a-96a0-cac400a3a72e&quot;,&quot;id&quot;:&quot;31bd3b01-6096-44f3-8c3b-e7013bff3ddb&quot;,&quot;user_id&quot;:&quot;31bd3b01-6096-44f3-8c3b-e7013bff3ddb&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_e927b755@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;31bd3b01-6096-44f3-8c3b-e7013bff3ddb&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:49.166184094Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:49.166232Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:49.166232Z&quot;,&quot;email&quot;:&quot;user_e927b755@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:25:49.164058Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:49.171877Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1424</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.create_user</div>
+      </div>
+      <div class="time-cell passed">1418</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1002</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">414</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.12">13:25:50.133 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_0d547cb6@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:25:50.545 response time in milliseconds: 411
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:50 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8c25cfd376b-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: ork4l
+1 &lt; sb-auth-session-id: 146df884-d672-4c93-85c9-4c32b3b452f5
+1 &lt; sb-auth-user-id: 2d3352d6-723e-4993-ad38-10a1d5d513d4
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-b57b-70a4-a6c3-4948e85a03b9
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 93
+1 &lt; set-cookie: __cf_bm=JxQUIJ7oMzumqXvGMH8T22lBy634vSECH6pju.DygD4-1785954350.4564464-1.0.1.1-uAbqhucSP3z6ZoNPV4OLVbF7q9zSYewH8DlR2ztlAHUhEJfYNcIELcYZypL2NyoMasHx1q73zcGVBLd9mUhuuE1a6KosTdAHBlP6DP5sJK88xIzC7rgWhwBCFAyAHAPz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:50 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=JxQUIJ7oMzumqXvGMH8T22lBy634vSECH6pju.DygD4-1785954350.4564464-1.0.1.1-uAbqhucSP3z6ZoNPV4OLVbF7q9zSYewH8DlR2ztlAHUhEJfYNcIELcYZypL2NyoMasHx1q73zcGVBLd9mUhuuE1a6KosTdAHBlP6DP5sJK88xIzC7rgWhwBCFAyAHAPz; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:50 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyZDMzNTJkNi03MjNlLTQ5OTMtYWQzOC0xMGExZDVkNTEzZDQiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTUwLCJpYXQiOjE3ODU5NTQzNTAsImVtYWlsIjoidXNlcl8wZDU0N2NiNkBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8wZDU0N2NiNkBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyZDMzNTJkNi03MjNlLTQ5OTMtYWQzOC0xMGExZDVkNTEzZDQifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM1MH1dLCJzZXNzaW9uX2lkIjoiMTQ2ZGY4ODQtZDY3Mi00YzkzLTg1YzktNGMzMmIzYjQ1MmY1IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.SQRcuAT8p9PGz8d_FvyA0DjzNrzrItgyh3OP4aDHUcCuFuZj9Z_xGk5CpIqjaD5a8Yqppc8bOllTMqIqTMLfCA&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957950,&quot;refresh_token&quot;:&quot;ork4lcojpc4g&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;2d3352d6-723e-4993-ad38-10a1d5d513d4&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_0d547cb6@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:25:50.596523481Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:50.598532032Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_0d547cb6@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;2d3352d6-723e-4993-ad38-10a1d5d513d4&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;79cea4a2-8fef-47e4-a90c-04ac678c6b8c&quot;,&quot;id&quot;:&quot;2d3352d6-723e-4993-ad38-10a1d5d513d4&quot;,&quot;user_id&quot;:&quot;2d3352d6-723e-4993-ad38-10a1d5d513d4&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_0d547cb6@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;2d3352d6-723e-4993-ad38-10a1d5d513d4&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:50.594529559Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:50.594574Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:50.594574Z&quot;,&quot;email&quot;:&quot;user_0d547cb6@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:25:50.590404Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:50.600223Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/audit&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = user.authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">852</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">13:25:50.547 request:
+1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/audit
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyZDMzNTJkNi03MjNlLTQ5OTMtYWQzOC0xMGExZDVkNTEzZDQiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTUwLCJpYXQiOjE3ODU5NTQzNTAsImVtYWlsIjoidXNlcl8wZDU0N2NiNkBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8wZDU0N2NiNkBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyZDMzNTJkNi03MjNlLTQ5OTMtYWQzOC0xMGExZDVkNTEzZDQifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM1MH1dLCJzZXNzaW9uX2lkIjoiMTQ2ZGY4ODQtZDY3Mi00YzkzLTg1YzktNGMzMmIzYjQ1MmY1IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.SQRcuAT8p9PGz8d_FvyA0DjzNrzrItgyh3OP4aDHUcCuFuZj9Z_xGk5CpIqjaD5a8Yqppc8bOllTMqIqTMLfCA
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:25:51.398 response time in milliseconds: 849
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:51 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8c48f897ba7-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; endpoint-load-metrics: application_utilization:8,named_metrics.queue_depth:8
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-b6f3-7b3d-a34d-e01d21766982
+1 &lt; x-deno-execution-id: 99aba98c-d527-4d24-b244-f127be776d93
+1 &lt; x-sb-edge-region: us-east-1
+1 &lt; x-served-by: supabase-edge-runtime
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; set-cookie: __cf_bm=kjCVXNNvculRtaiydljsbzp80IMUP0HvHdRo9CWVeJU-1785954350.8099153-1.0.1.1-nWKqOc5GebfJBWUwTeagDapXQd2Yc4HSRobB5aDrQKalpArJ7RI723CSodpKy52GNuGZ6uJIQ5tP8lBMCUSkbDmOHeZjOgYpENRjg7nr1bqNobgU0XKbL4cwFsthIzno; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:51 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=kjCVXNNvculRtaiydljsbzp80IMUP0HvHdRo9CWVeJU-1785954350.8099153-1.0.1.1-nWKqOc5GebfJBWUwTeagDapXQd2Yc4HSRobB5aDrQKalpArJ7RI723CSodpKy52GNuGZ6uJIQ5tP8lBMCUSkbDmOHeZjOgYpENRjg7nr1bqNobgU0XKbL4cwFsthIzno; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:51 GMT
+{&quot;events&quot;:[{&quot;id&quot;:&quot;91ddf663-d4e2-428d-965d-6650af9bb5c9&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;INSUFFICIENT_FUNDS: Balance 100.00.2f insufficient for transfer of 999999999.2f&quot;,&quot;amount&quot;:999999999,&quot;source_account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;destination_account_id&quot;:&quot;c6d76ce0-9dbe-4b23-9869-bba7574e5d88&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:47.316072+00:00&quot;},{&quot;id&quot;:&quot;eee89290-1a51-4e4f-aced-2d479b150526&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;c6d76ce0-9dbe-4b23-9869-bba7574e5d88&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000082&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:46.51211+00:00&quot;},{&quot;id&quot;:&quot;59f9f362-2873-46f8-905d-6482c7524644&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000081&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:45.720294+00:00&quot;},{&quot;id&quot;:&quot;5c7794b6-7911-4711-979f-d972136a01a8&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;SAME_ACCOUNT: Source and destination must differ&quot;,&quot;amount&quot;:50,&quot;source_account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;destination_account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;be5e384c-3a24-4f49-999c-c1a90ff79013&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:43.190113+00:00&quot;},{&quot;id&quot;:&quot;c176ee76-9286-4b17-baea-c9502f3c0d17&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000080&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;be5e384c-3a24-4f49-999c-c1a90ff79013&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:42.528748+00:00&quot;},{&quot;id&quot;:&quot;383d0a7c-4522-40ee-bb26-90087980cc58&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e00bd5bf-7d1b-46fb-88f6-24d385486fe1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000079&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;a96fbf52-996e-4073-9a4d-7c88e01c9feb&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:28.451801+00:00&quot;},{&quot;id&quot;:&quot;87f8bcda-cd74-4b53-92fa-e1271b086604&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:17.754053+00:00&quot;},{&quot;id&quot;:&quot;eda159c3-f000-42d7-af39-6de9a00a9ef9&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.710161+00:00&quot;},{&quot;id&quot;:&quot;5ba064a9-6e43-458e-8f23-4d8e5733e119&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000078&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.085733+00:00&quot;},{&quot;id&quot;:&quot;f372d920-f3a1-4e48-a729-2f71bc643762&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000077&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:15.32268+00:00&quot;},{&quot;id&quot;:&quot;f084978f-25bb-4410-a28c-10cd03a7402a&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;transaction_id&quot;:&quot;6b9483ce-dcd5-40e2-8da2-96ecceb0ac71&quot;,&quot;payload&quot;:{&quot;amount&quot;:100,&quot;transaction_id&quot;:&quot;6b9483ce-dcd5-40e2-8da2-96ecceb0ac71&quot;,&quot;source_account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;destination_account_id&quot;:&quot;2cb8db78-fe5b-433e-bd84-21eea641e9c4&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:13.719983+00:00&quot;},{&quot;id&quot;:&quot;815f092b-e72d-44cd-aa27-de6575ad57e5&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;2cb8db78-fe5b-433e-bd84-21eea641e9c4&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;account_number&quot;:&quot;1000076&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:12.207814+00:00&quot;},{&quot;id&quot;:&quot;be18bc35-995e-4aa7-b962-e5b6e1399ee3&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;account_number&quot;:&quot;1000075&quot;,&quot;initial_balance&quot;:1000},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:11.489862+00:00&quot;},{&quot;id&quot;:&quot;81b9cb0d-519a-4542-b4cd-d9f1e6ad40c5&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7be66d1b-6082-436c-9a63-935ac0329188&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario e7f46e&quot;,&quot;account_number&quot;:&quot;1000074&quot;,&quot;initial_balance&quot;:300},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8ce00bf-96de-445f-ab70-09c33e94372f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:56.926802+00:00&quot;},{&quot;id&quot;:&quot;00413f8f-6e8e-44f9-931e-555ddf109db1&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;da852597-d3ce-4563-89e1-c42e465cbb07&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 76d6a4&quot;,&quot;account_number&quot;:&quot;1000073&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;1305be49-5d30-4fb8-8b60-a18dc74a55b4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:49.456359+00:00&quot;},{&quot;id&quot;:&quot;77144466-ec16-4a27-9a48-1f7880cdda64&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;69f20984-d23f-4ff8-8d72-a295c48f0880&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 4ea67c&quot;,&quot;account_number&quot;:&quot;1000072&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;7d973939-3a6a-467f-b673-b7a9d4aab230&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:38.519461+00:00&quot;},{&quot;id&quot;:&quot;cf9c584f-c20e-4411-9ee7-f6537be9a9d1&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2022-10-05&quot;,&quot;report_hash&quot;:&quot;7289307df43c6faaf8d7e52dca677f78c4a41cbc69a62a9de4770748f611294e&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;e8d1702c-6b14-4ecd-93e0-ba9210b43a5f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:45.876183+00:00&quot;},{&quot;id&quot;:&quot;38d7bcfa-3426-4d4f-ba18-c7cc61e6cdf7&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2025-08-08&quot;,&quot;report_hash&quot;:&quot;ce6e031fd02f1225affe5bbc1dcdf6ade122b6e6f7961342cc9e67cc39dd1ef0&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;80ddc4aa-211c-4ae5-99dc-5588a6d7399b&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:44.303314+00:00&quot;},{&quot;id&quot;:&quot;9272557a-7c1e-4349-893e-232ccf01c088&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;cdf6ab49-51e1-4382-b8f2-2692cb560bd1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;INSUFFICIENT_FUNDS: Balance 100.00.2f insufficient for transfer of 999999999.2f&quot;,&quot;amount&quot;:999999999,&quot;source_account_id&quot;:&quot;cdf6ab49-51e1-4382-b8f2-2692cb560bd1&quot;,&quot;destination_account_id&quot;:&quot;f9f8b705-c625-47e9-b328-0e4e0673c58b&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;e4f4e10a-912a-4dd8-9093-4f2303ef2cf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:37.490944+00:00&quot;},{&quot;id&quot;:&quot;03ba9787-8d97-4835-8ced-1a2d1bbb6ac9&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;f9f8b705-c625-47e9-b328-0e4e0673c58b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000071&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;e4f4e10a-912a-4dd8-9093-4f2303ef2cf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:36.756671+00:00&quot;},{&quot;id&quot;:&quot;e0f04d71-80c0-4510-b429-62e96ec90a78&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;cdf6ab49-51e1-4382-b8f2-2692cb560bd1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000070&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;e4f4e10a-912a-4dd8-9093-4f2303ef2cf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:36.077599+00:00&quot;},{&quot;id&quot;:&quot;c7e95478-091b-4cb9-8932-62d5076a4916&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;467e8a3b-4f52-434e-8549-befc9730dfd7&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;SAME_ACCOUNT: Source and destination must differ&quot;,&quot;amount&quot;:50,&quot;source_account_id&quot;:&quot;467e8a3b-4f52-434e-8549-befc9730dfd7&quot;,&quot;destination_account_id&quot;:&quot;467e8a3b-4f52-434e-8549-befc9730dfd7&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;ae0e8139-8f4e-4309-ab54-2d65ad4dc43f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:35.060987+00:00&quot;},{&quot;id&quot;:&quot;561d8f80-dcc9-4871-810f-7559b429c5bb&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;467e8a3b-4f52-434e-8549-befc9730dfd7&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000069&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;ae0e8139-8f4e-4309-ab54-2d65ad4dc43f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:34.287657+00:00&quot;},{&quot;id&quot;:&quot;a63f74d8-9a68-473b-a028-203603788264&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;cb44e69d-ce04-457c-96d1-90e78685b3d8&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000068&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;83e8e940-9b20-4198-b013-e5cb5b68307e&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:28.027745+00:00&quot;},{&quot;id&quot;:&quot;ee74b271-d68a-4355-b34b-999bffd5f42f&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;source_account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;destination_account_id&quot;:&quot;d3b1ec82-2f68-4c7f-8d80-294b6701da60&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:24.346819+00:00&quot;},{&quot;id&quot;:&quot;9fe0518c-5be9-44c3-86db-c1b27692ffd5&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;source_account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;destination_account_id&quot;:&quot;d3b1ec82-2f68-4c7f-8d80-294b6701da60&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:23.644133+00:00&quot;},{&quot;id&quot;:&quot;aafbf97f-3566-4891-9681-22ea2cae1559&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;d3b1ec82-2f68-4c7f-8d80-294b6701da60&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000067&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:22.951073+00:00&quot;},{&quot;id&quot;:&quot;d6c49b31-4d47-43ee-b7f2-ff80a18a012b&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000066&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:22.236802+00:00&quot;},{&quot;id&quot;:&quot;5bc20770-3d13-4920-acdb-5123c219ad71&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;3be99ed3-4b34-4202-a910-f404f36a884e&quot;,&quot;transaction_id&quot;:&quot;aef9d9bd-314d-47ea-9a15-d46c49732fd4&quot;,&quot;payload&quot;:{&quot;amount&quot;:100,&quot;transaction_id&quot;:&quot;aef9d9bd-314d-47ea-9a15-d46c49732fd4&quot;,&quot;source_account_id&quot;:&quot;3be99ed3-4b34-4202-a910-f404f36a884e&quot;,&quot;destination_account_id&quot;:&quot;0e38eae3-4f7c-491f-8d42-d2c9a5a13c8d&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;20d81c62-fdb7-4f46-b12f-c8cb0a1959d4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:21.002209+00:00&quot;},{&quot;id&quot;:&quot;3a503b9f-c9d5-471d-85d7-0de42aaf8711&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;0e38eae3-4f7c-491f-8d42-d2c9a5a13c8d&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;account_number&quot;:&quot;1000065&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;20d81c62-fdb7-4f46-b12f-c8cb0a1959d4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:19.752334+00:00&quot;},{&quot;id&quot;:&quot;3c1a8a49-10b8-463c-90cd-e2a85a58fcc2&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;3be99ed3-4b34-4202-a910-f404f36a884e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;account_number&quot;:&quot;1000064&quot;,&quot;initial_balance&quot;:1000},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;20d81c62-fdb7-4f46-b12f-c8cb0a1959d4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:19.016605+00:00&quot;},{&quot;id&quot;:&quot;8fbefcfb-2794-4672-bec2-29c4b7b7fb42&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;302b70ff-bec9-4cc0-afac-265c868af9d9&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 00518c&quot;,&quot;account_number&quot;:&quot;1000063&quot;,&quot;initial_balance&quot;:300},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;5c0c741c-c7f1-49b8-b315-fa067d6bba5a&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:11.13618+00:00&quot;},{&quot;id&quot;:&quot;bf41ead9-f5ec-498a-b4f2-cfb620eb55e6&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;1723d771-17a3-4e2c-9c81-03a0df089b3b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 08b1f4&quot;,&quot;account_number&quot;:&quot;1000062&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;a22b16b7-6cbd-4a3f-a2d6-37bd72c5b182&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:07.170448+00:00&quot;},{&quot;id&quot;:&quot;1da26685-924e-473d-a1db-01a5f7f76717&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e7cbb1c2-ba38-4c30-b57f-3bc8932e3d51&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 37e0a2&quot;,&quot;account_number&quot;:&quot;1000061&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c0d66795-7630-4fc0-a611-0e35fa3893d0&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:18:58.173728+00:00&quot;},{&quot;id&quot;:&quot;c69a8259-cb73-41cd-a885-a47272f2dd48&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2026-02-14&quot;,&quot;report_hash&quot;:&quot;cf7a5f2a1ba707a5daba06b44afb59b0fea496c84753d61d3ce57dd7c94eb6c1&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;5e11d22d-3e23-493c-9245-ea4c7e82ddf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:30.956679+00:00&quot;},{&quot;id&quot;:&quot;c6e33081-b0bf-4970-a4c3-58efc4b544d2&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;06210b14-e32e-46c8-a18c-46fe84fe4880&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;INSUFFICIENT_FUNDS: Balance 100.00.2f insufficient for transfer of 999999999.2f&quot;,&quot;amount&quot;:999999999,&quot;source_account_id&quot;:&quot;06210b14-e32e-46c8-a18c-46fe84fe4880&quot;,&quot;destination_account_id&quot;:&quot;8714a2cc-4ce8-4b53-8a18-98624d5950c5&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;4513977f-2aa0-4411-bdd2-17ebc4612e2c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:25.036258+00:00&quot;},{&quot;id&quot;:&quot;d98f0081-cbdb-47c8-994c-8db49b296949&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;8714a2cc-4ce8-4b53-8a18-98624d5950c5&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000060&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;4513977f-2aa0-4411-bdd2-17ebc4612e2c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:24.464574+00:00&quot;},{&quot;id&quot;:&quot;99c4ddc7-a9f5-4f2e-bf75-8cf3dd10146e&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;06210b14-e32e-46c8-a18c-46fe84fe4880&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000059&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;4513977f-2aa0-4411-bdd2-17ebc4612e2c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:23.627368+00:00&quot;},{&quot;id&quot;:&quot;de0ada0d-5ea5-4c4b-a5b3-21b38970ed05&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;5c1d1e1b-8a8f-4af4-b113-1b5bbdaee271&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;SAME_ACCOUNT: Source and destination must differ&quot;,&quot;amount&quot;:50,&quot;source_account_id&quot;:&quot;5c1d1e1b-8a8f-4af4-b113-1b5bbdaee271&quot;,&quot;destination_account_id&quot;:&quot;5c1d1e1b-8a8f-4af4-b113-1b5bbdaee271&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;1bf19983-db12-4a22-9daf-9ebc2f8bd926&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:19.724079+00:00&quot;},{&quot;id&quot;:&quot;0f950a4a-af19-403c-a0fe-b6b069ede770&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;5c1d1e1b-8a8f-4af4-b113-1b5bbdaee271&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000058&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;1bf19983-db12-4a22-9daf-9ebc2f8bd926&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:18.930875+00:00&quot;},{&quot;id&quot;:&quot;673edab6-2884-44fa-a21e-eb7bfddb1aab&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;0cba2c3f-9358-467a-9241-9bf3e60757db&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000057&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;eae7edfd-87a4-448d-a353-67190ac42c85&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:12.924993+00:00&quot;},{&quot;id&quot;:&quot;6e57a732-c3ec-40f3-8138-ed889d66fe9e&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;source_account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;destination_account_id&quot;:&quot;af3b8192-c7f6-4d6f-bb46-f31f4b840fdd&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:09.411707+00:00&quot;},{&quot;id&quot;:&quot;39d32fc9-3922-4709-b42c-5b515c45ba05&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;source_account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;destination_account_id&quot;:&quot;af3b8192-c7f6-4d6f-bb46-f31f4b840fdd&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:08.613425+00:00&quot;},{&quot;id&quot;:&quot;4628fa37-6c29-4f85-a728-ccb51da5d5bf&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;af3b8192-c7f6-4d6f-bb46-f31f4b840fdd&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000056&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:07.648652+00:00&quot;},{&quot;id&quot;:&quot;6f9a2671-2626-4e98-922c-d551e18dd229&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000055&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:06.666791+00:00&quot;},{&quot;id&quot;:&quot;c045f26c-d410-4c58-84fd-d7e0faba500c&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;aafdfa09-94f0-4f4f-af55-d56e31a6bf4b&quot;,&quot;transaction_id&quot;:&quot;8e4a4042-eaaa-4836-abad-cd51e0946f53&quot;,&quot;payload&quot;:{&quot;amount&quot;:100,&quot;transaction_id&quot;:&quot;8e4a4042-eaaa-4836-abad-cd51e0946f53&quot;,&quot;source_account_id&quot;:&quot;aafdfa09-94f0-4f4f-af55-d56e31a6bf4b&quot;,&quot;destination_account_id&quot;:&quot;15b3f126-4d76-490b-b55d-1b0208fae032&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;b3d4a6ad-39fd-4c94-bfbc-0a31a66be995&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:05.492971+00:00&quot;},{&quot;id&quot;:&quot;279bfef0-1a1c-4120-88e4-6d3026eef03b&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;15b3f126-4d76-490b-b55d-1b0208fae032&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;account_number&quot;:&quot;1000054&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;b3d4a6ad-39fd-4c94-bfbc-0a31a66be995&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:04.625655+00:00&quot;},{&quot;id&quot;:&quot;aeaaa435-fc66-40b8-bc72-d9798c6d1876&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;aafdfa09-94f0-4f4f-af55-d56e31a6bf4b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;account_number&quot;:&quot;1000053&quot;,&quot;initial_balance&quot;:1000},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;b3d4a6ad-39fd-4c94-bfbc-0a31a66be995&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:03.838346+00:00&quot;},{&quot;id&quot;:&quot;ac9be2e7-a01d-45cf-86f2-d2c9e9ff9667&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;581521f3-ebe9-4733-a761-7791e51ac29e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario a687fa&quot;,&quot;account_number&quot;:&quot;1000052&quot;,&quot;initial_balance&quot;:300},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;663d4d83-6e1d-4af2-8fbc-8d338019f7df&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:12:54.266644+00:00&quot;},{&quot;id&quot;:&quot;74a75550-d81e-4f1e-9e9b-e57e4c19d3e9&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;987a310f-284e-4092-bfca-d447dcfbecc3&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 5cd032&quot;,&quot;account_number&quot;:&quot;1000051&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;82596a65-5dbd-4e8b-9d2f-35c63a8bec09&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:12:50.133757+00:00&quot;}],&quot;total&quot;:135,&quot;limit&quot;:50,&quot;offset&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { events: &#39;#array&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">users</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:18]</span>
+                <span class="scenario-name">Listar eventos filtrados por severidad</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2084</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = callonce read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:25:51.407 Usando configuración por defecto. 
+13:25:51.407 Ambiente activo: qa 
+13:25:51.407 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1455</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.19.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.create_user</div>
+      </div>
+      <div class="time-cell passed">1449</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1017</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">430</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19.0.call.0.12">13:25:52.435 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_2d3d6c80@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:25:52.863 response time in milliseconds: 427
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:52 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8d0c976810e-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: asxps
+1 &lt; sb-auth-session-id: 532ac003-3f61-40ab-8d23-11bac0bad21b
+1 &lt; sb-auth-user-id: c6a30a40-2b55-4661-b845-d71d13262889
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-be7e-74bf-a7f3-9dca9f53a9e9
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 96
+1 &lt; set-cookie: __cf_bm=3SmI8txxvOYH9NPY6jXx4Ia8Ckh9gOPwfqtE0a.o1ok-1785954352.7638428-1.0.1.1-iDHBAPexih6uNCjB4v74h_eGiM6rQjXYIsQLItkmP_8NBdbzguV6LVW0qYZFBR1CpCgHyR38jOcvf_9Cai4gS0bmmeaDKCmEBUgCjOLj1J8ad4MVZ8kwyySPpPvtbssl; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:52 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=3SmI8txxvOYH9NPY6jXx4Ia8Ckh9gOPwfqtE0a.o1ok-1785954352.7638428-1.0.1.1-iDHBAPexih6uNCjB4v74h_eGiM6rQjXYIsQLItkmP_8NBdbzguV6LVW0qYZFBR1CpCgHyR38jOcvf_9Cai4gS0bmmeaDKCmEBUgCjOLj1J8ad4MVZ8kwyySPpPvtbssl; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:52 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJjNmEzMGE0MC0yYjU1LTQ2NjEtYjg0NS1kNzFkMTMyNjI4ODkiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTUyLCJpYXQiOjE3ODU5NTQzNTIsImVtYWlsIjoidXNlcl8yZDNkNmM4MEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8yZDNkNmM4MEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJjNmEzMGE0MC0yYjU1LTQ2NjEtYjg0NS1kNzFkMTMyNjI4ODkifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM1Mn1dLCJzZXNzaW9uX2lkIjoiNTMyYWMwMDMtM2Y2MS00MGFiLThkMjMtMTFiYWMwYmFkMjFiIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.bZYT-A_zBddGwy29Q7p_MGgW3q3AE6HItzs_ZLtpNXeg4oJUcKN6YifpSb5HSiMMW9B_PX_GhrMPvptG5_pT-w&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957952,&quot;refresh_token&quot;:&quot;asxpsuqy2xex&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;c6a30a40-2b55-4661-b845-d71d13262889&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_2d3d6c80@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:25:52.905398584Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:52.907910252Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_2d3d6c80@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;c6a30a40-2b55-4661-b845-d71d13262889&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;f6c62aa7-6d4a-4e8d-92db-892e7d771ee1&quot;,&quot;id&quot;:&quot;c6a30a40-2b55-4661-b845-d71d13262889&quot;,&quot;user_id&quot;:&quot;c6a30a40-2b55-4661-b845-d71d13262889&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_2d3d6c80@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;c6a30a40-2b55-4661-b845-d71d13262889&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:52.90285463Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:52.9029Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:52.9029Z&quot;,&quot;email&quot;:&quot;user_2d3d6c80@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:25:52.900105Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:52.910255Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/audit&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param severity = &#39;INFO&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = user.authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">627</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">13:25:52.866 request:
+1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/audit?severity=INFO
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJjNmEzMGE0MC0yYjU1LTQ2NjEtYjg0NS1kNzFkMTMyNjI4ODkiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTUyLCJpYXQiOjE3ODU5NTQzNTIsImVtYWlsIjoidXNlcl8yZDNkNmM4MEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8yZDNkNmM4MEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJjNmEzMGE0MC0yYjU1LTQ2NjEtYjg0NS1kNzFkMTMyNjI4ODkifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM1Mn1dLCJzZXNzaW9uX2lkIjoiNTMyYWMwMDMtM2Y2MS00MGFiLThkMjMtMTFiYWMwYmFkMjFiIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.bZYT-A_zBddGwy29Q7p_MGgW3q3AE6HItzs_ZLtpNXeg4oJUcKN6YifpSb5HSiMMW9B_PX_GhrMPvptG5_pT-w
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:25:53.491 response time in milliseconds: 623
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:53 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8d349d06871-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; endpoint-load-metrics: application_utilization:10,named_metrics.queue_depth:10
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-c014-7cb7-9af4-3e4962c7cbc0
+1 &lt; x-deno-execution-id: 2a4f3a24-1b84-4e7b-9ff8-c17a443b2852
+1 &lt; x-sb-edge-region: us-east-1
+1 &lt; x-served-by: supabase-edge-runtime
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; set-cookie: __cf_bm=liIcxnAQ7_DWPqY3itjLi6PO1UNPTUUIaDW5JZWc4ow-1785954353.168245-1.0.1.1-LKfLF0QWuLc8LeRk0AZO5QFkR.uzwaCRcXWhvRIq7z4ju4pKtFzPfE2JEDbFHP.tb6QwVM2F1sqfdbW4lj9BQVzM61ZDfuHVy9wtDIjGdaHj1V_SEG3qrdqXgoinGgZu; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:53 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=liIcxnAQ7_DWPqY3itjLi6PO1UNPTUUIaDW5JZWc4ow-1785954353.168245-1.0.1.1-LKfLF0QWuLc8LeRk0AZO5QFkR.uzwaCRcXWhvRIq7z4ju4pKtFzPfE2JEDbFHP.tb6QwVM2F1sqfdbW4lj9BQVzM61ZDfuHVy9wtDIjGdaHj1V_SEG3qrdqXgoinGgZu; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:53 GMT
+{&quot;events&quot;:[{&quot;id&quot;:&quot;eee89290-1a51-4e4f-aced-2d479b150526&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;c6d76ce0-9dbe-4b23-9869-bba7574e5d88&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000082&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:46.51211+00:00&quot;},{&quot;id&quot;:&quot;59f9f362-2873-46f8-905d-6482c7524644&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000081&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:45.720294+00:00&quot;},{&quot;id&quot;:&quot;c176ee76-9286-4b17-baea-c9502f3c0d17&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000080&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;be5e384c-3a24-4f49-999c-c1a90ff79013&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:42.528748+00:00&quot;},{&quot;id&quot;:&quot;383d0a7c-4522-40ee-bb26-90087980cc58&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e00bd5bf-7d1b-46fb-88f6-24d385486fe1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000079&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;a96fbf52-996e-4073-9a4d-7c88e01c9feb&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:28.451801+00:00&quot;},{&quot;id&quot;:&quot;87f8bcda-cd74-4b53-92fa-e1271b086604&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:17.754053+00:00&quot;},{&quot;id&quot;:&quot;eda159c3-f000-42d7-af39-6de9a00a9ef9&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.710161+00:00&quot;},{&quot;id&quot;:&quot;5ba064a9-6e43-458e-8f23-4d8e5733e119&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000078&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.085733+00:00&quot;},{&quot;id&quot;:&quot;f372d920-f3a1-4e48-a729-2f71bc643762&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000077&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:15.32268+00:00&quot;},{&quot;id&quot;:&quot;f084978f-25bb-4410-a28c-10cd03a7402a&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;transaction_id&quot;:&quot;6b9483ce-dcd5-40e2-8da2-96ecceb0ac71&quot;,&quot;payload&quot;:{&quot;amount&quot;:100,&quot;transaction_id&quot;:&quot;6b9483ce-dcd5-40e2-8da2-96ecceb0ac71&quot;,&quot;source_account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;destination_account_id&quot;:&quot;2cb8db78-fe5b-433e-bd84-21eea641e9c4&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:13.719983+00:00&quot;},{&quot;id&quot;:&quot;815f092b-e72d-44cd-aa27-de6575ad57e5&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;2cb8db78-fe5b-433e-bd84-21eea641e9c4&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;account_number&quot;:&quot;1000076&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:12.207814+00:00&quot;},{&quot;id&quot;:&quot;be18bc35-995e-4aa7-b962-e5b6e1399ee3&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;account_number&quot;:&quot;1000075&quot;,&quot;initial_balance&quot;:1000},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:11.489862+00:00&quot;},{&quot;id&quot;:&quot;81b9cb0d-519a-4542-b4cd-d9f1e6ad40c5&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7be66d1b-6082-436c-9a63-935ac0329188&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario e7f46e&quot;,&quot;account_number&quot;:&quot;1000074&quot;,&quot;initial_balance&quot;:300},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8ce00bf-96de-445f-ab70-09c33e94372f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:56.926802+00:00&quot;},{&quot;id&quot;:&quot;00413f8f-6e8e-44f9-931e-555ddf109db1&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;da852597-d3ce-4563-89e1-c42e465cbb07&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 76d6a4&quot;,&quot;account_number&quot;:&quot;1000073&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;1305be49-5d30-4fb8-8b60-a18dc74a55b4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:49.456359+00:00&quot;},{&quot;id&quot;:&quot;77144466-ec16-4a27-9a48-1f7880cdda64&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;69f20984-d23f-4ff8-8d72-a295c48f0880&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 4ea67c&quot;,&quot;account_number&quot;:&quot;1000072&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;7d973939-3a6a-467f-b673-b7a9d4aab230&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:24:38.519461+00:00&quot;},{&quot;id&quot;:&quot;cf9c584f-c20e-4411-9ee7-f6537be9a9d1&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2022-10-05&quot;,&quot;report_hash&quot;:&quot;7289307df43c6faaf8d7e52dca677f78c4a41cbc69a62a9de4770748f611294e&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;e8d1702c-6b14-4ecd-93e0-ba9210b43a5f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:45.876183+00:00&quot;},{&quot;id&quot;:&quot;38d7bcfa-3426-4d4f-ba18-c7cc61e6cdf7&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2025-08-08&quot;,&quot;report_hash&quot;:&quot;ce6e031fd02f1225affe5bbc1dcdf6ade122b6e6f7961342cc9e67cc39dd1ef0&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;80ddc4aa-211c-4ae5-99dc-5588a6d7399b&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:44.303314+00:00&quot;},{&quot;id&quot;:&quot;03ba9787-8d97-4835-8ced-1a2d1bbb6ac9&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;f9f8b705-c625-47e9-b328-0e4e0673c58b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000071&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;e4f4e10a-912a-4dd8-9093-4f2303ef2cf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:36.756671+00:00&quot;},{&quot;id&quot;:&quot;e0f04d71-80c0-4510-b429-62e96ec90a78&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;cdf6ab49-51e1-4382-b8f2-2692cb560bd1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000070&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;e4f4e10a-912a-4dd8-9093-4f2303ef2cf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:36.077599+00:00&quot;},{&quot;id&quot;:&quot;561d8f80-dcc9-4871-810f-7559b429c5bb&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;467e8a3b-4f52-434e-8549-befc9730dfd7&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000069&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;ae0e8139-8f4e-4309-ab54-2d65ad4dc43f&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:34.287657+00:00&quot;},{&quot;id&quot;:&quot;a63f74d8-9a68-473b-a028-203603788264&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;cb44e69d-ce04-457c-96d1-90e78685b3d8&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000068&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;83e8e940-9b20-4198-b013-e5cb5b68307e&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:28.027745+00:00&quot;},{&quot;id&quot;:&quot;ee74b271-d68a-4355-b34b-999bffd5f42f&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;source_account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;destination_account_id&quot;:&quot;d3b1ec82-2f68-4c7f-8d80-294b6701da60&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:24.346819+00:00&quot;},{&quot;id&quot;:&quot;9fe0518c-5be9-44c3-86db-c1b27692ffd5&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;3c533d87-9666-466f-a494-24770d69f9cc&quot;,&quot;source_account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;destination_account_id&quot;:&quot;d3b1ec82-2f68-4c7f-8d80-294b6701da60&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:23.644133+00:00&quot;},{&quot;id&quot;:&quot;aafbf97f-3566-4891-9681-22ea2cae1559&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;d3b1ec82-2f68-4c7f-8d80-294b6701da60&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000067&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:22.951073+00:00&quot;},{&quot;id&quot;:&quot;d6c49b31-4d47-43ee-b7f2-ff80a18a012b&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7c9cebc3-f14c-4ced-b497-206459dc88d4&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000066&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8a47764-29c8-42e0-b498-ff2ecbe2132c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:22.236802+00:00&quot;},{&quot;id&quot;:&quot;5bc20770-3d13-4920-acdb-5123c219ad71&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;3be99ed3-4b34-4202-a910-f404f36a884e&quot;,&quot;transaction_id&quot;:&quot;aef9d9bd-314d-47ea-9a15-d46c49732fd4&quot;,&quot;payload&quot;:{&quot;amount&quot;:100,&quot;transaction_id&quot;:&quot;aef9d9bd-314d-47ea-9a15-d46c49732fd4&quot;,&quot;source_account_id&quot;:&quot;3be99ed3-4b34-4202-a910-f404f36a884e&quot;,&quot;destination_account_id&quot;:&quot;0e38eae3-4f7c-491f-8d42-d2c9a5a13c8d&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;20d81c62-fdb7-4f46-b12f-c8cb0a1959d4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:21.002209+00:00&quot;},{&quot;id&quot;:&quot;3a503b9f-c9d5-471d-85d7-0de42aaf8711&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;0e38eae3-4f7c-491f-8d42-d2c9a5a13c8d&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;account_number&quot;:&quot;1000065&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;20d81c62-fdb7-4f46-b12f-c8cb0a1959d4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:19.752334+00:00&quot;},{&quot;id&quot;:&quot;3c1a8a49-10b8-463c-90cd-e2a85a58fcc2&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;3be99ed3-4b34-4202-a910-f404f36a884e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;account_number&quot;:&quot;1000064&quot;,&quot;initial_balance&quot;:1000},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;20d81c62-fdb7-4f46-b12f-c8cb0a1959d4&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:19.016605+00:00&quot;},{&quot;id&quot;:&quot;8fbefcfb-2794-4672-bec2-29c4b7b7fb42&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;302b70ff-bec9-4cc0-afac-265c868af9d9&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 00518c&quot;,&quot;account_number&quot;:&quot;1000063&quot;,&quot;initial_balance&quot;:300},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;5c0c741c-c7f1-49b8-b315-fa067d6bba5a&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:11.13618+00:00&quot;},{&quot;id&quot;:&quot;bf41ead9-f5ec-498a-b4f2-cfb620eb55e6&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;1723d771-17a3-4e2c-9c81-03a0df089b3b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 08b1f4&quot;,&quot;account_number&quot;:&quot;1000062&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;a22b16b7-6cbd-4a3f-a2d6-37bd72c5b182&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:19:07.170448+00:00&quot;},{&quot;id&quot;:&quot;1da26685-924e-473d-a1db-01a5f7f76717&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e7cbb1c2-ba38-4c30-b57f-3bc8932e3d51&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 37e0a2&quot;,&quot;account_number&quot;:&quot;1000061&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c0d66795-7630-4fc0-a611-0e35fa3893d0&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:18:58.173728+00:00&quot;},{&quot;id&quot;:&quot;c69a8259-cb73-41cd-a885-a47272f2dd48&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2026-02-14&quot;,&quot;report_hash&quot;:&quot;cf7a5f2a1ba707a5daba06b44afb59b0fea496c84753d61d3ce57dd7c94eb6c1&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;5e11d22d-3e23-493c-9245-ea4c7e82ddf7&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:30.956679+00:00&quot;},{&quot;id&quot;:&quot;d98f0081-cbdb-47c8-994c-8db49b296949&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;8714a2cc-4ce8-4b53-8a18-98624d5950c5&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000060&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;4513977f-2aa0-4411-bdd2-17ebc4612e2c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:24.464574+00:00&quot;},{&quot;id&quot;:&quot;99c4ddc7-a9f5-4f2e-bf75-8cf3dd10146e&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;06210b14-e32e-46c8-a18c-46fe84fe4880&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000059&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;4513977f-2aa0-4411-bdd2-17ebc4612e2c&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:23.627368+00:00&quot;},{&quot;id&quot;:&quot;0f950a4a-af19-403c-a0fe-b6b069ede770&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;5c1d1e1b-8a8f-4af4-b113-1b5bbdaee271&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000058&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;1bf19983-db12-4a22-9daf-9ebc2f8bd926&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:18.930875+00:00&quot;},{&quot;id&quot;:&quot;673edab6-2884-44fa-a21e-eb7bfddb1aab&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;0cba2c3f-9358-467a-9241-9bf3e60757db&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000057&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;eae7edfd-87a4-448d-a353-67190ac42c85&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:12.924993+00:00&quot;},{&quot;id&quot;:&quot;6e57a732-c3ec-40f3-8138-ed889d66fe9e&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;source_account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;destination_account_id&quot;:&quot;af3b8192-c7f6-4d6f-bb46-f31f4b840fdd&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:09.411707+00:00&quot;},{&quot;id&quot;:&quot;39d32fc9-3922-4709-b42c-5b515c45ba05&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;105c55c5-66cb-4064-ab5e-c01d78856b56&quot;,&quot;source_account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;destination_account_id&quot;:&quot;af3b8192-c7f6-4d6f-bb46-f31f4b840fdd&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:08.613425+00:00&quot;},{&quot;id&quot;:&quot;4628fa37-6c29-4f85-a728-ccb51da5d5bf&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;af3b8192-c7f6-4d6f-bb46-f31f4b840fdd&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000056&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:07.648652+00:00&quot;},{&quot;id&quot;:&quot;6f9a2671-2626-4e98-922c-d551e18dd229&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;473cdf96-adce-4e62-ba79-fe32baace3fb&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000055&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d4557cf1-16a1-485d-b7d7-8bb9ad42bcaa&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:06.666791+00:00&quot;},{&quot;id&quot;:&quot;c045f26c-d410-4c58-84fd-d7e0faba500c&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;aafdfa09-94f0-4f4f-af55-d56e31a6bf4b&quot;,&quot;transaction_id&quot;:&quot;8e4a4042-eaaa-4836-abad-cd51e0946f53&quot;,&quot;payload&quot;:{&quot;amount&quot;:100,&quot;transaction_id&quot;:&quot;8e4a4042-eaaa-4836-abad-cd51e0946f53&quot;,&quot;source_account_id&quot;:&quot;aafdfa09-94f0-4f4f-af55-d56e31a6bf4b&quot;,&quot;destination_account_id&quot;:&quot;15b3f126-4d76-490b-b55d-1b0208fae032&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;b3d4a6ad-39fd-4c94-bfbc-0a31a66be995&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:05.492971+00:00&quot;},{&quot;id&quot;:&quot;279bfef0-1a1c-4120-88e4-6d3026eef03b&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;15b3f126-4d76-490b-b55d-1b0208fae032&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;account_number&quot;:&quot;1000054&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;b3d4a6ad-39fd-4c94-bfbc-0a31a66be995&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:04.625655+00:00&quot;},{&quot;id&quot;:&quot;aeaaa435-fc66-40b8-bc72-d9798c6d1876&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;aafdfa09-94f0-4f4f-af55-d56e31a6bf4b&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;account_number&quot;:&quot;1000053&quot;,&quot;initial_balance&quot;:1000},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;b3d4a6ad-39fd-4c94-bfbc-0a31a66be995&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:13:03.838346+00:00&quot;},{&quot;id&quot;:&quot;ac9be2e7-a01d-45cf-86f2-d2c9e9ff9667&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;581521f3-ebe9-4733-a761-7791e51ac29e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario a687fa&quot;,&quot;account_number&quot;:&quot;1000052&quot;,&quot;initial_balance&quot;:300},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;663d4d83-6e1d-4af2-8fbc-8d338019f7df&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:12:54.266644+00:00&quot;},{&quot;id&quot;:&quot;74a75550-d81e-4f1e-9e9b-e57e4c19d3e9&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;987a310f-284e-4092-bfca-d447dcfbecc3&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 5cd032&quot;,&quot;account_number&quot;:&quot;1000051&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;82596a65-5dbd-4e8b-9d2f-35c63a8bec09&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:12:50.133757+00:00&quot;},{&quot;id&quot;:&quot;68e8d00e-9a1f-40e3-ab52-9d0b284e92e7&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;498ffb8f-0b00-479c-97bc-b7fe2b0494ac&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Usuario 3b3209&quot;,&quot;account_number&quot;:&quot;1000050&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;7e1b822e-af1d-4b04-898d-e1d0586e5d7a&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:12:43.745618+00:00&quot;},{&quot;id&quot;:&quot;785fe703-cf9b-4401-b086-34227e68793c&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2023-10-25&quot;,&quot;report_hash&quot;:&quot;fc9f1fd6178cabedfec1769c3015375548c32860b6d092315782dca39cc23a77&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;93136c53-ed5f-4f3d-8728-cb73e8eb857d&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:08:53.612433+00:00&quot;},{&quot;id&quot;:&quot;70bd8337-2782-430f-9c62-715166a68b1e&quot;,&quot;event_type&quot;:&quot;DAY_CLOSE_EXECUTED&quot;,&quot;account_id&quot;:null,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;is_balanced&quot;:true,&quot;report_date&quot;:&quot;2025-11-09&quot;,&quot;report_hash&quot;:&quot;e9c45dd9125c86815fcae4aa8141fa2a6b5b0b8ed46a0bcc7c44f40cd9b3dea2&quot;,&quot;total_transactions&quot;:0},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;3226e654-fe4e-4eae-b297-dda28f58b1c6&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:08:52.355433+00:00&quot;},{&quot;id&quot;:&quot;6859cf35-5312-434b-b8dd-aec5c27b14bf&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;9e4d8139-b459-4419-a87a-dbabd24df3ec&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000049&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d2fd7842-d076-40a4-ac3c-dd32ba3df5f3&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:08:45.591302+00:00&quot;},{&quot;id&quot;:&quot;3fca00d7-cf60-4e07-a597-b9093aa7d284&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e6f8fbcd-a1a1-4e82-bcbf-b8cf948b04b9&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000048&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;d2fd7842-d076-40a4-ac3c-dd32ba3df5f3&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:08:44.848977+00:00&quot;},{&quot;id&quot;:&quot;c6a8926f-c67c-487c-b22e-71620206353f&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;2fd327c7-5436-4246-abff-b7672bcaa8a1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000047&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;40e16081-4bcf-47d7-a5d6-ef5d4c637036&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:08:42.719916+00:00&quot;}],&quot;total&quot;:111,&quot;limit&quot;:50,&quot;offset&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { events: &#39;#array&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">users</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:29]</span>
+                <span class="scenario-name">Listar eventos con paginacion</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1924</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = callonce read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:25:53.501 Usando configuración por defecto. 
+13:25:53.503 Ambiente activo: qa 
+13:25:53.503 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1358</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.30.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.create_user</div>
+      </div>
+      <div class="time-cell passed">1350</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1015</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">333</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30.0.call.0.12">13:25:54.532 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_2249e95d@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:25:54.863 response time in milliseconds: 330
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8dd5aa3f2a4-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: ucjbg
+1 &lt; sb-auth-session-id: ec1c82e8-f091-46dd-8b4b-4e16f593c39f
+1 &lt; sb-auth-user-id: bc9fc0b9-e72e-4f64-82d4-019bcbde9319
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-c65a-78c2-8f18-58d691462c54
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 91
+1 &lt; set-cookie: __cf_bm=2UTFMvgO4HbdSsSsrYnQ09d0kqsUVg8Q.ETscVAcgew-1785954354.7766223-1.0.1.1-2Az11gnAPlxhuuK9Pfvn2TNjYe7ho4bnAg3IaACdazsGOJYmm75WzPsk9eEn36cJpSGVI6wYYl.hPATTHZhRzzwjgBfCcYSGFkj6nR9b.9e2e.kDZLdBm9BUPT9G1DAd; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:54 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=2UTFMvgO4HbdSsSsrYnQ09d0kqsUVg8Q.ETscVAcgew-1785954354.7766223-1.0.1.1-2Az11gnAPlxhuuK9Pfvn2TNjYe7ho4bnAg3IaACdazsGOJYmm75WzPsk9eEn36cJpSGVI6wYYl.hPATTHZhRzzwjgBfCcYSGFkj6nR9b.9e2e.kDZLdBm9BUPT9G1DAd; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:54 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJiYzlmYzBiOS1lNzJlLTRmNjQtODJkNC0wMTliY2JkZTkzMTkiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTU0LCJpYXQiOjE3ODU5NTQzNTQsImVtYWlsIjoidXNlcl8yMjQ5ZTk1ZEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8yMjQ5ZTk1ZEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJiYzlmYzBiOS1lNzJlLTRmNjQtODJkNC0wMTliY2JkZTkzMTkifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM1NH1dLCJzZXNzaW9uX2lkIjoiZWMxYzgyZTgtZjA5MS00NmRkLThiNGItNGUxNmY1OTNjMzlmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.Hpm51CQycbaO5S6YAi3kCrBxeibJ9C8dMIvAuIvBQUC6OISrY8CHGp_u_uxkv9yZXjQa0RkmZV39Dio-wlqS_w&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957954,&quot;refresh_token&quot;:&quot;ucjbgmglrwa4&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;bc9fc0b9-e72e-4f64-82d4-019bcbde9319&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_2249e95d@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:25:54.91288287Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:54.91503917Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_2249e95d@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;bc9fc0b9-e72e-4f64-82d4-019bcbde9319&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;7055f167-aef0-449c-b8e0-6f49e467b99c&quot;,&quot;id&quot;:&quot;bc9fc0b9-e72e-4f64-82d4-019bcbde9319&quot;,&quot;user_id&quot;:&quot;bc9fc0b9-e72e-4f64-82d4-019bcbde9319&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_2249e95d@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;bc9fc0b9-e72e-4f64-82d4-019bcbde9319&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:54.910764133Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:54.910811Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:54.910811Z&quot;,&quot;email&quot;:&quot;user_2249e95d@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:25:54.908598Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:54.917082Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.30.0.call">
+    <div class="step-container" id="0.30.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/audit&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param limit = 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param offset = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = user.authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">562</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">13:25:54.866 request:
+1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/audit?offset=0&amp;limit=10
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJiYzlmYzBiOS1lNzJlLTRmNjQtODJkNC0wMTliY2JkZTkzMTkiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTU0LCJpYXQiOjE3ODU5NTQzNTQsImVtYWlsIjoidXNlcl8yMjQ5ZTk1ZEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8yMjQ5ZTk1ZEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJiYzlmYzBiOS1lNzJlLTRmNjQtODJkNC0wMTliY2JkZTkzMTkifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM1NH1dLCJzZXNzaW9uX2lkIjoiZWMxYzgyZTgtZjA5MS00NmRkLThiNGItNGUxNmY1OTNjMzlmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.Hpm51CQycbaO5S6YAi3kCrBxeibJ9C8dMIvAuIvBQUC6OISrY8CHGp_u_uxkv9yZXjQa0RkmZV39Dio-wlqS_w
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:25:55.426 response time in milliseconds: 559
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:55 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d8df8a8449e0-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Server: cloudflare
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; endpoint-load-metrics: application_utilization:9,named_metrics.queue_depth:9
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-c7b9-7154-92ec-1a313d5a648c
+1 &lt; x-deno-execution-id: 80a207f7-047a-4eae-8bd3-5fc157dd4ee6
+1 &lt; x-sb-edge-region: us-east-1
+1 &lt; x-served-by: supabase-edge-runtime
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; set-cookie: __cf_bm=slcEkS3_kSuRkt7LS6DXnyAvmt46rsLYoXX_xdxTI10-1785954355.1245549-1.0.1.1-vkSaIcWeS.t47w4PvoQJytmzLNVQYPykq76V7WaB0l4uUPKeW_peB4h8NT0rA8yi9doKexWt.Hyff890LCd5NtyifRecIXhiI14pnMoyoUaPgklcKHmnuIgtaTdqJWqA; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:55 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=slcEkS3_kSuRkt7LS6DXnyAvmt46rsLYoXX_xdxTI10-1785954355.1245549-1.0.1.1-vkSaIcWeS.t47w4PvoQJytmzLNVQYPykq76V7WaB0l4uUPKeW_peB4h8NT0rA8yi9doKexWt.Hyff890LCd5NtyifRecIXhiI14pnMoyoUaPgklcKHmnuIgtaTdqJWqA; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:55 GMT
+{&quot;events&quot;:[{&quot;id&quot;:&quot;91ddf663-d4e2-428d-965d-6650af9bb5c9&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;INSUFFICIENT_FUNDS: Balance 100.00.2f insufficient for transfer of 999999999.2f&quot;,&quot;amount&quot;:999999999,&quot;source_account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;destination_account_id&quot;:&quot;c6d76ce0-9dbe-4b23-9869-bba7574e5d88&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:47.316072+00:00&quot;},{&quot;id&quot;:&quot;eee89290-1a51-4e4f-aced-2d479b150526&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;c6d76ce0-9dbe-4b23-9869-bba7574e5d88&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Destino&quot;,&quot;account_number&quot;:&quot;1000082&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:46.51211+00:00&quot;},{&quot;id&quot;:&quot;59f9f362-2873-46f8-905d-6482c7524644&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;7316d50f-c5c5-4e5f-a212-4bf8b17fe394&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Origen&quot;,&quot;account_number&quot;:&quot;1000081&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;c8dd3649-4e0f-436a-b1ca-8275d64e0c52&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:45.720294+00:00&quot;},{&quot;id&quot;:&quot;5c7794b6-7911-4711-979f-d972136a01a8&quot;,&quot;event_type&quot;:&quot;TRANSFER_FAILED&quot;,&quot;account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;error&quot;:&quot;SAME_ACCOUNT: Source and destination must differ&quot;,&quot;amount&quot;:50,&quot;source_account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;destination_account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;},&quot;severity&quot;:&quot;WARNING&quot;,&quot;actor_id&quot;:&quot;be5e384c-3a24-4f49-999c-c1a90ff79013&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:43.190113+00:00&quot;},{&quot;id&quot;:&quot;c176ee76-9286-4b17-baea-c9502f3c0d17&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;dd6d49d4-e54e-4ab6-b032-d38d65fe9e38&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Unica&quot;,&quot;account_number&quot;:&quot;1000080&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;be5e384c-3a24-4f49-999c-c1a90ff79013&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:42.528748+00:00&quot;},{&quot;id&quot;:&quot;383d0a7c-4522-40ee-bb26-90087980cc58&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;e00bd5bf-7d1b-46fb-88f6-24d385486fe1&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta Transacciones&quot;,&quot;account_number&quot;:&quot;1000079&quot;,&quot;initial_balance&quot;:100},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;a96fbf52-996e-4073-9a4d-7c88e01c9feb&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:28.451801+00:00&quot;},{&quot;id&quot;:&quot;87f8bcda-cd74-4b53-92fa-e1271b086604&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:17.754053+00:00&quot;},{&quot;id&quot;:&quot;eda159c3-f000-42d7-af39-6de9a00a9ef9&quot;,&quot;event_type&quot;:&quot;TRANSFER_COMPLETED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;payload&quot;:{&quot;amount&quot;:50,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.710161+00:00&quot;},{&quot;id&quot;:&quot;5ba064a9-6e43-458e-8f23-4d8e5733e119&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;account_number&quot;:&quot;1000078&quot;,&quot;initial_balance&quot;:50},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.085733+00:00&quot;},{&quot;id&quot;:&quot;f372d920-f3a1-4e48-a729-2f71bc643762&quot;,&quot;event_type&quot;:&quot;ACCOUNT_CREATED&quot;,&quot;account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;transaction_id&quot;:null,&quot;payload&quot;:{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;account_number&quot;:&quot;1000077&quot;,&quot;initial_balance&quot;:500},&quot;severity&quot;:&quot;INFO&quot;,&quot;actor_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:15.32268+00:00&quot;}],&quot;total&quot;:135,&quot;limit&quot;:10,&quot;offset&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.limit == 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.offset == 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

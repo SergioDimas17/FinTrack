@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2b22845d-0693-470c-8d7f-70a83ca8876a",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.transfers.transfer_flow</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>qa</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-08-05 01:25:18 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Transferencia exitosa entre cuentas propias</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:45]"><span>[2:45]</span> <span>Transferencia con idempotency key duplicado</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/transfers/transfer_flow.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Transferencias entre cuentas</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">transfers</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">positive</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Transferencia exitosa entre cuentas propias</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4141</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:25:09.557 Usando configuración por defecto. 
+13:25:09.558 Ambiente activo: qa 
+13:25:09.558 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 1. Registrar usuario dinámico y obtener token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;transfer_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;TestPassword123&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">569</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">13:25:09.565 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 71
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;transfer_9b2ebb7c@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:25:10.131 response time in milliseconds: 565
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d7c53be2f516-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: lvkjk
+1 &lt; sb-auth-session-id: 3b579360-f1e9-419c-b78f-a1c71ccdb01a
+1 &lt; sb-auth-user-id: dafa8924-aa19-43a7-bceb-f7ab63295c72
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-1748-79a6-b52f-50c77c2840e1
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 98
+1 &lt; set-cookie: __cf_bm=qBdLtc4KGkP6uN4t.CyohGEs9CfKkErHfYJ9kDKGy8w-1785954309.9579053-1.0.1.1-Dtd0_Vooueyco1pmV7Gj3b4UqznHo8.tq45Q8Kv1It8qVo1JakCFu5R2oNiAZ.eZ4dk8E.6LPFJpMLCIJq3nCSsHzOIqTOfYwGslABzwkiu1XthKnJU9qmRXa5hWK0uv; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:10 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=qBdLtc4KGkP6uN4t.CyohGEs9CfKkErHfYJ9kDKGy8w-1785954309.9579053-1.0.1.1-Dtd0_Vooueyco1pmV7Gj3b4UqznHo8.tq45Q8Kv1It8qVo1JakCFu5R2oNiAZ.eZ4dk8E.6LPFJpMLCIJq3nCSsHzOIqTOfYwGslABzwkiu1XthKnJU9qmRXa5hWK0uv; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:10 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkYWZhODkyNC1hYTE5LTQzYTctYmNlYi1mN2FiNjMyOTVjNzIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTEwLCJpYXQiOjE3ODU5NTQzMTAsImVtYWlsIjoidHJhbnNmZXJfOWIyZWJiN2NAZmludHJhY2suZGV2IiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRyYW5zZmVyXzliMmViYjdjQGZpbnRyYWNrLmRldiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImRhZmE4OTI0LWFhMTktNDNhNy1iY2ViLWY3YWI2MzI5NWM3MiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg1OTU0MzEwfV0sInNlc3Npb25faWQiOiIzYjU3OTM2MC1mMWU5LTQxOWMtYjc4Zi1hMWM3MWNjZGIwMWEiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.rpaWD5oSjj_mzBBFO3B-soPv16WKp1d9GmU1dbgpF1l6OsTJz3_quydM2Djki3R0tZKI1HHnpPsYLXdNvLXObA&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957910,&quot;refresh_token&quot;:&quot;lvkjke36k4fx&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;transfer_9b2ebb7c@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:25:10.096979877Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:10.102546853Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;transfer_9b2ebb7c@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;c875cc14-12db-4c66-afa6-b7ce984f31db&quot;,&quot;id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;user_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;transfer_9b2ebb7c@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:10.095062065Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:10.095103Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:10.095103Z&quot;,&quot;email&quot;:&quot;transfer_9b2ebb7c@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:25:10.091856Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:10.104392Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2. Crear Cuenta de Origen</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { holder_name: &#39;Cuenta Origen&#39;, initial_balance: 1000.00 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1303</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">13:25:10.134 request:
+2 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/accounts
+2 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkYWZhODkyNC1hYTE5LTQzYTctYmNlYi1mN2FiNjMyOTVjNzIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTEwLCJpYXQiOjE3ODU5NTQzMTAsImVtYWlsIjoidHJhbnNmZXJfOWIyZWJiN2NAZmludHJhY2suZGV2IiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRyYW5zZmVyXzliMmViYjdjQGZpbnRyYWNrLmRldiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImRhZmE4OTI0LWFhMTktNDNhNy1iY2ViLWY3YWI2MzI5NWM3MiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg1OTU0MzEwfV0sInNlc3Npb25faWQiOiIzYjU3OTM2MC1mMWU5LTQxOWMtYjc4Zi1hMWM3MWNjZGIwMWEiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.rpaWD5oSjj_mzBBFO3B-soPv16WKp1d9GmU1dbgpF1l6OsTJz3_quydM2Djki3R0tZKI1HHnpPsYLXdNvLXObA
+2 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Cookie: __cf_bm=qBdLtc4KGkP6uN4t.CyohGEs9CfKkErHfYJ9kDKGy8w-1785954309.9579053-1.0.1.1-Dtd0_Vooueyco1pmV7Gj3b4UqznHo8.tq45Q8Kv1It8qVo1JakCFu5R2oNiAZ.eZ4dk8E.6LPFJpMLCIJq3nCSsHzOIqTOfYwGslABzwkiu1XthKnJU9qmRXa5hWK0uv
+2 &gt; Content-Length: 56
+2 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;initial_balance&quot;:1000.0}
+
+13:25:11.434 response time in milliseconds: 1299
+2 &lt; 201
+2 &lt; Date: Wed, 05 Aug 2026 18:25:11 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Connection: keep-alive
+2 &lt; CF-Ray: a267d7cb4f95631a-BOG
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Server: cloudflare
+2 &lt; Vary: Accept-Encoding
+2 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+2 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+2 &lt; endpoint-load-metrics: application_utilization:10,named_metrics.queue_depth:10
+2 &lt; sb-gateway-version: 1
+2 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+2 &lt; sb-request-id: 019fd32c-1b15-7519-8844-2a1235ecb377
+2 &lt; x-deno-execution-id: ab9249f3-fa09-43aa-8e33-bba728e3972f
+2 &lt; x-sb-edge-region: us-east-1
+2 &lt; x-served-by: supabase-edge-runtime
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;account&quot;:{&quot;id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;account_number&quot;:&quot;1000075&quot;,&quot;holder_name&quot;:&quot;Cuenta Origen&quot;,&quot;balance&quot;:1000,&quot;status&quot;:&quot;active&quot;,&quot;user_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:11.431655+00:00&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sourceId = response.account.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3. Crear Cuenta de Destino</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { holder_name: &#39;Cuenta Destino&#39;, initial_balance: 100.00 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">837</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">13:25:11.438 request:
+3 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/accounts
+3 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkYWZhODkyNC1hYTE5LTQzYTctYmNlYi1mN2FiNjMyOTVjNzIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTEwLCJpYXQiOjE3ODU5NTQzMTAsImVtYWlsIjoidHJhbnNmZXJfOWIyZWJiN2NAZmludHJhY2suZGV2IiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRyYW5zZmVyXzliMmViYjdjQGZpbnRyYWNrLmRldiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImRhZmE4OTI0LWFhMTktNDNhNy1iY2ViLWY3YWI2MzI5NWM3MiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg1OTU0MzEwfV0sInNlc3Npb25faWQiOiIzYjU3OTM2MC1mMWU5LTQxOWMtYjc4Zi1hMWM3MWNjZGIwMWEiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.rpaWD5oSjj_mzBBFO3B-soPv16WKp1d9GmU1dbgpF1l6OsTJz3_quydM2Djki3R0tZKI1HHnpPsYLXdNvLXObA
+3 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Cookie: __cf_bm=qBdLtc4KGkP6uN4t.CyohGEs9CfKkErHfYJ9kDKGy8w-1785954309.9579053-1.0.1.1-Dtd0_Vooueyco1pmV7Gj3b4UqznHo8.tq45Q8Kv1It8qVo1JakCFu5R2oNiAZ.eZ4dk8E.6LPFJpMLCIJq3nCSsHzOIqTOfYwGslABzwkiu1XthKnJU9qmRXa5hWK0uv
+3 &gt; Content-Length: 56
+3 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;initial_balance&quot;:100.0}
+
+13:25:12.273 response time in milliseconds: 834
+3 &lt; 201
+3 &lt; Date: Wed, 05 Aug 2026 18:25:12 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Connection: keep-alive
+3 &lt; CF-Ray: a267d7d0eb581e0e-BOG
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Server: cloudflare
+3 &lt; Vary: Accept-Encoding
+3 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+3 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+3 &lt; endpoint-load-metrics: application_utilization:12,named_metrics.queue_depth:12
+3 &lt; sb-gateway-version: 1
+3 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+3 &lt; sb-request-id: 019fd32c-1e92-72a1-ad33-a489b5ce5513
+3 &lt; x-deno-execution-id: 0cb8bc31-7662-4234-bdc5-204e9aa1b64d
+3 &lt; x-sb-edge-region: us-east-1
+3 &lt; x-served-by: supabase-edge-runtime
+3 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;account&quot;:{&quot;id&quot;:&quot;2cb8db78-fe5b-433e-bd84-21eea641e9c4&quot;,&quot;account_number&quot;:&quot;1000076&quot;,&quot;holder_name&quot;:&quot;Cuenta Destino&quot;,&quot;balance&quot;:100,&quot;status&quot;:&quot;active&quot;,&quot;user_id&quot;:&quot;dafa8924-aa19-43a7-bceb-f7ab63295c72&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:12.170903+00:00&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def destId = response.account.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 4. Realizar Transferencia</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomIdemKey = &#39;karate-&#39; + java.util.UUID.randomUUID().toString()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;transfer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { source_account_id: &#39;#(sourceId)&#39;, destination_account_id: &#39;#(destId)&#39;, amount: 100, idempotency_key: &#39;#(randomIdemKey)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1424</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">13:25:12.278 request:
+4 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/transfer
+4 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkYWZhODkyNC1hYTE5LTQzYTctYmNlYi1mN2FiNjMyOTVjNzIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTEwLCJpYXQiOjE3ODU5NTQzMTAsImVtYWlsIjoidHJhbnNmZXJfOWIyZWJiN2NAZmludHJhY2suZGV2IiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbCI6InRyYW5zZmVyXzliMmViYjdjQGZpbnRyYWNrLmRldiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImRhZmE4OTI0LWFhMTktNDNhNy1iY2ViLWY3YWI2MzI5NWM3MiJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzg1OTU0MzEwfV0sInNlc3Npb25faWQiOiIzYjU3OTM2MC1mMWU5LTQxOWMtYjc4Zi1hMWM3MWNjZGIwMWEiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.rpaWD5oSjj_mzBBFO3B-soPv16WKp1d9GmU1dbgpF1l6OsTJz3_quydM2Djki3R0tZKI1HHnpPsYLXdNvLXObA
+4 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Cookie: __cf_bm=qBdLtc4KGkP6uN4t.CyohGEs9CfKkErHfYJ9kDKGy8w-1785954309.9579053-1.0.1.1-Dtd0_Vooueyco1pmV7Gj3b4UqznHo8.tq45Q8Kv1It8qVo1JakCFu5R2oNiAZ.eZ4dk8E.6LPFJpMLCIJq3nCSsHzOIqTOfYwGslABzwkiu1XthKnJU9qmRXa5hWK0uv
+4 &gt; Content-Length: 201
+4 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;source_account_id&quot;:&quot;e7ac4e8a-4ece-4170-9afb-173a699e664b&quot;,&quot;destination_account_id&quot;:&quot;2cb8db78-fe5b-433e-bd84-21eea641e9c4&quot;,&quot;amount&quot;:100,&quot;idempotency_key&quot;:&quot;karate-99283abe-7a6c-4825-84ad-e2d78f2619a6&quot;}
+
+13:25:13.700 response time in milliseconds: 1421
+4 &lt; 202
+4 &lt; Date: Wed, 05 Aug 2026 18:25:13 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Connection: keep-alive
+4 &lt; CF-Ray: a267d7d8b8be74ab-BOG
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Server: cloudflare
+4 &lt; Vary: Accept-Encoding
+4 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+4 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+4 &lt; endpoint-load-metrics: application_utilization:11,named_metrics.queue_depth:11
+4 &lt; sb-gateway-version: 1
+4 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+4 &lt; sb-request-id: 019fd32c-237a-7b44-953d-40886ccf9470
+4 &lt; x-deno-execution-id: db8ad4d0-8248-4153-b699-4e9b3af7e488
+4 &lt; x-sb-edge-region: us-east-1
+4 &lt; x-served-by: supabase-edge-runtime
+4 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;success&quot;:true,&quot;transaction_id&quot;:&quot;6b9483ce-dcd5-40e2-8da2-96ecceb0ac71&quot;,&quot;new_balance&quot;:900,&quot;message&quot;:&quot;Transferencia completada exitosamente.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 202</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { success: true, transaction_id: &#39;#notnull&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:45]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">transfers</a><a class="badge badge-primary" href="karate-tags.html">regression</a><a class="badge badge-primary" href="karate-tags.html">api</a><a class="badge badge-primary" href="karate-tags.html">positive</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:45]</span>
+                <span class="scenario-name">Transferencia con idempotency key duplicado</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4293</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:45]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:45]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:25:13.708 Usando configuración por defecto. 
+13:25:13.708 Ambiente activo: qa 
+13:25:13.708 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 1. Registrar usuario dinámico y obtener token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;transfer_idem_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;TestPassword123&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">663</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50">13:25:13.711 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 76
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;transfer_idem_bc9c7458@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+13:25:14.372 response time in milliseconds: 660
+1 &lt; 200
+1 &lt; Date: Wed, 05 Aug 2026 18:25:14 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a267d7dfebcf707c-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: qivha
+1 &lt; sb-auth-session-id: 63071bde-4b13-40bf-8fa8-c61b21d800d2
+1 &lt; sb-auth-user-id: 94184553-97e8-4235-b3d2-d456228874bc
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 019fd32c-27f6-7322-84a9-584a5cbb8095
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 92
+1 &lt; set-cookie: __cf_bm=oCvTqcT6PNBbcSuZGDJf2uI2nDDTUisMGZiB.tNgkcA-1785954314.2274828-1.0.1.1-SqopwTw.xZ3ONTC5deyQQUqhVvYjOfr2RRmOzW33HH8Hfty0gDaJwRNKzsy9Xh_D84NJqCbJJ9dCTyLpGlVsm0cuinznz.0ugt3JGO2_win4QVpc6UBJNqL5qn7_Bbn2; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:14 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=oCvTqcT6PNBbcSuZGDJf2uI2nDDTUisMGZiB.tNgkcA-1785954314.2274828-1.0.1.1-SqopwTw.xZ3ONTC5deyQQUqhVvYjOfr2RRmOzW33HH8Hfty0gDaJwRNKzsy9Xh_D84NJqCbJJ9dCTyLpGlVsm0cuinznz.0ugt3JGO2_win4QVpc6UBJNqL5qn7_Bbn2; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:55:14 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTE0LCJpYXQiOjE3ODU5NTQzMTQsImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDMxNH1dLCJzZXNzaW9uX2lkIjoiNjMwNzFiZGUtNGIxMy00MGJmLThmYTgtYzYxYjIxZDgwMGQyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.G5hNtggodSRcRwmgR6kj4jlBguurc4xpnGegdxEXCYxXWKlWMQQHkGSlxjd9gQB0nSf7dFhCDkf2-ibx3sYpkw&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957914,&quot;refresh_token&quot;:&quot;qivhavapbbe5&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;transfer_idem_bc9c7458@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:25:14.36537463Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:14.368209305Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;transfer_idem_bc9c7458@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;e682821e-b7ea-48b0-93ce-1faf54fbcdc5&quot;,&quot;id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;user_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;transfer_idem_bc9c7458@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:25:14.362146072Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:14.362187Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:14.362187Z&quot;,&quot;email&quot;:&quot;transfer_idem_bc9c7458@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:25:14.360124Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:25:14.370719Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2. Crear Cuentas para la prueba</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url functionsUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { holder_name: &#39;Cuenta A&#39;, initial_balance: 500.00 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">974</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">13:25:14.375 request:
+2 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/accounts
+2 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTE0LCJpYXQiOjE3ODU5NTQzMTQsImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDMxNH1dLCJzZXNzaW9uX2lkIjoiNjMwNzFiZGUtNGIxMy00MGJmLThmYTgtYzYxYjIxZDgwMGQyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.G5hNtggodSRcRwmgR6kj4jlBguurc4xpnGegdxEXCYxXWKlWMQQHkGSlxjd9gQB0nSf7dFhCDkf2-ibx3sYpkw
+2 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Cookie: __cf_bm=oCvTqcT6PNBbcSuZGDJf2uI2nDDTUisMGZiB.tNgkcA-1785954314.2274828-1.0.1.1-SqopwTw.xZ3ONTC5deyQQUqhVvYjOfr2RRmOzW33HH8Hfty0gDaJwRNKzsy9Xh_D84NJqCbJJ9dCTyLpGlVsm0cuinznz.0ugt3JGO2_win4QVpc6UBJNqL5qn7_Bbn2
+2 &gt; Content-Length: 50
+2 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;initial_balance&quot;:500.0}
+
+13:25:15.347 response time in milliseconds: 971
+2 &lt; 201
+2 &lt; Date: Wed, 05 Aug 2026 18:25:15 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Connection: keep-alive
+2 &lt; CF-Ray: a267d7e32fdd376b-BOG
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Server: cloudflare
+2 &lt; Vary: Accept-Encoding
+2 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+2 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+2 &lt; endpoint-load-metrics: application_utilization:11,named_metrics.queue_depth:11
+2 &lt; sb-gateway-version: 1
+2 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+2 &lt; sb-request-id: 019fd32c-29fc-781f-9e9e-9f114ad7b47d
+2 &lt; x-deno-execution-id: c6885399-0562-4fb1-be53-e47b657ff778
+2 &lt; x-sb-edge-region: us-east-1
+2 &lt; x-served-by: supabase-edge-runtime
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;account&quot;:{&quot;id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;account_number&quot;:&quot;1000077&quot;,&quot;holder_name&quot;:&quot;Cuenta A&quot;,&quot;balance&quot;:500,&quot;status&quot;:&quot;active&quot;,&quot;user_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:15.214608+00:00&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sourceId = response.account.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;banking-api/accounts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { holder_name: &#39;Cuenta B&#39;, initial_balance: 50.00 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">681</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.67">13:25:15.351 request:
+3 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/accounts
+3 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTE0LCJpYXQiOjE3ODU5NTQzMTQsImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDMxNH1dLCJzZXNzaW9uX2lkIjoiNjMwNzFiZGUtNGIxMy00MGJmLThmYTgtYzYxYjIxZDgwMGQyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.G5hNtggodSRcRwmgR6kj4jlBguurc4xpnGegdxEXCYxXWKlWMQQHkGSlxjd9gQB0nSf7dFhCDkf2-ibx3sYpkw
+3 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Cookie: __cf_bm=oCvTqcT6PNBbcSuZGDJf2uI2nDDTUisMGZiB.tNgkcA-1785954314.2274828-1.0.1.1-SqopwTw.xZ3ONTC5deyQQUqhVvYjOfr2RRmOzW33HH8Hfty0gDaJwRNKzsy9Xh_D84NJqCbJJ9dCTyLpGlVsm0cuinznz.0ugt3JGO2_win4QVpc6UBJNqL5qn7_Bbn2
+3 &gt; Content-Length: 49
+3 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;initial_balance&quot;:50.0}
+
+13:25:16.030 response time in milliseconds: 678
+3 &lt; 201
+3 &lt; Date: Wed, 05 Aug 2026 18:25:16 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Connection: keep-alive
+3 &lt; CF-Ray: a267d7e8dbc1631a-BOG
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Server: cloudflare
+3 &lt; Vary: Accept-Encoding
+3 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+3 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+3 &lt; endpoint-load-metrics: application_utilization:9,named_metrics.queue_depth:9
+3 &lt; sb-gateway-version: 1
+3 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+3 &lt; sb-request-id: 019fd32c-2d8a-7354-a47f-89813fb979e0
+3 &lt; x-deno-execution-id: 5b273919-0d6f-43ec-9ec3-e88f351dcc91
+3 &lt; x-sb-edge-region: us-east-1
+3 &lt; x-served-by: supabase-edge-runtime
+3 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;account&quot;:{&quot;id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;,&quot;account_number&quot;:&quot;1000078&quot;,&quot;holder_name&quot;:&quot;Cuenta B&quot;,&quot;balance&quot;:50,&quot;status&quot;:&quot;active&quot;,&quot;user_id&quot;:&quot;94184553-97e8-4235-b3d2-d456228874bc&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:25:16.040377+00:00&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def destId = response.account.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def idemKey = &#39;idem-&#39; + java.util.UUID.randomUUID().toString()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3. Primera Petición con Idempotency Key</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;transfer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { source_account_id: &#39;#(sourceId)&#39;, destination_account_id: &#39;#(destId)&#39;, amount: 50, idempotency_key: &#39;#(idemKey)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">772</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.77">13:25:16.035 request:
+4 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/transfer
+4 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTE0LCJpYXQiOjE3ODU5NTQzMTQsImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDMxNH1dLCJzZXNzaW9uX2lkIjoiNjMwNzFiZGUtNGIxMy00MGJmLThmYTgtYzYxYjIxZDgwMGQyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.G5hNtggodSRcRwmgR6kj4jlBguurc4xpnGegdxEXCYxXWKlWMQQHkGSlxjd9gQB0nSf7dFhCDkf2-ibx3sYpkw
+4 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Cookie: __cf_bm=oCvTqcT6PNBbcSuZGDJf2uI2nDDTUisMGZiB.tNgkcA-1785954314.2274828-1.0.1.1-SqopwTw.xZ3ONTC5deyQQUqhVvYjOfr2RRmOzW33HH8Hfty0gDaJwRNKzsy9Xh_D84NJqCbJJ9dCTyLpGlVsm0cuinznz.0ugt3JGO2_win4QVpc6UBJNqL5qn7_Bbn2
+4 &gt; Content-Length: 198
+4 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;,&quot;amount&quot;:50,&quot;idempotency_key&quot;:&quot;idem-cdce825d-63c3-44de-be0c-5e23ddeb20a3&quot;}
+
+13:25:16.805 response time in milliseconds: 769
+4 &lt; 202
+4 &lt; Date: Wed, 05 Aug 2026 18:25:16 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Connection: keep-alive
+4 &lt; CF-Ray: a267d7ed0dfd3bf3-BOG
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Server: cloudflare
+4 &lt; Vary: Accept-Encoding
+4 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+4 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+4 &lt; endpoint-load-metrics: application_utilization:11,named_metrics.queue_depth:11
+4 &lt; sb-gateway-version: 1
+4 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+4 &lt; sb-request-id: 019fd32c-3028-7249-a6a6-0093fe3b09fd
+4 &lt; x-deno-execution-id: 76c95ec2-e4e7-47e0-9fdf-667d1413d472
+4 &lt; x-sb-edge-region: us-east-1
+4 &lt; x-served-by: supabase-edge-runtime
+4 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;success&quot;:true,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;new_balance&quot;:450,&quot;message&quot;:&quot;Transferencia completada exitosamente.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 202</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 4. Petición Duplicada con el mismo Idempotency Key</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;transfer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { source_account_id: &#39;#(sourceId)&#39;, destination_account_id: &#39;#(destId)&#39;, amount: 50, idempotency_key: &#39;#(idemKey)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1196</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.84">13:25:16.807 request:
+5 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/transfer
+5 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTE0LCJpYXQiOjE3ODU5NTQzMTQsImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidHJhbnNmZXJfaWRlbV9iYzljNzQ1OEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5NDE4NDU1My05N2U4LTQyMzUtYjNkMi1kNDU2MjI4ODc0YmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDMxNH1dLCJzZXNzaW9uX2lkIjoiNjMwNzFiZGUtNGIxMy00MGJmLThmYTgtYzYxYjIxZDgwMGQyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.G5hNtggodSRcRwmgR6kj4jlBguurc4xpnGegdxEXCYxXWKlWMQQHkGSlxjd9gQB0nSf7dFhCDkf2-ibx3sYpkw
+5 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Cookie: __cf_bm=oCvTqcT6PNBbcSuZGDJf2uI2nDDTUisMGZiB.tNgkcA-1785954314.2274828-1.0.1.1-SqopwTw.xZ3ONTC5deyQQUqhVvYjOfr2RRmOzW33HH8Hfty0gDaJwRNKzsy9Xh_D84NJqCbJJ9dCTyLpGlVsm0cuinznz.0ugt3JGO2_win4QVpc6UBJNqL5qn7_Bbn2
+5 &gt; Content-Length: 198
+5 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;source_account_id&quot;:&quot;d5da28dc-1f53-486d-a0e6-54b1a2865963&quot;,&quot;destination_account_id&quot;:&quot;6cd65f74-a2f3-4475-97b5-6175d167d90e&quot;,&quot;amount&quot;:50,&quot;idempotency_key&quot;:&quot;idem-cdce825d-63c3-44de-be0c-5e23ddeb20a3&quot;}
+
+13:25:18.001 response time in milliseconds: 1194
+5 &lt; 202
+5 &lt; Date: Wed, 05 Aug 2026 18:25:17 GMT
+5 &lt; Content-Type: application/json
+5 &lt; Connection: keep-alive
+5 &lt; CF-Ray: a267d7f35ec11e0e-BOG
+5 &lt; CF-Cache-Status: DYNAMIC
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Server: cloudflare
+5 &lt; Vary: Accept-Encoding
+5 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
+5 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+5 &lt; endpoint-load-metrics: application_utilization:11,named_metrics.queue_depth:11
+5 &lt; sb-gateway-version: 1
+5 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+5 &lt; sb-request-id: 019fd32c-341f-772f-a62d-74fa3a80a3b6
+5 &lt; x-deno-execution-id: 92c9baf0-a7bc-4971-a3c9-a1c748ce50b2
+5 &lt; x-sb-edge-region: us-east-1
+5 &lt; x-served-by: supabase-edge-runtime
+5 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+5 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;success&quot;:true,&quot;transaction_id&quot;:&quot;d69206ab-7a3e-488c-bb3f-06482bafbe96&quot;,&quot;new_balance&quot;:450,&quot;message&quot;:&quot;Transferencia completada exitosamente.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 202</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

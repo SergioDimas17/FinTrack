@@ -1,0 +1,18 @@
+{
+  "testUser": {
+    "email": "pruebasQA@gmail.com",
+    "password": "TuPassword123"
+  },
+  "sampleAccount": {
+    "holderName": "Usuario QA Demo",
+    "initialBalance": 1000.00
+  },
+  "transferData": {
+    "amount": 250.50,
+    "idempotencyKey": "test-key-001"
+  },
+  "invalidUser": {
+    "email": "invalid@example.com",
+    "password": "wrongpassword"
+  }
+}
