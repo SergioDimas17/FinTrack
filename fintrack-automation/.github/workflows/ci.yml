@@ -22,7 +22,7 @@ jobs:
 
       - name: Run API Tests
         working-directory: api-automation
-        run: mvn test
+        run: mvn test -Dkarate.env=qa
 
   test-web:
     name: Web Tests (Playwright)
@@ -43,7 +43,24 @@ jobs:
 
       - name: Run Web Tests
         working-directory: web-automation
-        run: mvn test
+        run: mvn test -Denv=qa -Dexec.skip=true
+
+  test-mobile:
+    name: Mobile Tests (Appium / JUnit)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Run Mobile Smoke Tests
+        working-directory: mobile-automation
+        run: mvn test -Dtest=SmokeTest
 
   test-performance:
     name: Performance Tests (k6)
