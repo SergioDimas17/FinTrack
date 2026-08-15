@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.fintrack.mobile.tests.regression.RegressionTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 69.79 s <<< FAILURE! -- in com.fintrack.mobile.tests.regression.RegressionTest
+com.fintrack.mobile.tests.regression.RegressionTest.testFailedLoginInvalidCredentials -- Time elapsed: 21.23 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Debería mostrarse una alerta de error por credenciales incorrectas. ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.fintrack.mobile.tests.regression.RegressionTest.testFailedLoginInvalidCredentials(RegressionTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.fintrack.mobile.tests.regression.RegressionTest.testInvalidDestinationAccount -- Time elapsed: 29.09 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Debería mostrarse un mensaje de error al consultar una cuenta inexistente. ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.fintrack.mobile.tests.regression.RegressionTest.testInvalidDestinationAccount(RegressionTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

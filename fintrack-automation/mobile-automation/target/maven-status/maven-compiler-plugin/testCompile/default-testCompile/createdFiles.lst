@@ -1,0 +1,6 @@
+com\fintrack\mobile\base\BaseTest.class
+com\fintrack\mobile\tests\sanity\SanityTest.class
+com\fintrack\mobile\tests\smoke\SmokeTest.class
+com\fintrack\mobile\base\BaseTest$1.class
+com\fintrack\mobile\fixtures\TestData.class
+com\fintrack\mobile\config\Config.class

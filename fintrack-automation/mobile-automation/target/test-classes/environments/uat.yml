@@ -1,0 +1,6 @@
+appiumUrl: http://localhost:4723
+platformName: Android
+automationName: UiAutomator2
+browserName: Chrome
+webUrl: http://localhost:5173
+supabaseUrl: https://wlsxfjlaxxwgnbhmtgmw.supabase.co

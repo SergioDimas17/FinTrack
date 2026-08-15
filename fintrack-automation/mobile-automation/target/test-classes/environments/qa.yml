@@ -1,0 +1,6 @@
+appiumUrl: http://127.0.0.1:4723
+platformName: Android
+automationName: UiAutomator2
+browserName: Chrome
+webUrl: https://fintech-micro-transf-6q7b.bolt.host
+supabaseUrl: https://wlsxfjlaxxwgnbhmtgmw.supabase.co

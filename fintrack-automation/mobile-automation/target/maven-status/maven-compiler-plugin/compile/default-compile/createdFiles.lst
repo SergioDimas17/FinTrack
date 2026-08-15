@@ -1,0 +1,8 @@
+com\fintrack\mobile\screens\DashboardScreen.class
+com\fintrack\mobile\base\TestInstance.class
+com\fintrack\mobile\screens\HistoryScreen.class
+com\fintrack\mobile\utils\ConfigUtils.class
+com\fintrack\mobile\screens\LoginScreen.class
+com\fintrack\mobile\utils\ScreenshotUtils.class
+com\fintrack\mobile\drivers\DriverFactory.class
+com\fintrack\mobile\screens\TransferScreen.class
