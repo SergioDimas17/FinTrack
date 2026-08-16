@@ -6,6 +6,14 @@ on:
   pull_request:
     branches: [ main, master, develop ]
 
+# 1. Variables globales para que TODOS los jobs puedan autenticarse en Supabase
+env:
+  BASE_URL: ${{ secrets.BASE_URL }}
+  SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
+  K6_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
+  K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
+  K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
+
 jobs:
   test-api:
     name: API Tests (Karate)
@@ -56,9 +64,12 @@ jobs:
         uses: grafana/setup-k6-action@v1
 
       - name: Run k6 Smoke Test
-        env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          K6_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
-          K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
-          K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
         run: k6 run fintrack-automation/performance/scripts/smoke.js
+
+  # --------------------------------------------------------------------------------
+  # NOTA DE ARQUITECTURA: 
+  # El job de Mobile (Appium) requiere un emulador Android (hardware acceleration), 
+  # lo cual no está soportado nativamente en runners de Linux gratuitos.
+  # En un entorno empresarial, aquí se integraría BrowserStack o Firebase Test Lab.
+  # Por ello, se omite temporalmente de la ejecución en la nube.
+  # --------------------------------------------------------------------------------
