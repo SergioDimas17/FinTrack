@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.fintrack.web.tests.transfer.TransferTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.69 s -- in com.fintrack.web.tests.transfer.TransferTest

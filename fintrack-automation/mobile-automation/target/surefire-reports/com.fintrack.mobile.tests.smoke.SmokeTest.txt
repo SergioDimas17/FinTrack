@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.fintrack.mobile.tests.smoke.SmokeTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.065 s <<< FAILURE! -- in com.fintrack.mobile.tests.smoke.SmokeTest
-com.fintrack.mobile.tests.smoke.SmokeTest -- Time elapsed: 1.065 s <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.170 s <<< FAILURE! -- in com.fintrack.mobile.tests.smoke.SmokeTest
+com.fintrack.mobile.tests.smoke.SmokeTest -- Time elapsed: 1.170 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-LG6MGI1', ip: '192.168.0.112'
+Host info: host: 'DESKTOP-LG6MGI1', ip: '192.168.0.106'
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
 	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)

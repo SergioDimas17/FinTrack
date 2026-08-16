@@ -1,0 +1,9 @@
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\base\BaseTest.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\base\ScreenshotOnFailureExtension.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\fixtures\TestData.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\tests\auth\LoginNegativeTest.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\tests\regression\RegressionTest.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\tests\sanity\SanityTest.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\tests\smoke\SmokeTest.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\tests\transfer\TransferNegativeTest.java
+D:\Proyectos QA\project\fintrack-automation\web-automation\src\test\java\com\fintrack\web\tests\transfer\TransferTest.java

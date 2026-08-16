@@ -1,41 +1,42 @@
 package com.fintrack.mobile.screens;
 
-import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.List;
 
 public class DashboardScreen {
 
-    private final AndroidDriver driver;
     private final WebDriverWait wait;
 
+    // Localizadores basados en los data-testids y atributos ARIA heredados de la web
+    private final By balanceDisplay = By.cssSelector("[data-testid='balance'], .balance, [aria-label*='balance' i]");
+    private final By accountList = By.cssSelector("[data-testid='account-list'], .account-list, [aria-label*='account' i]");
+
     public DashboardScreen(AndroidDriver driver) {
-        this.driver = driver;
+        // Se utiliza 'driver' solo para instanciar la espera explícita
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
-    public String balance() {
-        return balanceLabel().getText();
+    public boolean isDashboardVisible() {
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(balanceDisplay)).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
-    public List<String> accountNames() {
-        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
-                AppiumBy.accessibilityId("account-item"))).stream()
-                .map(WebElement::getText)
-                .toList();
+    public String getBalance() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(balanceDisplay)).getText();
     }
 
-    public boolean isLoaded() {
-        return balanceLabel().isDisplayed();
-    }
-
-    private WebElement balanceLabel() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(
-                AppiumBy.accessibilityId("balance")));
+    public boolean isAccountListVisible() {
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(accountList)).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

@@ -1,0 +1,9 @@
+com\fintrack\web\pages\TransferPage.class
+com\fintrack\web\utils\ConfigUtils.class
+com\fintrack\web\utils\ScreenshotUtils.class
+com\fintrack\web\components\SidebarComponent.class
+com\fintrack\web\pages\HistoryPage.class
+com\fintrack\web\pages\LoginPage.class
+com\fintrack\web\components\HeaderComponent.class
+com\fintrack\web\pages\DashboardPage.class
+com\fintrack\web\utils\PlaywrightFactory.class

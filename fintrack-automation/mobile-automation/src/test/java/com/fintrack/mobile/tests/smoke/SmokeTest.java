@@ -1,29 +1,44 @@
 package com.fintrack.mobile.tests.smoke;
 
 import com.fintrack.mobile.base.BaseTest;
-import com.fintrack.mobile.fixtures.TestData;
-import com.fintrack.mobile.screens.DashboardScreen;
 import com.fintrack.mobile.screens.LoginScreen;
-import org.junit.jupiter.api.Tag;
+import com.fintrack.mobile.screens.TransferScreen;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("smoke")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SmokeTest extends BaseTest {
 
     @Test
-    void appLaunchesAndLoginScreenIsVisible() {
-        LoginScreen login = new LoginScreen(driver);
-        assertTrue(login.isLoaded(), "Login screen should be visible after app launch");
+    @Order(1)
+    @DisplayName("CP-MOB-SMK-01: Carga de la pantalla de inicio de sesión")
+    public void testLoginScreenLoads() {
+        LoginScreen loginScreen = new LoginScreen(driver);
+        assertTrue(loginScreen.isLoginButtonVisible(), "El botón de inicio de sesión debería ser visible.");
     }
 
     @Test
-    void userCanLoginAndSeeDashboard() {
-        LoginScreen login = new LoginScreen(driver);
-        login.loginAs(TestData.userEmail(), TestData.userPassword());
+    @Order(2)
+    @DisplayName("CP-MOB-SMK-02: Inicio de sesión exitoso")
+    public void testSuccessfulLogin() {
+        LoginScreen loginScreen = new LoginScreen(driver);
+        loginScreen.login("pruebasQA@gmail.com", "pruebas123");
+        assertTrue(loginScreen.isDashboardLoaded(), "Fallo Crítico: Se hizo clic en Login, pero la aplicación nunca ingresó al Dashboard.");
+    }
 
-        DashboardScreen dashboard = new DashboardScreen(driver);
-        assertTrue(dashboard.isLoaded(), "Dashboard should be visible after successful login");
+    @Test
+    @Order(3)
+    @DisplayName("CP-MOB-SMK-03: Navegación, llenado y confirmación de transferencia")
+    public void testNavigateToTransfer() {
+        TransferScreen transferScreen = new TransferScreen(driver);
+        transferScreen.executeTransfer("1000004", "50.00");
+        
+        // Aserción de confirmación E2E
+        assertTrue(transferScreen.isSuccessVisible(), "Error E2E: La transferencia no mostró la notificación de confirmación exitosa.");
     }
 }

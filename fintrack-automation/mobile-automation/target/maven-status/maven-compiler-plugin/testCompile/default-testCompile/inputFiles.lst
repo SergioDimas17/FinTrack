@@ -1,5 +1,8 @@
 D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\base\BaseTest.java
 D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\config\Config.java
 D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\fixtures\TestData.java
+D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\tests\auth\LoginNegativeTest.java
+D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\tests\regression\RegressionTest.java
 D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\tests\sanity\SanityTest.java
 D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\tests\smoke\SmokeTest.java
+D:\Proyectos QA\project\fintrack-automation\mobile-automation\src\test\java\com\fintrack\mobile\tests\transfer\TransferNegativeTest.java

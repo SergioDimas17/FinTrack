@@ -1,9 +1,9 @@
 package com.fintrack.web.tests.sanity;
 
 import com.fintrack.web.base.BaseTest;
-import com.fintrack.web.fixtures.TestData;
 import com.fintrack.web.pages.DashboardPage;
 import com.fintrack.web.pages.LoginPage;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

@@ -1,0 +1,9 @@
+com\fintrack\web\fixtures\TestData.class
+com\fintrack\web\tests\sanity\SanityTest.class
+com\fintrack\web\tests\transfer\TransferTest.class
+com\fintrack\web\tests\auth\LoginNegativeTest.class
+com\fintrack\web\base\BaseTest.class
+com\fintrack\web\base\ScreenshotOnFailureExtension.class
+com\fintrack\web\tests\smoke\SmokeTest.class
+com\fintrack\web\tests\transfer\TransferNegativeTest.class
+com\fintrack\web\tests\regression\RegressionTest.class

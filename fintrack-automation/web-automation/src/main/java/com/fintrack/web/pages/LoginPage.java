@@ -22,28 +22,30 @@ public class LoginPage {
     public Locator loginButton() {
         return page.locator("[data-testid='login-button'], button[type='submit'], button:has-text('Login'), button:has-text('Sign in')").first();
     }
-
-    public Locator errorMessage() {
-        return page.locator("[data-testid='error-message'], .error, [role='alert']").first();
-    }
+public Locator errorMessage() {
+    return page.locator("[data-testid='error-message'], .error, [role='alert'], .text-red-500, .text-red-600, p:has-text('Invalid'), div:has-text('Invalid')").first();
+}
 
     public void navigate(String url) {
         page.navigate(url);
     }
 
-    public void login(String email, String password) {
-        emailField().fill(email);
-        passwordField().fill(password);
-        loginButton().click();
-    }
-
+public void login(String email, String password) {
+    emailField().fill(email);
+    passwordField().fill(password);
+    loginButton().click();
+}
     public String getErrorMessage() {
         return errorMessage().textContent();
     }
 
     public boolean isErrorVisible() {
+    try {
+        errorMessage().waitFor(new Locator.WaitForOptions().setTimeout(5000));
         return errorMessage().isVisible();
-    }
+    } catch (Exception e) {
+        return false;
+    }}
 
     public boolean isLoginButtonVisible() {
         return loginButton().isVisible();
