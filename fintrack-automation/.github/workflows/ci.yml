@@ -15,7 +15,7 @@ env:
 
 jobs:
   test-api:
-    name: API Tests (Karate - Isolated)
+    name: API Tests (Karate)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -27,7 +27,17 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run Single API Test (Login)
+      - name: Run API Tests
         working-directory: fintrack-automation/api-automation
-        # Ejecutamos EXCLUSIVAMENTE el feature de login usando karate.options
-        run: mvn test -Dkarate.env=qa -Dkarate.options="classpath:features/authentication/login.feature"
+        run: mvn test -Dkarate.env=qa
+
+      # =================================================================
+      # NUEVO PASO: Extraer el reporte gráfico de Karate como Artefacto
+      # =================================================================
+      - name: Upload Karate HTML Report
+        uses: actions/upload-artifact@v4
+        if: always() # Crucial: Extraer el reporte AUNQUE la prueba falle
+        with:
+          name: karate-api-report
+          path: fintrack-automation/api-automation/target/karate-reports/
+          retention-days: 7
