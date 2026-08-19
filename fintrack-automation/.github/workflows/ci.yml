@@ -6,17 +6,11 @@ on:
   pull_request:
     branches: [ main, master, develop ]
 
-env:
-  BASE_URL: ${{ secrets.BASE_URL }}
-  SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
-  K6_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
-  K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
-  K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
-
 jobs:
-  test-api:
-    name: API Tests (Karate)
+  test-web:
+    name: 1. Web Tests (Playwright)
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,17 +21,19 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run API Tests
-        working-directory: fintrack-automation/api-automation
-        run: mvn test -Dkarate.env=qa
+      # Paso crítico: Instalar navegadores de Playwright con sus dependencias de Linux
+      - name: Install Playwright Browsers
+        working-directory: fintrack-automation/web-automation
+        run: mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
 
-      # =================================================================
-      # NUEVO PASO: Extraer el reporte gráfico de Karate como Artefacto
-      # =================================================================
-      - name: Upload Karate HTML Report
-        uses: actions/upload-artifact@v4
-        if: always() # Crucial: Extraer el reporte AUNQUE la prueba falle
-        with:
-          name: karate-api-report
-          path: fintrack-automation/api-automation/target/karate-reports/
-          retention-days: 7
+      # Ejecución de la suite Smoke de Web
+      - name: Run Web Smoke Suite
+        working-directory: fintrack-automation/web-automation
+        run: >
+          mvn test
+          -Denv=qa
+          -Dexec.skip=true
+          -Dtest=SmokeTest
+          -DwebUrl=https://fintech-micro-transf-6q7b.bolt.host
+          -DTEST_USER_EMAIL=${{ secrets.K6_TEST_EMAIL }}
+          -DTEST_USER_PASSWORD=${{ secrets.K6_TEST_PASSWORD }}

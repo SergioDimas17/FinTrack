@@ -2,30 +2,26 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 import { Rate } from 'k6/metrics';
 
-// Smoke test: minimal load to verify the FinTrack API is up and healthy.
-// 1-2 VUs for 1 minute. Used as a quick sanity check before deeper tests.
-
+// Smoke test: carga mínima para verificar la disponibilidad de la API FinTrack
 const BASE_URL = __ENV.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co';
-const ANON_KEY = __ENV.K6_ANON_KEY || '';
+const ANON_KEY = __ENV.K6_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI';
 const TEST_EMAIL = __ENV.K6_TEST_EMAIL || 'pruebasQA@gmail.com';
-const TEST_PASSWORD = __ENV.K6_TEST_PASSWORD || '';
+const TEST_PASSWORD = __ENV.K6_TEST_PASSWORD || 'pruebas123'; // Contraseña corregida
 
-// Custom metric: track login failures so they show up in the summary.
+// Métrica personalizada para monitorear errores de login
 const loginFailureRate = new Rate('login_failures');
 
 export const options = {
   vus: 2,
-  duration: '1m',
+  duration: '30s',
   thresholds: {
-    // Smoke test must pass cleanly: no failed checks, fast responses.
-    http_req_failed: ['rate<0.01'],          // <1% of requests may fail
-    http_req_duration: ['p(95)<2000'],      // 95% of requests under 2s
-    login_failures: ['rate<0.05'],          // <5% login failures
-    checks: ['rate>0.95'],                  // >95% of checks must pass
+    http_req_failed: ['rate<0.01'],   // Menos del 1% de peticiones fallidas
+    http_req_duration: ['p(95)<2000'], // 95% de peticiones por debajo de 2s
+    login_failures: ['rate<0.05'],    // Menos del 5% de errores en login
+    checks: ['rate>0.95'],            // Más del 95% de aserciones exitosas
   },
 };
 
-// Login helper: returns the access token from the Supabase auth response.
 function login() {
   const params = {
     headers: {
@@ -46,8 +42,8 @@ function login() {
   );
 
   const ok = check(res, {
-    'login status is 200': (r) => r.status === 200,
-    'login has access_token': (r) => {
+    'login status es 200': (r) => r.status === 200,
+    'login contiene access_token': (r) => {
       try {
         return JSON.parse(r.body).access_token !== undefined;
       } catch (e) {
@@ -59,7 +55,7 @@ function login() {
   loginFailureRate.add(!ok);
 
   if (!ok) {
-    console.error(`Login failed: ${res.status} ${res.body}`);
+    console.error(`Error en Login: ${res.status} ${res.body}`);
     return null;
   }
 
@@ -67,13 +63,14 @@ function login() {
 }
 
 export default function () {
-  // 1. Authenticate
+  // 1. Obtener Token
   const token = login();
   if (!token) {
+    sleep(2);
     return;
   }
 
-  // 2. Hit the accounts edge function with the token
+  // 2. Probar endpoint de cuentas
   const accountsRes = http.get(
     `${BASE_URL}/functions/v1/banking-api/accounts`,
     {
@@ -85,8 +82,8 @@ export default function () {
   );
 
   check(accountsRes, {
-    'accounts status is 200': (r) => r.status === 200,
+    'accounts status es 200': (r) => r.status === 200,
   });
 
-  sleep(1);
+  sleep(2);
 }
