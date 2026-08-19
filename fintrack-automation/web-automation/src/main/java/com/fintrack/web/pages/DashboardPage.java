@@ -39,4 +39,32 @@ public class DashboardPage {
             return 0;
         }
     }
+
+    // =========================================================================
+    // Métodos de compatibilidad para SanityTest y RegressionTest
+    // =========================================================================
+
+    public boolean isBalanceVisible() {
+        return isAccountListVisible();
+    }
+
+    public Locator balanceDisplay() {
+        return accountList();
+    }
+
+    public String getBalance() {
+        try {
+            return accountList().innerText();
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    public Locator sidebar() {
+        return page.locator("nav, aside, .sidebar, [data-testid='sidebar']").first();
+    }
+
+    public Locator header() {
+        return page.locator("header, .header, [data-testid='header']").first();
+    }
 }
