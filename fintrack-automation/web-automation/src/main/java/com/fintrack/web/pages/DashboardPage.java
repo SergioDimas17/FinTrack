@@ -40,10 +40,47 @@ public class DashboardPage {
         }
     }
 
+    // Localizador del menú lateral (Sidebar)
+    public Locator sidebar() {
+        return page.locator("nav, aside, .sidebar, [data-testid='sidebar']").first();
+    }
+
+    // Localizador del encabezado (Header)
+    public Locator header() {
+        return page.locator("header, .header, [data-testid='header']").first();
+    }
+
     // =========================================================================
-    // Métodos de compatibilidad para SanityTest y RegressionTest
+    // Métodos de verificación para SanityTest
     // =========================================================================
 
+    public boolean isSidebarVisible() {
+        try {
+            return sidebar().isVisible();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isSidebarLinkVisible(String linkText) {
+        try {
+            Locator link = page.locator("nav a, nav button, aside a, aside button").filter(new Locator.FilterOptions().setHasText(linkText)).first();
+            return link.isVisible();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isLogoVisible() {
+        try {
+            Locator logo = page.locator("header img, header svg, [aria-label*='logo' i], .logo").first();
+            return logo.isVisible();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    // Métodos de compatibilidad adicionales
     public boolean isBalanceVisible() {
         return isAccountListVisible();
     }
@@ -58,13 +95,5 @@ public class DashboardPage {
         } catch (Exception e) {
             return "";
         }
-    }
-
-    public Locator sidebar() {
-        return page.locator("nav, aside, .sidebar, [data-testid='sidebar']").first();
-    }
-
-    public Locator header() {
-        return page.locator("header, .header, [data-testid='header']").first();
     }
 }
