@@ -1,21 +1,23 @@
 ﻿@ignore
-Feature: Helper para creación de usuario dinámico y obtención de token
+Feature: Helper de Autenticación de Usuario QA
 
-  Scenario: Crear usuario y retornar credenciales
+  Background:
     * url baseUrl
-    * def randomEmail = 'user_' + java.util.UUID.randomUUID().toString().substring(0, 8) + '@fintrack.dev'
-    * def randomPassword = 'TestPassword123'
-    
-    # Pausa de 1.5 segundos para evitar el Rate Limit (429) de Supabase en GitHub Actions
-    * def sleep = function(millis){ java.lang.Thread.sleep(millis) }
-    * eval sleep(1500)
+    * def envEmail = java.lang.System.getenv('K6_TEST_EMAIL')
+    * def envPassword = java.lang.System.getenv('K6_TEST_PASSWORD')
+    * def qaEmail = envEmail ? envEmail : 'pruebasQA@gmail.com'
+    * def qaPassword = envPassword ? envPassword : 'TestPassword123'
 
-    Given path '/auth/v1/signup'
-    And request { email: '#(randomEmail)', password: '#(randomPassword)' }
+  Scenario: Obtener Token de Acceso
+    Given path '/auth/v1/token'
+    And param grant_type = 'password'
+    And header apikey = supabaseAnonKey
+    And header Content-Type = 'application/json'
+    And request { email: '#(qaEmail)', password: '#(qaPassword)' }
     When method POST
     Then status 200
 
     * def accessToken = response.access_token
     * def authHeader = 'Bearer ' + accessToken
-    * def userEmail = randomEmail
-    * def userPassword = randomPassword
+    * def userEmail = qaEmail
+    * def userPassword = qaPassword

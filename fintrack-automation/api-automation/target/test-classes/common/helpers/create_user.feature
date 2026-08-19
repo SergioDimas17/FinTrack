@@ -1,4 +1,4 @@
-@ignore
+﻿@ignore
 Feature: Helper para creación de usuario dinámico y obtención de token
 
   Scenario: Crear usuario y retornar credenciales
