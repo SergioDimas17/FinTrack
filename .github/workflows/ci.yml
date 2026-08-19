@@ -48,12 +48,12 @@ jobs:
           -DTEST_USER_EMAIL="${{ secrets.K6_TEST_EMAIL || 'pruebasQA@gmail.com' }}"
           -DTEST_USER_PASSWORD="${{ secrets.K6_TEST_PASSWORD || 'pruebas123' }}"
 
-  # =========================================================================
+ # =========================================================================
   # PASO 2: API AUTOMATION (KARATE)
   # =========================================================================
   test-api:
     name: 2. API Tests (Karate)
-    needs: test-web # Se ejecuta de forma secuencial al completar las pruebas Web
+    needs: test-web
     runs-on: ubuntu-latest
 
     steps:
@@ -68,10 +68,16 @@ jobs:
 
       - name: Run API Tests
         working-directory: fintrack-automation/api-automation
-        run: mvn test -Dkarate.env=qa
+        run: >
+          mvn test
+          -Dkarate.env=qa
+          -DK6_TEST_EMAIL="${{ secrets.K6_TEST_EMAIL }}"
+          -DK6_TEST_PASSWORD="${{ secrets.K6_TEST_PASSWORD }}"
         env:
           BASE_URL: ${{ secrets.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co' }}
           SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
+          K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
+          K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
 
       - name: Upload Karate HTML Report
         uses: actions/upload-artifact@v4
