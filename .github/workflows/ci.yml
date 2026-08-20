@@ -48,7 +48,7 @@ jobs:
           -DTEST_USER_EMAIL="${{ secrets.K6_TEST_EMAIL || 'pruebasQA@gmail.com' }}"
           -DTEST_USER_PASSWORD="${{ secrets.K6_TEST_PASSWORD || 'pruebas123' }}"
 
- # =========================================================================
+  # =========================================================================
   # PASO 2: API AUTOMATION (KARATE)
   # =========================================================================
   test-api:
@@ -84,7 +84,29 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: karate-reports
-          path: target/karate-reports/
+          path: fintrack-automation/api-automation/target/karate-reports/
 
-          
-          
+  # =========================================================================
+  # PASO 3: PERFORMANCE TESTING (K6)
+  # =========================================================================
+  test-performance:
+    name: 3. Performance Tests (k6)
+    needs: test-api
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup k6 binary
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run k6 Load Test
+        env:
+          BASE_URL: ${{ secrets.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co' }}
+          SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
+          K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
+          K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
+        run: |
+          # Ejecuta tu script de k6 asegurando apuntar a la ruta correcta dentro del monorepo
+          k6 run fintrack-automation/performance/load_test.js
