@@ -110,6 +110,5 @@ jobs:
           K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
           K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
         run: |
-          # 💡 NOTA: Asegúrate de que tu archivo se llame "load_test.js". 
-          # Si tiene otro nombre (por ejemplo script.js), cámbialo en la línea de abajo:
-          k6 run load_test.js
+          # 💡 NOTA: El archivo de script es "smoke.js"
+          k6 run smoke.js
