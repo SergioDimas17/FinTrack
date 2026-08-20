@@ -102,11 +102,14 @@ jobs:
         uses: grafana/setup-k6-action@v1
 
       - name: Run k6 Load Test
+        # 👇 AQUÍ CORREGIMOS LA RUTA PARA APUNTAR A LA SUBCARPETA 'scripts'
+        working-directory: fintrack-automation/performance/scripts
         env:
           BASE_URL: ${{ secrets.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co' }}
           SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
           K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
           K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
         run: |
-          # Ejecuta tu script de k6 asegurando apuntar a la ruta correcta dentro del monorepo
-          k6 run fintrack-automation/performance/load_test.js
+          # 💡 NOTA: Asegúrate de que tu archivo se llame "load_test.js". 
+          # Si tiene otro nombre (por ejemplo script.js), cámbialo en la línea de abajo:
+          k6 run load_test.js
