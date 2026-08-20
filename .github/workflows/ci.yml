@@ -79,10 +79,12 @@ jobs:
           K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
           K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
 
-      - name: Upload Karate HTML Report
+      - name: Subir reportes de Karate
+        if: always() # Se ejecuta incluso si las pruebas fallan
         uses: actions/upload-artifact@v4
-        if: always()
         with:
-          name: karate-api-report
-          path: fintrack-automation/api-automation/target/karate-reports/
-          retention-days: 7
+          name: karate-reports
+          path: target/karate-reports/
+
+          
+          
