@@ -5,6 +5,13 @@ function fn() {
   var rawEnvEmail = java.lang.System.getenv('K6_TEST_EMAIL') || karate.properties['K6_TEST_EMAIL'];
   var rawEnvPassword = java.lang.System.getenv('K6_TEST_PASSWORD') || karate.properties['K6_TEST_PASSWORD'];
 
+  // Dentro de tu function fn() en karate-config.js
+var rawBaseUrl = java.lang.System.getenv('BASE_URL');
+
+if (!rawBaseUrl || rawBaseUrl.includes('***')) {
+    karate.log('🚨 ALERTA: BASE_URL está censurada o vacía. Revisa tus Secrets en GitHub Actions.');
+}
+
   // 2. Limpiar comillas accidentales y espacios en blanco de TODAS las variables
   var config = {
     env: env,
