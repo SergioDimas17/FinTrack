@@ -10,12 +10,19 @@ function fn() {
     karate.log('🚨 ALERTA: BASE_URL está censurada o vacía. Revisa tus Secrets en GitHub Actions.');
   }
   
+  // Define application context if needed
+  var application = {
+    name: 'FinTrack',
+    version: '1.0'
+  };
+  
   var config = {
     env: env,
     baseUrl: String(java.lang.System.getenv('BASE_URL') || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co').replace(/['"]/g, '').trim(),
     supabaseAnonKey: String(java.lang.System.getenv('SUPABASE_ANON_KEY') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...').replace(/['"]/g, '').trim(),
     qaEmail: rawEnvEmail ? String(rawEnvEmail).replace(/['"]/g, '').trim() : 'pruebasQA@gmail.com',
-    qaPassword: rawEnvPassword ? String(rawEnvPassword).replace(/['"]/g, '').trim() : 'TestPassword123'
+    qaPassword: rawEnvPassword ? String(rawEnvPassword).replace(/['"]/g, '').trim() : 'TestPassword123',
+    application: application
   };
   
   karate.configure('headers', { 'apikey': config.supabaseAnonKey });
