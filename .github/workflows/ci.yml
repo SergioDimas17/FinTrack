@@ -120,7 +120,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: write # 👈 Permite a ZAP registrar o actualizar el Issue de hallazgos
+      issues: write
 
     steps:
       - name: Checkout Code
@@ -129,7 +129,8 @@ jobs:
       - name: OWASP ZAP Baseline Scan
         uses: zaproxy/action-baseline@v0.12.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # 👈 Se le proporciona el token con permisos
+          token: ${{ secrets.GITHUB_TOKEN }}
           target: '${{ secrets.BASE_URL || ''https://wlsxfjlaxxwgnbhmtgmw.supabase.co'' }}'
           cmd_options: '-a'
-          fail_action: false # Permite que el pipeline no falle si encuentra advertencias menores
+          artifact_name: 'zap-scan-report' # 👈 Nombre de artefacto corregido con guión medio
+          fail_action: false
