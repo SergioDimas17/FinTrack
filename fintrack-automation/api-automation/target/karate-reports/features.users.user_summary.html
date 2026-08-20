@@ -43,13 +43,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     </div>
   </div>
   <div id="nav-env">
-    <div>qa</div>
+    <div></div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-08-05 01:26:13 p. m.</div>
+    <div>2026-08-20 02:48:18 a. m.</div>
   </div>
 </div>
 
@@ -87,7 +87,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3445</span>
+              <span>ms:</span>&nbsp;<span>2177</span>
             </div>
           </div>
           <div class="step-row">
@@ -110,7 +110,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user = callonce read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1374</div>
+    <div class="time-cell passed">760</div>
   </div>
 
    
@@ -119,7 +119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">13:26:07.014 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/helpers/create_user.feature&#39;)
+  <div class="preformatted" data-parent="0.5">02:48:04.233 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/helpers/create_user.feature&#39;)
 </div>   
 
   <div>
@@ -130,7 +130,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.helpers.create_user</div>
       </div>
-      <div class="time-cell passed">1369</div>
+      <div class="time-cell passed">720</div>
     </div>
     <div>
       <div><div>
@@ -143,10 +143,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
+        <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1014</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -155,10 +155,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.5">13:26:05.640 Usando configuración por defecto. 
-13:26:05.640 Ambiente activo: qa 
-13:26:05.641 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
-13:26:05.642 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/helpers/create_user.feature&#39;)
+  <div class="preformatted" data-parent="0.5.0.call.0.5">02:48:01.462 🚨 ALERTA: BASE_URL está censurada o vacía. Revisa tus Secrets en GitHub Actions. 
+02:48:03.488 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/helpers/create_user.feature&#39;)
 </div>   
 
   
@@ -175,10 +173,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -203,7 +201,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">7</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -227,19 +225,59 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+        <span>*</span>&nbsp;<span>def intentarCrearUsuario =</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
   
-  
+  <div class="preformatted" data-parent="0.5.0.call.0.9">function() {
+  var maxReintentos = 10;        // Aumentado a 10 intentos
+  var delayActual = 5000;         // Delay inicial de 5 segundos
+  var ultimaRespuesta = null;
+  for (var i = 0; i &lt; maxReintentos; i++) {
+    try {
+      karate.log(&#39;🔄 Intento de registro &#39; + (i + 1) + &#39; de &#39; + maxReintentos + &#39; para: &#39; + randomEmail);
+      var res = karate.call(&#39;classpath:common/helpers/signup-request.feature&#39;, {
+        baseUrl: baseUrl,
+        supabaseAnonKey: supabaseAnonKey,
+        email: randomEmail,
+        password: randomPassword
+      });
+      ultimaRespuesta = res;
+      var statusCode = res.responseStatus || res.statusCode || res.status;
+      karate.log(&#39;📡 Código de respuesta HTTP: &#39; + statusCode);
+      karate.log(&#39;📡 Respuesta: &#39; + JSON.stringify(res));
+      if (statusCode === 200) {
+        karate.log(&#39;✅ Usuario creado exitosamente&#39;);
+        return res;
+      } else if (statusCode === 429) {
+        karate.log(&#39;⚠️ Rate limit 429. Esperando &#39; + delayActual + &#39;ms antes de reintentar...&#39;);
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000); // Máximo 60 segundos
+      } else {
+        karate.log(&#39;⚠️ Status inesperado: &#39; + statusCode);
+        if (i &lt; maxReintentos - 1) {
+          java.lang.Thread.sleep(delayActual);
+          delayActual = Math.min(delayActual * 2, 60000);
+        }
+      }
+    } catch (e) {
+      karate.log(&#39;❌ Excepción en intento &#39; + (i + 1) + &#39;: &#39; + (e.message || e));
+      if (i &lt; maxReintentos - 1) {
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000);
+      }
+    }
+  }
+  throw &#39;🚨 Se alcanzó el máximo de reintentos (&#39; + maxReintentos + &#39;). Última respuesta: &#39; + JSON.stringify(ultimaRespuesta);
+}</div>
 
   
 
@@ -255,11 +293,51 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
+    <div class="step-container" id="0.5.0.call.0.60">
+      <div class="step-ref bg-step">60</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+        <span>*</span>&nbsp;<span>def resultado = call intentarCrearUsuario</span>
+      </div>
+    </div>
+    <div class="time-cell passed">701</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.60">02:48:04.208 📡 Código de respuesta HTTP: 200 
+02:48:04.221 📡 Respuesta: {&quot;supabaseAnonKey&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI&quot;,&quot;baseUrl&quot;:&quot;https://wlsxfjlaxxwgnbhmtgmw.supabase.co&quot;,&quot;password&quot;:&quot;TestPassword123&quot;,&quot;responseHeaders&quot;:{&quot;Date&quot;:[&quot;Thu, 20 Aug 2026 07:48:04 GMT&quot;],&quot;Content-Type&quot;:[&quot;application/json&quot;],&quot;Transfer-Encoding&quot;:[&quot;chunked&quot;],&quot;Connection&quot;:[&quot;keep-alive&quot;],&quot;CF-Ray&quot;:[&quot;a2dfcb28defc441c-BOG&quot;],&quot;CF-Cache-Status&quot;:[&quot;DYNAMIC&quot;],&quot;Server&quot;:[&quot;cloudflare&quot;],&quot;Strict-Transport-Security&quot;:[&quot;max-age=31536000; includeSubDomains; preload&quot;],&quot;Vary&quot;:[&quot;Origin, Accept-Encoding&quot;],&quot;X-Content-Type-Options&quot;:[&quot;nosniff&quot;],&quot;sb-auth-refresh-token-prefix&quot;:[&quot;t2v2l&quot;],&quot;sb-auth-session-id&quot;:[&quot;53cf0c6f-d23c-49ec-abd8-5785ac75b543&quot;],&quot;sb-auth-user-id&quot;:[&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;],&quot;sb-gateway-version&quot;:[&quot;1&quot;],&quot;sb-project-ref&quot;:[&quot;wlsxfjlaxxwgnbhmtgmw&quot;],&quot;sb-request-id&quot;:[&quot;01a01e24-3589-7b3c-8ee4-a8dcf8f61e43&quot;],&quot;x-envoy-attempt-count&quot;:[&quot;1&quot;],&quot;x-envoy-upstream-service-time&quot;:[&quot;91&quot;],&quot;set-cookie&quot;:[&quot;__cf_bm=FOxVg7aoJcT_kGIDhed6uTRRfXkQR6hu0ql6pN91HxQ-1787212084.614632-1.0.1.1-JL2u7OWfW56CFXhPwHqKy528OPfqHMPYbJnollRqoDrNmoDNmIRVYERvyn9EFUKJ5_Pa3kQi9c6zvRaX2tKlVlvjI2kmaUBSmwBpTSzVp73O4JHKmKr4QP92M0Lq.nZY; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:04 GMT&quot;],&quot;alt-svc&quot;:[&quot;h3=\&quot;:443\&quot;; ma=86400&quot;],&quot;Set-Cookie&quot;:[&quot;__cf_bm=FOxVg7aoJcT_kGIDhed6uTRRfXkQR6hu0ql6pN91HxQ-1787212084.614632-1.0.1.1-JL2u7OWfW56CFXhPwHqKy528OPfqHMPYbJnollRqoDrNmoDNmIRVYERvyn9EFUKJ5_Pa3kQi9c6zvRaX2tKlVlvjI2kmaUBSmwBpTSzVp73O4JHKmKr4QP92M0Lq.nZY; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:04 GMT&quot;]},&quot;responseTime&quot;:616,&quot;response&quot;:{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTBmOTE4Ni0xNGZjLTQyOTItOTk0MS1iZGJkYzI2ODExNDMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg0LCJpYXQiOjE3ODcyMTIwODQsImVtYWlsIjoidXNlcl84YWYyNTkyOUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl84YWYyNTkyOUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5ZTBmOTE4Ni0xNGZjLTQyOTItOTk0MS1iZGJkYzI2ODExNDMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4NH1dLCJzZXNzaW9uX2lkIjoiNTNjZjBjNmYtZDIzYy00OWVjLWFiZDgtNTc4NWFjNzViNTQzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.2xT1PLViNw22ccDmfxF5VZhqCom1C6R-rpCmsmmAAN1UWtStHC_kL3vcoc3aLgeWIzdYtft5bCXchnaYOfTICA&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215684,&quot;refresh_token&quot;:&quot;t2v2lfxglihk&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:04.754738941Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:04.756764459Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;41b5a6da-eb44-4a23-99b5-ec719e4fadde&quot;,&quot;id&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;,&quot;user_id&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:04.752796024Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:04.75284Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:04.75284Z&quot;,&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:04.750642Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:04.75854Z&quot;,&quot;is_anonymous&quot;:false}},&quot;responseStatus&quot;:200,&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;} 
+02:48:04.222 ✅ Usuario creado exitosamente 
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.5.0.call">
+      <div class="step-container" id="0.5.0.call.0.60.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.signup-request</div>
+      </div>
+      <div class="time-cell passed">646</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call.0.60.0.call">
+    <div class="step-container" id="0.5.0.call.0.60.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/auth/v1/signup&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -271,98 +349,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">353</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.5.0.call.0.12">13:26:06.662 request:
-1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
-1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;user_6373ed9c@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
-
-13:26:07.013 response time in milliseconds: 350
-1 &lt; 200
-1 &lt; Date: Wed, 05 Aug 2026 18:26:07 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d9294b7e60d3-BOG
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Server: cloudflare
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; Vary: Origin, Accept-Encoding
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; sb-auth-refresh-token-prefix: 4l7vt
-1 &lt; sb-auth-session-id: 7e3f29cb-cea1-4382-b321-c859dacd4b80
-1 &lt; sb-auth-user-id: 84da6fd2-4c3c-463d-aafa-625966966f4c
-1 &lt; sb-gateway-version: 1
-1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32c-f5d0-7026-a0b8-19e59aa06ccd
-1 &lt; x-envoy-attempt-count: 1
-1 &lt; x-envoy-upstream-service-time: 89
-1 &lt; set-cookie: __cf_bm=3ahdRp.3dX3Ymdm3YBMFNdb4OMqS7y95ojf4469Nkeo-1785954366.9251914-1.0.1.1-stMDha64MX.YdEFREOaS2xKYa35niM_aVBtR5DE3l_U031Hp8VuS7U2AIInH4ove2R3UF3pSc1UkK9udd9524X0.vK22n9J4.KY02ou_ncI5VFPUnrdSzMbRVdHYkRrW; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:07 GMT
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=3ahdRp.3dX3Ymdm3YBMFNdb4OMqS7y95ojf4469Nkeo-1785954366.9251914-1.0.1.1-stMDha64MX.YdEFREOaS2xKYa35niM_aVBtR5DE3l_U031Hp8VuS7U2AIInH4ove2R3UF3pSc1UkK9udd9524X0.vK22n9J4.KY02ou_ncI5VFPUnrdSzMbRVdHYkRrW; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:07 GMT
-{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4NGRhNmZkMi00YzNjLTQ2M2QtYWFmYS02MjU5NjY5NjZmNGMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTY3LCJpYXQiOjE3ODU5NTQzNjcsImVtYWlsIjoidXNlcl82MzczZWQ5Y0BmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl82MzczZWQ5Y0BmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4NGRhNmZkMi00YzNjLTQ2M2QtYWFmYS02MjU5NjY5NjZmNGMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM2N31dLCJzZXNzaW9uX2lkIjoiN2UzZjI5Y2ItY2VhMS00MzgyLWIzMjEtYzg1OWRhY2Q0YjgwIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.NcpkPs_OnHCzfrm1SBLShSWXO6KqAHTCY5hZYxnrM5lzLiP5mCA0wypkAEErHvM5AXk_CmHpHyo2-4nha0w88A&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957967,&quot;refresh_token&quot;:&quot;4l7vt7sepwim&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;84da6fd2-4c3c-463d-aafa-625966966f4c&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_6373ed9c@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:26:07.06144623Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:07.063469182Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_6373ed9c@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;84da6fd2-4c3c-463d-aafa-625966966f4c&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;9f0ca7b4-28e2-4639-b727-d022d9edcfd1&quot;,&quot;id&quot;:&quot;84da6fd2-4c3c-463d-aafa-625966966f4c&quot;,&quot;user_id&quot;:&quot;84da6fd2-4c3c-463d-aafa-625966966f4c&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_6373ed9c@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;84da6fd2-4c3c-463d-aafa-625966966f4c&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:07.059548783Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:26:07.059591Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:07.059591Z&quot;,&quot;email&quot;:&quot;user_6373ed9c@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:26:07.05752Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:07.06532Z&quot;,&quot;is_anonymous&quot;:false}}
-
+  <div class="preformatted" data-parent="0.5.0.call.0.60.0.call.0.5">02:48:03.524 🔄 Intento de registro 1 de 10 para: user_8af25929@fintrack.dev 
 </div>   
 
   
@@ -374,12 +361,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.13">
-      <div class="step-ref bg-step">13</div>
+  <div class="step-row" data-parent="0.5.0.call.0.60.0.call">
+    <div class="step-container" id="0.5.0.call.0.60.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>header apikey = supabaseAnonKey</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -402,12 +390,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.15">
-      <div class="step-ref bg-step">15</div>
+  <div class="step-row" data-parent="0.5.0.call.0.60.0.call">
+    <div class="step-container" id="0.5.0.call.0.60.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -428,17 +417,180 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div><div>
   
 
+  <div class="step-row" data-parent="0.5.0.call.0.60.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 🟢 CORRECCIÓN: Usar #(variable) para inyectar los valores dinámicos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.5.0.call.0.60.0.call">
+    <div class="step-container" id="0.5.0.call.0.60.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call.0.60.0.call">
+    <div class="step-container" id="0.5.0.call.0.60.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">644</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.60.0.call.0.10">02:48:03.568 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+02:48:04.198 response time in milliseconds: 616
+1 &lt; 200
+1 &lt; Date: Thu, 20 Aug 2026 07:48:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a2dfcb28defc441c-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: t2v2l
+1 &lt; sb-auth-session-id: 53cf0c6f-d23c-49ec-abd8-5785ac75b543
+1 &lt; sb-auth-user-id: 9e0f9186-14fc-4292-9941-bdbdc2681143
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 01a01e24-3589-7b3c-8ee4-a8dcf8f61e43
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 91
+1 &lt; set-cookie: __cf_bm=FOxVg7aoJcT_kGIDhed6uTRRfXkQR6hu0ql6pN91HxQ-1787212084.614632-1.0.1.1-JL2u7OWfW56CFXhPwHqKy528OPfqHMPYbJnollRqoDrNmoDNmIRVYERvyn9EFUKJ5_Pa3kQi9c6zvRaX2tKlVlvjI2kmaUBSmwBpTSzVp73O4JHKmKr4QP92M0Lq.nZY; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:04 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=FOxVg7aoJcT_kGIDhed6uTRRfXkQR6hu0ql6pN91HxQ-1787212084.614632-1.0.1.1-JL2u7OWfW56CFXhPwHqKy528OPfqHMPYbJnollRqoDrNmoDNmIRVYERvyn9EFUKJ5_Pa3kQi9c6zvRaX2tKlVlvjI2kmaUBSmwBpTSzVp73O4JHKmKr4QP92M0Lq.nZY; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:04 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI5ZTBmOTE4Ni0xNGZjLTQyOTItOTk0MS1iZGJkYzI2ODExNDMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg0LCJpYXQiOjE3ODcyMTIwODQsImVtYWlsIjoidXNlcl84YWYyNTkyOUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl84YWYyNTkyOUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI5ZTBmOTE4Ni0xNGZjLTQyOTItOTk0MS1iZGJkYzI2ODExNDMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4NH1dLCJzZXNzaW9uX2lkIjoiNTNjZjBjNmYtZDIzYy00OWVjLWFiZDgtNTc4NWFjNzViNTQzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.2xT1PLViNw22ccDmfxF5VZhqCom1C6R-rpCmsmmAAN1UWtStHC_kL3vcoc3aLgeWIzdYtft5bCXchnaYOfTICA&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215684,&quot;refresh_token&quot;:&quot;t2v2lfxglihk&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:04.754738941Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:04.756764459Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;41b5a6da-eb44-4a23-99b5-ec719e4fadde&quot;,&quot;id&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;,&quot;user_id&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;9e0f9186-14fc-4292-9941-bdbdc2681143&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:04.752796024Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:04.75284Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:04.75284Z&quot;,&quot;email&quot;:&quot;user_8af25929@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:04.750642Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:04.75854Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
   
 
   <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.16">
-      <div class="step-ref bg-step">16</div>
+    <div class="step-container" id="0.5.0.call.0.61">
+      <div class="step-ref bg-step">61</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match resultado.responseStatus == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.63">
+      <div class="step-ref bg-step">63</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = resultado.response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.64">
+      <div class="step-ref bg-step">64</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -459,14 +611,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.17">
-      <div class="step-ref bg-step">17</div>
+    <div class="step-container" id="0.5.0.call.0.65">
+      <div class="step-ref bg-step">65</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -487,14 +639,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.18">
-      <div class="step-ref bg-step">18</div>
+    <div class="step-container" id="0.5.0.call.0.66">
+      <div class="step-ref bg-step">66</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -527,7 +679,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1374</div>
+    <div class="time-cell passed">889</div>
   </div>
 
    
@@ -546,7 +698,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.helpers.create_user</div>
       </div>
-      <div class="time-cell passed">1369</div>
+      <div class="time-cell passed">853</div>
     </div>
     <div>
       <div><div>
@@ -557,34 +709,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row" data-parent="0.9.0.call">
     <div class="step-container" id="0.9.0.call.0.5">
       <div class="step-ref passed">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1015</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.6">
-      <div class="step-ref passed">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -611,11 +735,39 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
     <div class="step-container" id="0.9.0.call.0.7">
       <div class="step-ref passed">7</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
+        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -639,19 +791,59 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.8">
-      <div class="step-ref passed">8</div>
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
+        <span>*</span>&nbsp;<span>def intentarCrearUsuario =</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
   
-  
+  <div class="preformatted" data-parent="0.9.0.call.0.9">function() {
+  var maxReintentos = 10;        // Aumentado a 10 intentos
+  var delayActual = 5000;         // Delay inicial de 5 segundos
+  var ultimaRespuesta = null;
+  for (var i = 0; i &lt; maxReintentos; i++) {
+    try {
+      karate.log(&#39;🔄 Intento de registro &#39; + (i + 1) + &#39; de &#39; + maxReintentos + &#39; para: &#39; + randomEmail);
+      var res = karate.call(&#39;classpath:common/helpers/signup-request.feature&#39;, {
+        baseUrl: baseUrl,
+        supabaseAnonKey: supabaseAnonKey,
+        email: randomEmail,
+        password: randomPassword
+      });
+      ultimaRespuesta = res;
+      var statusCode = res.responseStatus || res.statusCode || res.status;
+      karate.log(&#39;📡 Código de respuesta HTTP: &#39; + statusCode);
+      karate.log(&#39;📡 Respuesta: &#39; + JSON.stringify(res));
+      if (statusCode === 200) {
+        karate.log(&#39;✅ Usuario creado exitosamente&#39;);
+        return res;
+      } else if (statusCode === 429) {
+        karate.log(&#39;⚠️ Rate limit 429. Esperando &#39; + delayActual + &#39;ms antes de reintentar...&#39;);
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000); // Máximo 60 segundos
+      } else {
+        karate.log(&#39;⚠️ Status inesperado: &#39; + statusCode);
+        if (i &lt; maxReintentos - 1) {
+          java.lang.Thread.sleep(delayActual);
+          delayActual = Math.min(delayActual * 2, 60000);
+        }
+      }
+    } catch (e) {
+      karate.log(&#39;❌ Excepción en intento &#39; + (i + 1) + &#39;: &#39; + (e.message || e));
+      if (i &lt; maxReintentos - 1) {
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000);
+      }
+    }
+  }
+  throw &#39;🚨 Se alcanzó el máximo de reintentos (&#39; + maxReintentos + &#39;). Última respuesta: &#39; + JSON.stringify(ultimaRespuesta);
+}</div>
 
   
 
@@ -667,11 +859,51 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.9.0.call.0.60">
+      <div class="step-ref passed">60</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+        <span>*</span>&nbsp;<span>def resultado = call intentarCrearUsuario</span>
+      </div>
+    </div>
+    <div class="time-cell passed">843</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.60">02:48:05.117 📡 Código de respuesta HTTP: 200 
+02:48:05.119 📡 Respuesta: {&quot;supabaseAnonKey&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI&quot;,&quot;baseUrl&quot;:&quot;https://wlsxfjlaxxwgnbhmtgmw.supabase.co&quot;,&quot;password&quot;:&quot;TestPassword123&quot;,&quot;responseHeaders&quot;:{&quot;Date&quot;:[&quot;Thu, 20 Aug 2026 07:48:05 GMT&quot;],&quot;Content-Type&quot;:[&quot;application/json&quot;],&quot;Transfer-Encoding&quot;:[&quot;chunked&quot;],&quot;Connection&quot;:[&quot;keep-alive&quot;],&quot;CF-Ray&quot;:[&quot;a2dfcb2f18e9aefa-BOG&quot;],&quot;CF-Cache-Status&quot;:[&quot;DYNAMIC&quot;],&quot;Server&quot;:[&quot;cloudflare&quot;],&quot;Strict-Transport-Security&quot;:[&quot;max-age=31536000; includeSubDomains; preload&quot;],&quot;Vary&quot;:[&quot;Origin, Accept-Encoding&quot;],&quot;X-Content-Type-Options&quot;:[&quot;nosniff&quot;],&quot;sb-auth-refresh-token-prefix&quot;:[&quot;mz6rd&quot;],&quot;sb-auth-session-id&quot;:[&quot;1778e3dc-1160-4f4a-8207-afa36b924c78&quot;],&quot;sb-auth-user-id&quot;:[&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;],&quot;sb-gateway-version&quot;:[&quot;1&quot;],&quot;sb-project-ref&quot;:[&quot;wlsxfjlaxxwgnbhmtgmw&quot;],&quot;sb-request-id&quot;:[&quot;01a01e24-3976-72e0-af74-db0b524e978e&quot;],&quot;x-envoy-attempt-count&quot;:[&quot;1&quot;],&quot;x-envoy-upstream-service-time&quot;:[&quot;88&quot;],&quot;set-cookie&quot;:[&quot;__cf_bm=oX13z_dKwb5RgV_lWbvRa1cXNuIM5Ki2aFOtuAeaQVU-1787212085.6201887-1.0.1.1-ez_Vl0FbuIYfhIVSSQ6H_sFbsogHsXrFUqaeoviC0pjEe2kPckL2Hr.uj8pqd_FLSzXK6DNxT1OpRhU4ha6XQhumg8_rdbyqCRd86I4009_0hEAm8NRGAA2dDYA62KL.; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:05 GMT&quot;],&quot;alt-svc&quot;:[&quot;h3=\&quot;:443\&quot;; ma=86400&quot;],&quot;Set-Cookie&quot;:[&quot;__cf_bm=oX13z_dKwb5RgV_lWbvRa1cXNuIM5Ki2aFOtuAeaQVU-1787212085.6201887-1.0.1.1-ez_Vl0FbuIYfhIVSSQ6H_sFbsogHsXrFUqaeoviC0pjEe2kPckL2Hr.uj8pqd_FLSzXK6DNxT1OpRhU4ha6XQhumg8_rdbyqCRd86I4009_0hEAm8NRGAA2dDYA62KL.; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:05 GMT&quot;]},&quot;responseTime&quot;:802,&quot;response&quot;:{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyODQzN2VhMy1hMDdlLTQwOWMtOTY5Yy1kZTgyYzYwNDE0NjIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg1LCJpYXQiOjE3ODcyMTIwODUsImVtYWlsIjoidXNlcl9kODI4MmNjYUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9kODI4MmNjYUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyODQzN2VhMy1hMDdlLTQwOWMtOTY5Yy1kZTgyYzYwNDE0NjIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4NX1dLCJzZXNzaW9uX2lkIjoiMTc3OGUzZGMtMTE2MC00ZjRhLTgyMDctYWZhMzZiOTI0Yzc4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.QlMRCqGQDJJdd5UdgjE_4tbSqoaPQ-_UlLaD5hsmHk_gfvUZhYDLYoptlXG5NGPQ4au5qBkvB4RXZ5OUFkuEgA&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215685,&quot;refresh_token&quot;:&quot;mz6rdjn34qwa&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:05.757061761Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:05.758974508Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;ddecd850-ccaf-4c74-9883-4141b175bb89&quot;,&quot;id&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;,&quot;user_id&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:05.755175696Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:05.755217Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:05.755217Z&quot;,&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:05.753178Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:05.760617Z&quot;,&quot;is_anonymous&quot;:false}},&quot;responseStatus&quot;:200,&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;} 
+02:48:05.119 ✅ Usuario creado exitosamente 
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.9.0.call">
+      <div class="step-container" id="0.9.0.call.0.60.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.signup-request</div>
+      </div>
+      <div class="time-cell passed">818</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.60.0.call">
+    <div class="step-container" id="0.9.0.call.0.60.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/auth/v1/signup&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -683,98 +915,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.11">
-      <div class="step-ref passed">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.12">
-      <div class="step-ref passed">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">351</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.9.0.call.0.12">13:26:08.038 request:
-1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
-1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;user_10e1303c@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
-
-13:26:08.388 response time in milliseconds: 349
-1 &lt; 200
-1 &lt; Date: Wed, 05 Aug 2026 18:26:08 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d931d988b226-BOG
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Server: cloudflare
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; Vary: Origin, Accept-Encoding
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; sb-auth-refresh-token-prefix: wxzd3
-1 &lt; sb-auth-session-id: be47c28b-a9a8-4130-b9ed-d836e0b2ca47
-1 &lt; sb-auth-user-id: c0c1a818-dc3e-4db2-b74c-3904140b4a43
-1 &lt; sb-gateway-version: 1
-1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32c-fb2d-7074-a2ef-4b173c4d5388
-1 &lt; x-envoy-attempt-count: 1
-1 &lt; x-envoy-upstream-service-time: 90
-1 &lt; set-cookie: __cf_bm=pd.qKVIAcfgAEFaHhw0PdBfZ9sJChtLBDmwEsxj7vwM-1785954368.2994761-1.0.1.1-MjUtBhsFKKFl6yeEB_BMm2hep4EPGcyEKl21nf29z.RAKmJDurJbBrVZidlV.8cEwjjs77K3kod5mKc.BL27Ci3qH0cxIhKsihnA4p3_wD402L88EEdtn8LWvWqDqZ2H; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:08 GMT
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=pd.qKVIAcfgAEFaHhw0PdBfZ9sJChtLBDmwEsxj7vwM-1785954368.2994761-1.0.1.1-MjUtBhsFKKFl6yeEB_BMm2hep4EPGcyEKl21nf29z.RAKmJDurJbBrVZidlV.8cEwjjs77K3kod5mKc.BL27Ci3qH0cxIhKsihnA4p3_wD402L88EEdtn8LWvWqDqZ2H; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:08 GMT
-{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJjMGMxYTgxOC1kYzNlLTRkYjItYjc0Yy0zOTA0MTQwYjRhNDMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTY4LCJpYXQiOjE3ODU5NTQzNjgsImVtYWlsIjoidXNlcl8xMGUxMzAzY0BmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8xMGUxMzAzY0BmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJjMGMxYTgxOC1kYzNlLTRkYjItYjc0Yy0zOTA0MTQwYjRhNDMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM2OH1dLCJzZXNzaW9uX2lkIjoiYmU0N2MyOGItYTlhOC00MTMwLWI5ZWQtZDgzNmUwYjJjYTQ3IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.3lrN86t3EB_KAzJN6h4zewI15B0Daj__ermS1ZVdGKu8kvfpIT-joYuaOW3NBClBaj9HgdikLYNoxqPWbQ40mw&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957968,&quot;refresh_token&quot;:&quot;wxzd3qibyijd&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;c0c1a818-dc3e-4db2-b74c-3904140b4a43&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_10e1303c@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:26:08.438566566Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:08.440595672Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_10e1303c@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;c0c1a818-dc3e-4db2-b74c-3904140b4a43&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;a8fde057-1512-4e1d-9eb3-abf2805b9ad9&quot;,&quot;id&quot;:&quot;c0c1a818-dc3e-4db2-b74c-3904140b4a43&quot;,&quot;user_id&quot;:&quot;c0c1a818-dc3e-4db2-b74c-3904140b4a43&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_10e1303c@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;c0c1a818-dc3e-4db2-b74c-3904140b4a43&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:08.435734828Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:26:08.435785Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:08.435785Z&quot;,&quot;email&quot;:&quot;user_10e1303c@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:26:08.433514Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:08.442232Z&quot;,&quot;is_anonymous&quot;:false}}
-
+  <div class="preformatted" data-parent="0.9.0.call.0.60.0.call.0.5">02:48:04.277 🔄 Intento de registro 1 de 10 para: user_d8282cca@fintrack.dev 
 </div>   
 
   
@@ -786,15 +927,180 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.13">
-      <div class="step-ref passed">13</div>
+  <div class="step-row" data-parent="0.9.0.call.0.60.0.call">
+    <div class="step-container" id="0.9.0.call.0.60.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>header apikey = supabaseAnonKey</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.60.0.call">
+    <div class="step-container" id="0.9.0.call.0.60.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.60.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 🟢 CORRECCIÓN: Usar #(variable) para inyectar los valores dinámicos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.9.0.call.0.60.0.call">
+    <div class="step-container" id="0.9.0.call.0.60.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call.0.60.0.call">
+    <div class="step-container" id="0.9.0.call.0.60.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">811</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.60.0.call.0.10">02:48:04.312 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+02:48:05.116 response time in milliseconds: 802
+1 &lt; 200
+1 &lt; Date: Thu, 20 Aug 2026 07:48:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a2dfcb2f18e9aefa-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: mz6rd
+1 &lt; sb-auth-session-id: 1778e3dc-1160-4f4a-8207-afa36b924c78
+1 &lt; sb-auth-user-id: 28437ea3-a07e-409c-969c-de82c6041462
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 01a01e24-3976-72e0-af74-db0b524e978e
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 88
+1 &lt; set-cookie: __cf_bm=oX13z_dKwb5RgV_lWbvRa1cXNuIM5Ki2aFOtuAeaQVU-1787212085.6201887-1.0.1.1-ez_Vl0FbuIYfhIVSSQ6H_sFbsogHsXrFUqaeoviC0pjEe2kPckL2Hr.uj8pqd_FLSzXK6DNxT1OpRhU4ha6XQhumg8_rdbyqCRd86I4009_0hEAm8NRGAA2dDYA62KL.; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:05 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=oX13z_dKwb5RgV_lWbvRa1cXNuIM5Ki2aFOtuAeaQVU-1787212085.6201887-1.0.1.1-ez_Vl0FbuIYfhIVSSQ6H_sFbsogHsXrFUqaeoviC0pjEe2kPckL2Hr.uj8pqd_FLSzXK6DNxT1OpRhU4ha6XQhumg8_rdbyqCRd86I4009_0hEAm8NRGAA2dDYA62KL.; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:05 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyODQzN2VhMy1hMDdlLTQwOWMtOTY5Yy1kZTgyYzYwNDE0NjIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg1LCJpYXQiOjE3ODcyMTIwODUsImVtYWlsIjoidXNlcl9kODI4MmNjYUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9kODI4MmNjYUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyODQzN2VhMy1hMDdlLTQwOWMtOTY5Yy1kZTgyYzYwNDE0NjIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4NX1dLCJzZXNzaW9uX2lkIjoiMTc3OGUzZGMtMTE2MC00ZjRhLTgyMDctYWZhMzZiOTI0Yzc4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.QlMRCqGQDJJdd5UdgjE_4tbSqoaPQ-_UlLaD5hsmHk_gfvUZhYDLYoptlXG5NGPQ4au5qBkvB4RXZ5OUFkuEgA&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215685,&quot;refresh_token&quot;:&quot;mz6rdjn34qwa&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:05.757061761Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:05.758974508Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;ddecd850-ccaf-4c74-9883-4141b175bb89&quot;,&quot;id&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;,&quot;user_id&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;28437ea3-a07e-409c-969c-de82c6041462&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:05.755175696Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:05.755217Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:05.755217Z&quot;,&quot;email&quot;:&quot;user_d8282cca@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:05.753178Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:05.760617Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.61">
+      <div class="step-ref passed">61</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match resultado.responseStatus == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -815,14 +1121,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.15">
-      <div class="step-ref passed">15</div>
+    <div class="step-container" id="0.9.0.call.0.63">
+      <div class="step-ref passed">63</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+        <span>*</span>&nbsp;<span>def accessToken = resultado.response.access_token</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -843,8 +1149,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.16">
-      <div class="step-ref passed">16</div>
+    <div class="step-container" id="0.9.0.call.0.64">
+      <div class="step-ref passed">64</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
@@ -871,8 +1177,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="0.9.0.call.0.65">
+      <div class="step-ref passed">65</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
@@ -899,8 +1205,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.9.0.call">
-    <div class="step-container" id="0.9.0.call.0.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="0.9.0.call.0.66">
+      <div class="step-ref passed">66</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
@@ -967,7 +1273,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;banking-api/summary&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1023,7 +1329,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">697</div>
+    <div class="time-cell passed">525</div>
   </div>
 
    
@@ -1032,23 +1338,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.13">13:26:08.391 request:
+  <div class="preformatted" data-parent="0.13">02:48:05.127 request:
 1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/summary
-1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJjMGMxYTgxOC1kYzNlLTRkYjItYjc0Yy0zOTA0MTQwYjRhNDMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTY4LCJpYXQiOjE3ODU5NTQzNjgsImVtYWlsIjoidXNlcl8xMGUxMzAzY0BmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8xMGUxMzAzY0BmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJjMGMxYTgxOC1kYzNlLTRkYjItYjc0Yy0zOTA0MTQwYjRhNDMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM2OH1dLCJzZXNzaW9uX2lkIjoiYmU0N2MyOGItYTlhOC00MTMwLWI5ZWQtZDgzNmUwYjJjYTQ3IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.3lrN86t3EB_KAzJN6h4zewI15B0Daj__ermS1ZVdGKu8kvfpIT-joYuaOW3NBClBaj9HgdikLYNoxqPWbQ40mw
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyODQzN2VhMy1hMDdlLTQwOWMtOTY5Yy1kZTgyYzYwNDE0NjIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg1LCJpYXQiOjE3ODcyMTIwODUsImVtYWlsIjoidXNlcl9kODI4MmNjYUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9kODI4MmNjYUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyODQzN2VhMy1hMDdlLTQwOWMtOTY5Yy1kZTgyYzYwNDE0NjIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4NX1dLCJzZXNzaW9uX2lkIjoiMTc3OGUzZGMtMTE2MC00ZjRhLTgyMDctYWZhMzZiOTI0Yzc4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.QlMRCqGQDJJdd5UdgjE_4tbSqoaPQ-_UlLaD5hsmHk_gfvUZhYDLYoptlXG5NGPQ4au5qBkvB4RXZ5OUFkuEgA
 1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json
 1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:26:09.085 response time in milliseconds: 693
+02:48:05.647 response time in milliseconds: 513
 1 &lt; 200
-1 &lt; Date: Wed, 05 Aug 2026 18:26:09 GMT
+1 &lt; Date: Thu, 20 Aug 2026 07:48:06 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d9340f4a0da0-BOG
+1 &lt; CF-Ray: a2dfcb315c58b6ac-BOG
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Server: cloudflare
@@ -1056,17 +1361,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
 1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
-1 &lt; endpoint-load-metrics: application_utilization:11,named_metrics.queue_depth:11
+1 &lt; endpoint-load-metrics: application_utilization:10,named_metrics.queue_depth:10
 1 &lt; sb-gateway-version: 1
 1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32c-fc84-7cf5-81d9-5cb336ec9379
-1 &lt; x-deno-execution-id: 27c4438e-fa55-4d5b-9633-ce3a8cb039f3
+1 &lt; sb-request-id: 01a01e24-3ada-76fb-b978-e3b1a889d3a9
+1 &lt; x-deno-execution-id: bcb19b17-1314-4fe7-8c7f-036844f1ece2
 1 &lt; x-sb-edge-region: us-east-1
 1 &lt; x-served-by: supabase-edge-runtime
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; set-cookie: __cf_bm=1tCBjVW7g4c6E2pNBvCKicf.P_d1WCyHJeoZton1nq4-1785954368.641313-1.0.1.1-uLjxQaBc4I3GiJ3UCenO1LBeaB1..IdEFpKiNpYetn_jMUZKDrGV0iszSsrknPXU8nKevGvv2Juk5mqIkqDJV7TBfMNwyHwccKBM.0wrn40ncXxV0DQuq5jkaUkchnEP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:09 GMT
+1 &lt; set-cookie: __cf_bm=pfpxTocYXYxyhG31IN09duAZOx79E4QNkUR1D4aNvqo-1787212085.975924-1.0.1.1-Xjww1HmSloOXgVocrOrPFP3Tx2Dy_8cuWyMQrZKfFqslyJp97z1D7qcYc4P3DFtr3PFl7LeM1xh1le_pUO2DWnNrHXBjfSNK6ynGxhzUmeYpMqAT6Yb3Ghbv14yQLSLP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:06 GMT
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=1tCBjVW7g4c6E2pNBvCKicf.P_d1WCyHJeoZton1nq4-1785954368.641313-1.0.1.1-uLjxQaBc4I3GiJ3UCenO1LBeaB1..IdEFpKiNpYetn_jMUZKDrGV0iszSsrknPXU8nKevGvv2Juk5mqIkqDJV7TBfMNwyHwccKBM.0wrn40ncXxV0DQuq5jkaUkchnEP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:09 GMT
+1 &lt; Set-Cookie: __cf_bm=pfpxTocYXYxyhG31IN09duAZOx79E4QNkUR1D4aNvqo-1787212085.975924-1.0.1.1-Xjww1HmSloOXgVocrOrPFP3Tx2Dy_8cuWyMQrZKfFqslyJp97z1D7qcYc4P3DFtr3PFl7LeM1xh1le_pUO2DWnNrHXBjfSNK6ynGxhzUmeYpMqAT6Yb3Ghbv14yQLSLP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:06 GMT
 {&quot;total_sent&quot;:&quot;0.00&quot;,&quot;total_received&quot;:&quot;0.00&quot;,&quot;count_sent&quot;:0,&quot;count_received&quot;:0,&quot;net&quot;:&quot;0.00&quot;,&quot;period&quot;:{&quot;from&quot;:null,&quot;to&quot;:null}}
 
 </div>   
@@ -1116,7 +1421,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response contains { period: &#39;#object&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1145,7 +1450,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1917</span>
+              <span>ms:</span>&nbsp;<span>4203</span>
             </div>
           </div>
           <div class="step-row">
@@ -1168,7 +1473,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user = callonce read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1177,9 +1482,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">13:26:09.094 Usando configuración por defecto. 
-13:26:09.094 Ambiente activo: qa 
-13:26:09.094 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+  <div class="preformatted" data-parent="0.5">02:48:05.706 🚨 ALERTA: BASE_URL está censurada o vacía. Revisa tus Secrets en GitHub Actions. 
 </div>   
 
   
@@ -1199,7 +1502,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1362</div>
+    <div class="time-cell passed">1852</div>
   </div>
 
    
@@ -1218,7 +1521,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.helpers.create_user</div>
       </div>
-      <div class="time-cell passed">1358</div>
+      <div class="time-cell passed">1844</div>
     </div>
     <div>
       <div><div>
@@ -1229,34 +1532,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row" data-parent="0.19.0.call">
     <div class="step-container" id="0.19.0.call.0.5">
       <div class="step-ref passed">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1010</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.6">
-      <div class="step-ref passed">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -1283,8 +1558,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.7">
-      <div class="step-ref passed">7</div>
+    <div class="step-container" id="0.19.0.call.0.6">
+      <div class="step-ref passed">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
@@ -1311,8 +1586,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.8">
-      <div class="step-ref passed">8</div>
+    <div class="step-container" id="0.19.0.call.0.7">
+      <div class="step-ref passed">7</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
@@ -1339,11 +1614,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.19.0.call.0.9">
+      <div class="step-ref passed">9</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+        <span>*</span>&nbsp;<span>def intentarCrearUsuario =</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1351,7 +1626,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
    
   
-  
+  <div class="preformatted" data-parent="0.19.0.call.0.9">function() {
+  var maxReintentos = 10;        // Aumentado a 10 intentos
+  var delayActual = 5000;         // Delay inicial de 5 segundos
+  var ultimaRespuesta = null;
+  for (var i = 0; i &lt; maxReintentos; i++) {
+    try {
+      karate.log(&#39;🔄 Intento de registro &#39; + (i + 1) + &#39; de &#39; + maxReintentos + &#39; para: &#39; + randomEmail);
+      var res = karate.call(&#39;classpath:common/helpers/signup-request.feature&#39;, {
+        baseUrl: baseUrl,
+        supabaseAnonKey: supabaseAnonKey,
+        email: randomEmail,
+        password: randomPassword
+      });
+      ultimaRespuesta = res;
+      var statusCode = res.responseStatus || res.statusCode || res.status;
+      karate.log(&#39;📡 Código de respuesta HTTP: &#39; + statusCode);
+      karate.log(&#39;📡 Respuesta: &#39; + JSON.stringify(res));
+      if (statusCode === 200) {
+        karate.log(&#39;✅ Usuario creado exitosamente&#39;);
+        return res;
+      } else if (statusCode === 429) {
+        karate.log(&#39;⚠️ Rate limit 429. Esperando &#39; + delayActual + &#39;ms antes de reintentar...&#39;);
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000); // Máximo 60 segundos
+      } else {
+        karate.log(&#39;⚠️ Status inesperado: &#39; + statusCode);
+        if (i &lt; maxReintentos - 1) {
+          java.lang.Thread.sleep(delayActual);
+          delayActual = Math.min(delayActual * 2, 60000);
+        }
+      }
+    } catch (e) {
+      karate.log(&#39;❌ Excepción en intento &#39; + (i + 1) + &#39;: &#39; + (e.message || e));
+      if (i &lt; maxReintentos - 1) {
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000);
+      }
+    }
+  }
+  throw &#39;🚨 Se alcanzó el máximo de reintentos (&#39; + maxReintentos + &#39;). Última respuesta: &#39; + JSON.stringify(ultimaRespuesta);
+}</div>
 
   
 
@@ -1367,11 +1682,51 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.11">
-      <div class="step-ref passed">11</div>
+    <div class="step-container" id="0.19.0.call.0.60">
+      <div class="step-ref passed">60</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+        <span>*</span>&nbsp;<span>def resultado = call intentarCrearUsuario</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1841</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19.0.call.0.60">02:48:09.905 📡 Código de respuesta HTTP: 200 
+02:48:09.908 📡 Respuesta: {&quot;supabaseAnonKey&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI&quot;,&quot;baseUrl&quot;:&quot;https://wlsxfjlaxxwgnbhmtgmw.supabase.co&quot;,&quot;password&quot;:&quot;TestPassword123&quot;,&quot;responseHeaders&quot;:{&quot;Date&quot;:[&quot;Thu, 20 Aug 2026 07:48:09 GMT&quot;],&quot;Content-Type&quot;:[&quot;application/json&quot;],&quot;Transfer-Encoding&quot;:[&quot;chunked&quot;],&quot;Connection&quot;:[&quot;keep-alive&quot;],&quot;CF-Ray&quot;:[&quot;a2dfcb490a74a259-BOG&quot;],&quot;CF-Cache-Status&quot;:[&quot;DYNAMIC&quot;],&quot;Server&quot;:[&quot;cloudflare&quot;],&quot;Strict-Transport-Security&quot;:[&quot;max-age=31536000; includeSubDomains; preload&quot;],&quot;Vary&quot;:[&quot;Origin, Accept-Encoding&quot;],&quot;X-Content-Type-Options&quot;:[&quot;nosniff&quot;],&quot;sb-auth-refresh-token-prefix&quot;:[&quot;kyfti&quot;],&quot;sb-auth-session-id&quot;:[&quot;0613f502-a2fc-4ebe-b640-aaae907bdd8e&quot;],&quot;sb-auth-user-id&quot;:[&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;],&quot;sb-gateway-version&quot;:[&quot;1&quot;],&quot;sb-project-ref&quot;:[&quot;wlsxfjlaxxwgnbhmtgmw&quot;],&quot;sb-request-id&quot;:[&quot;01a01e24-49a4-733f-8e0f-73265f771751&quot;],&quot;x-envoy-attempt-count&quot;:[&quot;1&quot;],&quot;x-envoy-upstream-service-time&quot;:[&quot;96&quot;],&quot;set-cookie&quot;:[&quot;__cf_bm=3cqGaMILnDNBrxjcwOHODfSDouk5WG8ODOPRbPsY6Xk-1787212089.7614346-1.0.1.1-vJB_AUPrFhkdfgww2GhB8ikiKWhe_XqWU3Hav_UGWRQR2p75k2cwpNCsrXDnQ.P9eUafpsG7M2_Q80bHTFjrjZq87ZlUn2CFsKrQS.bbx.HLx4ozuHz96vQaZFDlo5yP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:09 GMT&quot;],&quot;alt-svc&quot;:[&quot;h3=\&quot;:443\&quot;; ma=86400&quot;],&quot;Set-Cookie&quot;:[&quot;__cf_bm=3cqGaMILnDNBrxjcwOHODfSDouk5WG8ODOPRbPsY6Xk-1787212089.7614346-1.0.1.1-vJB_AUPrFhkdfgww2GhB8ikiKWhe_XqWU3Hav_UGWRQR2p75k2cwpNCsrXDnQ.P9eUafpsG7M2_Q80bHTFjrjZq87ZlUn2CFsKrQS.bbx.HLx4ozuHz96vQaZFDlo5yP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:09 GMT&quot;]},&quot;responseTime&quot;:1818,&quot;response&quot;:{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4NTYyMGNkZS0xY2JjLTRmZmMtOTIyMy0zMTkwOWMzOTQxOWIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg5LCJpYXQiOjE3ODcyMTIwODksImVtYWlsIjoidXNlcl9mMzVmNGJhYUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9mMzVmNGJhYUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4NTYyMGNkZS0xY2JjLTRmZmMtOTIyMy0zMTkwOWMzOTQxOWIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4OX1dLCJzZXNzaW9uX2lkIjoiMDYxM2Y1MDItYTJmYy00ZWJlLWI2NDAtYWFhZTkwN2JkZDhlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.fBHV4_e6nkuFhP8W-jfMtLUZOgzKz2Ynsv90ziC4RB29tJGDTPke1fV3q7XyXjBdSGI5jaLpvJRdUIjf4eoq9g&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215689,&quot;refresh_token&quot;:&quot;kyftihzpv7u6&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:09.906455865Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:09.908757138Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;4a132165-f48f-4d7c-a740-91b989e67396&quot;,&quot;id&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;,&quot;user_id&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:09.904355574Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:09.904413Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:09.904413Z&quot;,&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:09.900326Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:09.91051Z&quot;,&quot;is_anonymous&quot;:false}},&quot;responseStatus&quot;:200,&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;} 
+02:48:09.908 ✅ Usuario creado exitosamente 
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.19.0.call">
+      <div class="step-container" id="0.19.0.call.0.60.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.signup-request</div>
+      </div>
+      <div class="time-cell passed">1825</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call.0.60.0.call">
+    <div class="step-container" id="0.19.0.call.0.60.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/auth/v1/signup&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1383,70 +1738,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.12">
-      <div class="step-ref passed">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">347</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.19.0.call.0.12">13:26:10.111 request:
-1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
-1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;user_2dce624b@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
-
-13:26:10.457 response time in milliseconds: 345
-1 &lt; 200
-1 &lt; Date: Wed, 05 Aug 2026 18:26:10 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d93eccc46c18-BOG
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Server: cloudflare
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; Vary: Origin, Accept-Encoding
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; sb-auth-refresh-token-prefix: jruja
-1 &lt; sb-auth-session-id: ac48ac4e-4f97-4ee6-a6ff-7ea376a4e559
-1 &lt; sb-auth-user-id: de4795b6-648f-4ef9-876c-d3be08ecb2c7
-1 &lt; sb-gateway-version: 1
-1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32d-0340-774b-9737-15d38544431d
-1 &lt; x-envoy-attempt-count: 1
-1 &lt; x-envoy-upstream-service-time: 92
-1 &lt; set-cookie: __cf_bm=aqUGA0gOQ1UUnwteOtAF76hJ7o4eaGyLYz4oefex.dM-1785954370.3646486-1.0.1.1-OI49sboegpxA00JtmjWMzjeKOenAvaDCLEzCLtv6mhnj2ycd5eKQh5FNzLDLX09aPusr1a0L.kPlMet49g7tcHCmjm1D_c3pckcAS5CTZXtwO6YaZ9YO0WrZD54tNTCA; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:10 GMT
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=aqUGA0gOQ1UUnwteOtAF76hJ7o4eaGyLYz4oefex.dM-1785954370.3646486-1.0.1.1-OI49sboegpxA00JtmjWMzjeKOenAvaDCLEzCLtv6mhnj2ycd5eKQh5FNzLDLX09aPusr1a0L.kPlMet49g7tcHCmjm1D_c3pckcAS5CTZXtwO6YaZ9YO0WrZD54tNTCA; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:10 GMT
-{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkZTQ3OTViNi02NDhmLTRlZjktODc2Yy1kM2JlMDhlY2IyYzciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTcwLCJpYXQiOjE3ODU5NTQzNzAsImVtYWlsIjoidXNlcl8yZGNlNjI0YkBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8yZGNlNjI0YkBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJkZTQ3OTViNi02NDhmLTRlZjktODc2Yy1kM2JlMDhlY2IyYzcifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM3MH1dLCJzZXNzaW9uX2lkIjoiYWM0OGFjNGUtNGY5Ny00ZWU2LWE2ZmYtN2VhMzc2YTRlNTU5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.4tCyOkWfQfNLAbnPUntQP7Kq4u3XGbz3rtJaLq6kLGHhrALWCtEhaRSROemBX6V_gSP_BqgUL6ayNsdXQpNHlw&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957970,&quot;refresh_token&quot;:&quot;jrujaceovzv2&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;de4795b6-648f-4ef9-876c-d3be08ecb2c7&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_2dce624b@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:26:10.50475352Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:10.507588836Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_2dce624b@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;de4795b6-648f-4ef9-876c-d3be08ecb2c7&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;5ede8f93-05d2-4f22-b06d-817d5ceb4c6e&quot;,&quot;id&quot;:&quot;de4795b6-648f-4ef9-876c-d3be08ecb2c7&quot;,&quot;user_id&quot;:&quot;de4795b6-648f-4ef9-876c-d3be08ecb2c7&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_2dce624b@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;de4795b6-648f-4ef9-876c-d3be08ecb2c7&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:10.502675086Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:26:10.502717Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:10.502717Z&quot;,&quot;email&quot;:&quot;user_2dce624b@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:26:10.500607Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:10.509228Z&quot;,&quot;is_anonymous&quot;:false}}
-
+  <div class="preformatted" data-parent="0.19.0.call.0.60.0.call.0.5">02:48:08.069 🔄 Intento de registro 1 de 10 para: user_f35f4baa@fintrack.dev 
 </div>   
 
   
@@ -1458,12 +1750,205 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.13">
-      <div class="step-ref passed">13</div>
+  <div class="step-row" data-parent="0.19.0.call.0.60.0.call">
+    <div class="step-container" id="0.19.0.call.0.60.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>header apikey = supabaseAnonKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call.0.60.0.call">
+    <div class="step-container" id="0.19.0.call.0.60.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.19.0.call.0.60.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 🟢 CORRECCIÓN: Usar #(variable) para inyectar los valores dinámicos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.19.0.call.0.60.0.call">
+    <div class="step-container" id="0.19.0.call.0.60.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call.0.60.0.call">
+    <div class="step-container" id="0.19.0.call.0.60.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1824</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19.0.call.0.60.0.call.0.10">02:48:08.083 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+02:48:09.904 response time in milliseconds: 1818
+1 &lt; 200
+1 &lt; Date: Thu, 20 Aug 2026 07:48:09 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a2dfcb490a74a259-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: kyfti
+1 &lt; sb-auth-session-id: 0613f502-a2fc-4ebe-b640-aaae907bdd8e
+1 &lt; sb-auth-user-id: 85620cde-1cbc-4ffc-9223-31909c39419b
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 01a01e24-49a4-733f-8e0f-73265f771751
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 96
+1 &lt; set-cookie: __cf_bm=3cqGaMILnDNBrxjcwOHODfSDouk5WG8ODOPRbPsY6Xk-1787212089.7614346-1.0.1.1-vJB_AUPrFhkdfgww2GhB8ikiKWhe_XqWU3Hav_UGWRQR2p75k2cwpNCsrXDnQ.P9eUafpsG7M2_Q80bHTFjrjZq87ZlUn2CFsKrQS.bbx.HLx4ozuHz96vQaZFDlo5yP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:09 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=3cqGaMILnDNBrxjcwOHODfSDouk5WG8ODOPRbPsY6Xk-1787212089.7614346-1.0.1.1-vJB_AUPrFhkdfgww2GhB8ikiKWhe_XqWU3Hav_UGWRQR2p75k2cwpNCsrXDnQ.P9eUafpsG7M2_Q80bHTFjrjZq87ZlUn2CFsKrQS.bbx.HLx4ozuHz96vQaZFDlo5yP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:09 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4NTYyMGNkZS0xY2JjLTRmZmMtOTIyMy0zMTkwOWMzOTQxOWIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg5LCJpYXQiOjE3ODcyMTIwODksImVtYWlsIjoidXNlcl9mMzVmNGJhYUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9mMzVmNGJhYUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4NTYyMGNkZS0xY2JjLTRmZmMtOTIyMy0zMTkwOWMzOTQxOWIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4OX1dLCJzZXNzaW9uX2lkIjoiMDYxM2Y1MDItYTJmYy00ZWJlLWI2NDAtYWFhZTkwN2JkZDhlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.fBHV4_e6nkuFhP8W-jfMtLUZOgzKz2Ynsv90ziC4RB29tJGDTPke1fV3q7XyXjBdSGI5jaLpvJRdUIjf4eoq9g&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215689,&quot;refresh_token&quot;:&quot;kyftihzpv7u6&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:09.906455865Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:09.908757138Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;4a132165-f48f-4d7c-a740-91b989e67396&quot;,&quot;id&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;,&quot;user_id&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;85620cde-1cbc-4ffc-9223-31909c39419b&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:09.904355574Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:09.904413Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:09.904413Z&quot;,&quot;email&quot;:&quot;user_f35f4baa@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:09.900326Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:09.91051Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.61">
+      <div class="step-ref passed">61</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match resultado.responseStatus == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.19.0.call">
+    <div class="step-container" id="0.19.0.call.0.63">
+      <div class="step-ref passed">63</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = resultado.response.access_token</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1487,36 +1972,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.15">
-      <div class="step-ref passed">15</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.16">
-      <div class="step-ref passed">16</div>
+    <div class="step-container" id="0.19.0.call.0.64">
+      <div class="step-ref passed">64</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
@@ -1543,8 +2000,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="0.19.0.call.0.65">
+      <div class="step-ref passed">65</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
@@ -1571,8 +2028,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.19.0.call">
-    <div class="step-container" id="0.19.0.call.0.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="0.19.0.call.0.66">
+      <div class="step-ref passed">66</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
@@ -1639,7 +2096,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def today = java.time.LocalDate.now().toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1667,7 +2124,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def weekAgo = java.time.LocalDate.now().minusDays(7).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1807,7 +2264,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">550</div>
+    <div class="time-cell passed">2341</div>
   </div>
 
    
@@ -1816,23 +2273,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">13:26:10.462 request:
-1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/summary?from=2026-07-29&amp;to=2026-08-05
-1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkZTQ3OTViNi02NDhmLTRlZjktODc2Yy1kM2JlMDhlY2IyYzciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTcwLCJpYXQiOjE3ODU5NTQzNzAsImVtYWlsIjoidXNlcl8yZGNlNjI0YkBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8yZGNlNjI0YkBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiJkZTQ3OTViNi02NDhmLTRlZjktODc2Yy1kM2JlMDhlY2IyYzcifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM3MH1dLCJzZXNzaW9uX2lkIjoiYWM0OGFjNGUtNGY5Ny00ZWU2LWE2ZmYtN2VhMzc2YTRlNTU5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.4tCyOkWfQfNLAbnPUntQP7Kq4u3XGbz3rtJaLq6kLGHhrALWCtEhaRSROemBX6V_gSP_BqgUL6ayNsdXQpNHlw
+  <div class="preformatted" data-parent="0.27">02:48:09.919 request:
+1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/summary?from=2026-08-13&amp;to=2026-08-20
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4NTYyMGNkZS0xY2JjLTRmZmMtOTIyMy0zMTkwOWMzOTQxOWIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njg5LCJpYXQiOjE3ODcyMTIwODksImVtYWlsIjoidXNlcl9mMzVmNGJhYUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9mMzVmNGJhYUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4NTYyMGNkZS0xY2JjLTRmZmMtOTIyMy0zMTkwOWMzOTQxOWIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA4OX1dLCJzZXNzaW9uX2lkIjoiMDYxM2Y1MDItYTJmYy00ZWJlLWI2NDAtYWFhZTkwN2JkZDhlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.fBHV4_e6nkuFhP8W-jfMtLUZOgzKz2Ynsv90ziC4RB29tJGDTPke1fV3q7XyXjBdSGI5jaLpvJRdUIjf4eoq9g
 1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json
 1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:26:11.011 response time in milliseconds: 547
+02:48:12.257 response time in milliseconds: 2336
 1 &lt; 200
-1 &lt; Date: Wed, 05 Aug 2026 18:26:11 GMT
+1 &lt; Date: Thu, 20 Aug 2026 07:48:12 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d94118d0386d-BOG
+1 &lt; CF-Ray: a2dfcb58cbca7edd-BOG
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Server: cloudflare
@@ -1840,18 +2296,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
 1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
-1 &lt; endpoint-load-metrics: application_utilization:10,named_metrics.queue_depth:10
+1 &lt; endpoint-load-metrics: application_utilization:8,named_metrics.queue_depth:8
 1 &lt; sb-gateway-version: 1
 1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32d-04b7-7791-bdb4-2364f95b3658
-1 &lt; x-deno-execution-id: 8d141fec-ff11-431b-95f1-1219db1c8776
+1 &lt; sb-request-id: 01a01e24-5385-7740-8ea7-069ab7bc99c6
+1 &lt; x-deno-execution-id: f1d869d8-7627-47fd-8b63-49eac47c4f0b
 1 &lt; x-sb-edge-region: us-east-1
 1 &lt; x-served-by: supabase-edge-runtime
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; set-cookie: __cf_bm=ziLCz.9exuq7.ulusjjkl5ErfhKmeR7MQWfsWPrBZfE-1785954370.7394774-1.0.1.1-.H9Xm04Hmo17mil_D18f3iHB3S4GARv3es0ZTzKDSq9jRGwe.Ju2nrbkFlm2zS6GZqHthc54jYF1Ia9.yYc9Q.a4COsqgspS97zHPoefRJzsQICmOrnzhwIDYi_bOgAh; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:11 GMT
+1 &lt; set-cookie: __cf_bm=Hl2h2h5V414lVigp9oBVfwbbdtRelxiHxeVJF56_Zhk-1787212092.29038-1.0.1.1-76372tTR_ipc5hKHCv9cMZdmMkzhOWvuheB33Doh1XWNR15GEqYL5lbmnZsCunSM6MBHJTZaujuQv5iK5FmbKcdreiZ5M6Z9wu3WFNe8SF0OffjtR71eLWW9dlqKYCni; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:12 GMT
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=ziLCz.9exuq7.ulusjjkl5ErfhKmeR7MQWfsWPrBZfE-1785954370.7394774-1.0.1.1-.H9Xm04Hmo17mil_D18f3iHB3S4GARv3es0ZTzKDSq9jRGwe.Ju2nrbkFlm2zS6GZqHthc54jYF1Ia9.yYc9Q.a4COsqgspS97zHPoefRJzsQICmOrnzhwIDYi_bOgAh; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:11 GMT
-{&quot;total_sent&quot;:&quot;0.00&quot;,&quot;total_received&quot;:&quot;0.00&quot;,&quot;count_sent&quot;:0,&quot;count_received&quot;:0,&quot;net&quot;:&quot;0.00&quot;,&quot;period&quot;:{&quot;from&quot;:&quot;2026-07-29&quot;,&quot;to&quot;:&quot;2026-08-05&quot;}}
+1 &lt; Set-Cookie: __cf_bm=Hl2h2h5V414lVigp9oBVfwbbdtRelxiHxeVJF56_Zhk-1787212092.29038-1.0.1.1-76372tTR_ipc5hKHCv9cMZdmMkzhOWvuheB33Doh1XWNR15GEqYL5lbmnZsCunSM6MBHJTZaujuQv5iK5FmbKcdreiZ5M6Z9wu3WFNe8SF0OffjtR71eLWW9dlqKYCni; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:12 GMT
+{&quot;total_sent&quot;:&quot;0.00&quot;,&quot;total_received&quot;:&quot;0.00&quot;,&quot;count_sent&quot;:0,&quot;count_received&quot;:0,&quot;net&quot;:&quot;0.00&quot;,&quot;period&quot;:{&quot;from&quot;:&quot;2026-08-13&quot;,&quot;to&quot;:&quot;2026-08-20&quot;}}
 
 </div>   
 
@@ -1900,7 +2356,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.period.from == weekAgo</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1957,7 +2413,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2030</span>
+              <span>ms:</span>&nbsp;<span>4199</span>
             </div>
           </div>
           <div class="step-row">
@@ -1980,7 +2436,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user = callonce read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1989,9 +2445,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">13:26:11.018 Usando configuración por defecto. 
-13:26:11.018 Ambiente activo: qa 
-13:26:11.019 Base URL final: https://wlsxfjlaxxwgnbhmtgmw.supabase.co 
+  <div class="preformatted" data-parent="0.5">02:48:12.280 🚨 ALERTA: BASE_URL está censurada o vacía. Revisa tus Secrets en GitHub Actions. 
 </div>   
 
   
@@ -2011,7 +2465,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user = call read(&#39;classpath:common/helpers/create_user.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1357</div>
+    <div class="time-cell passed">2254</div>
   </div>
 
    
@@ -2030,7 +2484,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.helpers.create_user</div>
       </div>
-      <div class="time-cell passed">1353</div>
+      <div class="time-cell passed">2246</div>
     </div>
     <div>
       <div><div>
@@ -2041,34 +2495,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row" data-parent="0.34.0.call">
     <div class="step-container" id="0.34.0.call.0.5">
       <div class="step-ref passed">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>java.lang.Thread.sleep(1000)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1015</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.6">
-      <div class="step-ref passed">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -2095,8 +2521,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.7">
-      <div class="step-ref passed">7</div>
+    <div class="step-container" id="0.34.0.call.0.6">
+      <div class="step-ref passed">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def randomEmail = &#39;user_&#39; + java.util.UUID.randomUUID().toString().substring(0, 8) + &#39;@fintrack.dev&#39;</span>
@@ -2123,8 +2549,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.8">
-      <div class="step-ref passed">8</div>
+    <div class="step-container" id="0.34.0.call.0.7">
+      <div class="step-ref passed">7</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def randomPassword = &#39;TestPassword123&#39;</span>
@@ -2151,11 +2577,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.34.0.call.0.9">
+      <div class="step-ref passed">9</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/auth/v1/signup&#39;</span>
+        <span>*</span>&nbsp;<span>def intentarCrearUsuario =</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2163,7 +2589,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
    
   
-  
+  <div class="preformatted" data-parent="0.34.0.call.0.9">function() {
+  var maxReintentos = 10;        // Aumentado a 10 intentos
+  var delayActual = 5000;         // Delay inicial de 5 segundos
+  var ultimaRespuesta = null;
+  for (var i = 0; i &lt; maxReintentos; i++) {
+    try {
+      karate.log(&#39;🔄 Intento de registro &#39; + (i + 1) + &#39; de &#39; + maxReintentos + &#39; para: &#39; + randomEmail);
+      var res = karate.call(&#39;classpath:common/helpers/signup-request.feature&#39;, {
+        baseUrl: baseUrl,
+        supabaseAnonKey: supabaseAnonKey,
+        email: randomEmail,
+        password: randomPassword
+      });
+      ultimaRespuesta = res;
+      var statusCode = res.responseStatus || res.statusCode || res.status;
+      karate.log(&#39;📡 Código de respuesta HTTP: &#39; + statusCode);
+      karate.log(&#39;📡 Respuesta: &#39; + JSON.stringify(res));
+      if (statusCode === 200) {
+        karate.log(&#39;✅ Usuario creado exitosamente&#39;);
+        return res;
+      } else if (statusCode === 429) {
+        karate.log(&#39;⚠️ Rate limit 429. Esperando &#39; + delayActual + &#39;ms antes de reintentar...&#39;);
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000); // Máximo 60 segundos
+      } else {
+        karate.log(&#39;⚠️ Status inesperado: &#39; + statusCode);
+        if (i &lt; maxReintentos - 1) {
+          java.lang.Thread.sleep(delayActual);
+          delayActual = Math.min(delayActual * 2, 60000);
+        }
+      }
+    } catch (e) {
+      karate.log(&#39;❌ Excepción en intento &#39; + (i + 1) + &#39;: &#39; + (e.message || e));
+      if (i &lt; maxReintentos - 1) {
+        java.lang.Thread.sleep(delayActual);
+        delayActual = Math.min(delayActual * 2, 60000);
+      }
+    }
+  }
+  throw &#39;🚨 Se alcanzó el máximo de reintentos (&#39; + maxReintentos + &#39;). Última respuesta: &#39; + JSON.stringify(ultimaRespuesta);
+}</div>
 
   
 
@@ -2179,11 +2645,51 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.11">
-      <div class="step-ref passed">11</div>
+    <div class="step-container" id="0.34.0.call.0.60">
+      <div class="step-ref passed">60</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(randomPassword)&#39; }</span>
+        <span>*</span>&nbsp;<span>def resultado = call intentarCrearUsuario</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2244</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34.0.call.0.60">02:48:16.554 📡 Código de respuesta HTTP: 200 
+02:48:16.556 📡 Respuesta: {&quot;supabaseAnonKey&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI&quot;,&quot;baseUrl&quot;:&quot;https://wlsxfjlaxxwgnbhmtgmw.supabase.co&quot;,&quot;password&quot;:&quot;TestPassword123&quot;,&quot;responseHeaders&quot;:{&quot;Date&quot;:[&quot;Thu, 20 Aug 2026 07:48:16 GMT&quot;],&quot;Content-Type&quot;:[&quot;application/json&quot;],&quot;Transfer-Encoding&quot;:[&quot;chunked&quot;],&quot;Connection&quot;:[&quot;keep-alive&quot;],&quot;CF-Ray&quot;:[&quot;a2dfcb6fcc05e564-BOG&quot;],&quot;CF-Cache-Status&quot;:[&quot;DYNAMIC&quot;],&quot;Server&quot;:[&quot;cloudflare&quot;],&quot;Strict-Transport-Security&quot;:[&quot;max-age=31536000; includeSubDomains; preload&quot;],&quot;Vary&quot;:[&quot;Origin, Accept-Encoding&quot;],&quot;X-Content-Type-Options&quot;:[&quot;nosniff&quot;],&quot;sb-auth-refresh-token-prefix&quot;:[&quot;cocly&quot;],&quot;sb-auth-session-id&quot;:[&quot;5523a575-3fe1-4c74-9db3-4c220f6a1334&quot;],&quot;sb-auth-user-id&quot;:[&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;],&quot;sb-gateway-version&quot;:[&quot;1&quot;],&quot;sb-project-ref&quot;:[&quot;wlsxfjlaxxwgnbhmtgmw&quot;],&quot;sb-request-id&quot;:[&quot;01a01e24-61e5-7466-b077-62d257d4b280&quot;],&quot;x-envoy-attempt-count&quot;:[&quot;1&quot;],&quot;x-envoy-upstream-service-time&quot;:[&quot;91&quot;],&quot;set-cookie&quot;:[&quot;__cf_bm=P8bC3XnebExXhdpCmymKzx7Qp1.qLBulMrDcWd2zssE-1787212095.9707735-1.0.1.1-ozwRjZb17I.IJxShC86VLKcMssYsGnHHUqb7k3o0phtTQkIFFPgjzb4ASfDVvv6nvYUKNw2q4NS.adtBgW5NVfBlxXBUBNihAstjNM0vHgd7YOI41olOI5HHJfKSwUCs; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:16 GMT&quot;],&quot;alt-svc&quot;:[&quot;h3=\&quot;:443\&quot;; ma=86400&quot;],&quot;Set-Cookie&quot;:[&quot;__cf_bm=P8bC3XnebExXhdpCmymKzx7Qp1.qLBulMrDcWd2zssE-1787212095.9707735-1.0.1.1-ozwRjZb17I.IJxShC86VLKcMssYsGnHHUqb7k3o0phtTQkIFFPgjzb4ASfDVvv6nvYUKNw2q4NS.adtBgW5NVfBlxXBUBNihAstjNM0vHgd7YOI41olOI5HHJfKSwUCs; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:16 GMT&quot;]},&quot;responseTime&quot;:2228,&quot;response&quot;:{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyMGM0MjQyMS00ODg3LTQyOTMtYmZjNi1iYmJmNDZmYjg0ZmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njk2LCJpYXQiOjE3ODcyMTIwOTYsImVtYWlsIjoidXNlcl9jMDU0MDJkMUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9jMDU0MDJkMUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyMGM0MjQyMS00ODg3LTQyOTMtYmZjNi1iYmJmNDZmYjg0ZmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA5Nn1dLCJzZXNzaW9uX2lkIjoiNTUyM2E1NzUtM2ZlMS00Yzc0LTlkYjMtNGMyMjBmNmExMzM0IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.ak6jn756zxLoNdmx4nlOkLxDbJnYMPfOy9BPw3SQJxeVcV_36sDAJRHp_H0SMC3GSLT7Uy9mwLJpwNmkmAG9yw&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215696,&quot;refresh_token&quot;:&quot;coclyallurbe&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:16.112012279Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:16.114015561Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;7a6b311a-ae3e-4aa1-a673-45125a54dbde&quot;,&quot;id&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;,&quot;user_id&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:16.11006137Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:16.11011Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:16.11011Z&quot;,&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:16.107952Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:16.115713Z&quot;,&quot;is_anonymous&quot;:false}},&quot;responseStatus&quot;:200,&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;} 
+02:48:16.557 ✅ Usuario creado exitosamente 
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.34.0.call">
+      <div class="step-container" id="0.34.0.call.0.60.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.helpers.signup-request</div>
+      </div>
+      <div class="time-cell passed">2233</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.34.0.call.0.60.0.call">
+    <div class="step-container" id="0.34.0.call.0.60.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/auth/v1/signup&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2195,70 +2701,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.12">
-      <div class="step-ref passed">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">336</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.34.0.call.0.12">13:26:12.042 request:
-1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
-1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;user_3c737f10@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
-
-13:26:12.376 response time in milliseconds: 333
-1 &lt; 200
-1 &lt; Date: Wed, 05 Aug 2026 18:26:12 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d94acc05374d-BOG
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Server: cloudflare
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; Vary: Origin, Accept-Encoding
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; sb-auth-refresh-token-prefix: bmnug
-1 &lt; sb-auth-session-id: 38c9d7a4-2ed1-4cf9-814a-b0d11f163f83
-1 &lt; sb-auth-user-id: 38aea3d7-408d-4001-aae5-8f3e58536d16
-1 &lt; sb-gateway-version: 1
-1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32d-0ac1-7624-907b-0f110665b89f
-1 &lt; x-envoy-attempt-count: 1
-1 &lt; x-envoy-upstream-service-time: 94
-1 &lt; set-cookie: __cf_bm=aTF98g4E9wZRWe6xpfZeH792GD9ElP.vtaszmTVksMg-1785954372.285583-1.0.1.1-unTisPv2if1fWZNKX9rGN8WSybzTWQG7If2datMXcZxZXPSt4wt0t8TAhoApnu0CdqilO9x.yp5GzVbt36UMOUBhU6aEBU6Tr0ZS5ZfwfRcs76wNDYtetaQmCzLUurPF; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:12 GMT
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=aTF98g4E9wZRWe6xpfZeH792GD9ElP.vtaszmTVksMg-1785954372.285583-1.0.1.1-unTisPv2if1fWZNKX9rGN8WSybzTWQG7If2datMXcZxZXPSt4wt0t8TAhoApnu0CdqilO9x.yp5GzVbt36UMOUBhU6aEBU6Tr0ZS5ZfwfRcs76wNDYtetaQmCzLUurPF; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:12 GMT
-{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzOGFlYTNkNy00MDhkLTQwMDEtYWFlNS04ZjNlNTg1MzZkMTYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTcyLCJpYXQiOjE3ODU5NTQzNzIsImVtYWlsIjoidXNlcl8zYzczN2YxMEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8zYzczN2YxMEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIzOGFlYTNkNy00MDhkLTQwMDEtYWFlNS04ZjNlNTg1MzZkMTYifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM3Mn1dLCJzZXNzaW9uX2lkIjoiMzhjOWQ3YTQtMmVkMS00Y2Y5LTgxNGEtYjBkMTFmMTYzZjgzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.N8fEx7HRWBgCwAdyQ-HV1VUKDbUijBOcvDyd-YO_3DXKPDNL3X_KYtJ3RSovlx-xxOHBex4XSfFF_jmxsH1KUg&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1785957972,&quot;refresh_token&quot;:&quot;bmnugr6ggj7f&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;38aea3d7-408d-4001-aae5-8f3e58536d16&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_3c737f10@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-05T18:26:12.425843864Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:12.428602126Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_3c737f10@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;38aea3d7-408d-4001-aae5-8f3e58536d16&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;93e0ba0a-4c5e-4165-8ebf-bb375fdafba1&quot;,&quot;id&quot;:&quot;38aea3d7-408d-4001-aae5-8f3e58536d16&quot;,&quot;user_id&quot;:&quot;38aea3d7-408d-4001-aae5-8f3e58536d16&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_3c737f10@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;38aea3d7-408d-4001-aae5-8f3e58536d16&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-05T18:26:12.423850245Z&quot;,&quot;created_at&quot;:&quot;2026-08-05T18:26:12.423893Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:12.423893Z&quot;,&quot;email&quot;:&quot;user_3c737f10@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-05T18:26:12.421453Z&quot;,&quot;updated_at&quot;:&quot;2026-08-05T18:26:12.431488Z&quot;,&quot;is_anonymous&quot;:false}}
-
+  <div class="preformatted" data-parent="0.34.0.call.0.60.0.call.0.5">02:48:14.314 🔄 Intento de registro 1 de 10 para: user_c05402d1@fintrack.dev 
 </div>   
 
   
@@ -2270,12 +2713,177 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.13">
-      <div class="step-ref passed">13</div>
+  <div class="step-row" data-parent="0.34.0.call.0.60.0.call">
+    <div class="step-container" id="0.34.0.call.0.60.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>header apikey = supabaseAnonKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.34.0.call.0.60.0.call">
+    <div class="step-container" id="0.34.0.call.0.60.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.34.0.call.0.60.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># 🟢 CORRECCIÓN: Usar #(variable) para inyectar los valores dinámicos</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.34.0.call.0.60.0.call">
+    <div class="step-container" id="0.34.0.call.0.60.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.34.0.call.0.60.0.call">
+    <div class="step-container" id="0.34.0.call.0.60.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2232</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34.0.call.0.60.0.call.0.10">02:48:14.324 request:
+1 &gt; POST https://wlsxfjlaxxwgnbhmtgmw.supabase.co/auth/v1/signup
+1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;password&quot;:&quot;TestPassword123&quot;}
+
+02:48:16.553 response time in milliseconds: 2228
+1 &lt; 200
+1 &lt; Date: Thu, 20 Aug 2026 07:48:16 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: a2dfcb6fcc05e564-BOG
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; sb-auth-refresh-token-prefix: cocly
+1 &lt; sb-auth-session-id: 5523a575-3fe1-4c74-9db3-4c220f6a1334
+1 &lt; sb-auth-user-id: 20c42421-4887-4293-bfc6-bbbf46fb84fc
+1 &lt; sb-gateway-version: 1
+1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
+1 &lt; sb-request-id: 01a01e24-61e5-7466-b077-62d257d4b280
+1 &lt; x-envoy-attempt-count: 1
+1 &lt; x-envoy-upstream-service-time: 91
+1 &lt; set-cookie: __cf_bm=P8bC3XnebExXhdpCmymKzx7Qp1.qLBulMrDcWd2zssE-1787212095.9707735-1.0.1.1-ozwRjZb17I.IJxShC86VLKcMssYsGnHHUqb7k3o0phtTQkIFFPgjzb4ASfDVvv6nvYUKNw2q4NS.adtBgW5NVfBlxXBUBNihAstjNM0vHgd7YOI41olOI5HHJfKSwUCs; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:16 GMT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: __cf_bm=P8bC3XnebExXhdpCmymKzx7Qp1.qLBulMrDcWd2zssE-1787212095.9707735-1.0.1.1-ozwRjZb17I.IJxShC86VLKcMssYsGnHHUqb7k3o0phtTQkIFFPgjzb4ASfDVvv6nvYUKNw2q4NS.adtBgW5NVfBlxXBUBNihAstjNM0vHgd7YOI41olOI5HHJfKSwUCs; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:16 GMT
+{&quot;access_token&quot;:&quot;eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyMGM0MjQyMS00ODg3LTQyOTMtYmZjNi1iYmJmNDZmYjg0ZmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njk2LCJpYXQiOjE3ODcyMTIwOTYsImVtYWlsIjoidXNlcl9jMDU0MDJkMUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9jMDU0MDJkMUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyMGM0MjQyMS00ODg3LTQyOTMtYmZjNi1iYmJmNDZmYjg0ZmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA5Nn1dLCJzZXNzaW9uX2lkIjoiNTUyM2E1NzUtM2ZlMS00Yzc0LTlkYjMtNGMyMjBmNmExMzM0IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.ak6jn756zxLoNdmx4nlOkLxDbJnYMPfOy9BPw3SQJxeVcV_36sDAJRHp_H0SMC3GSLT7Uy9mwLJpwNmkmAG9yw&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:3600,&quot;expires_at&quot;:1787215696,&quot;refresh_token&quot;:&quot;coclyallurbe&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;,&quot;aud&quot;:&quot;authenticated&quot;,&quot;role&quot;:&quot;authenticated&quot;,&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;email_confirmed_at&quot;:&quot;2026-08-20T07:48:16.112012279Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:16.114015561Z&quot;,&quot;app_metadata&quot;:{&quot;provider&quot;:&quot;email&quot;,&quot;providers&quot;:[&quot;email&quot;]},&quot;user_metadata&quot;:{&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;},&quot;identities&quot;:[{&quot;identity_id&quot;:&quot;7a6b311a-ae3e-4aa1-a673-45125a54dbde&quot;,&quot;id&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;,&quot;user_id&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;,&quot;identity_data&quot;:{&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;,&quot;email_verified&quot;:true,&quot;phone_verified&quot;:false,&quot;sub&quot;:&quot;20c42421-4887-4293-bfc6-bbbf46fb84fc&quot;},&quot;provider&quot;:&quot;email&quot;,&quot;last_sign_in_at&quot;:&quot;2026-08-20T07:48:16.11006137Z&quot;,&quot;created_at&quot;:&quot;2026-08-20T07:48:16.11011Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:16.11011Z&quot;,&quot;email&quot;:&quot;user_c05402d1@fintrack.dev&quot;}],&quot;created_at&quot;:&quot;2026-08-20T07:48:16.107952Z&quot;,&quot;updated_at&quot;:&quot;2026-08-20T07:48:16.115713Z&quot;,&quot;is_anonymous&quot;:false}}
+
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.34.0.call">
+    <div class="step-container" id="0.34.0.call.0.61">
+      <div class="step-ref passed">61</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match resultado.responseStatus == 200</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2299,11 +2907,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.15">
-      <div class="step-ref passed">15</div>
+    <div class="step-container" id="0.34.0.call.0.63">
+      <div class="step-ref passed">63</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+        <span>*</span>&nbsp;<span>def accessToken = resultado.response.access_token</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2327,8 +2935,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.16">
-      <div class="step-ref passed">16</div>
+    <div class="step-container" id="0.34.0.call.0.64">
+      <div class="step-ref passed">64</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + accessToken</span>
@@ -2355,8 +2963,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="0.34.0.call.0.65">
+      <div class="step-ref passed">65</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userEmail = randomEmail</span>
@@ -2383,8 +2991,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row" data-parent="0.34.0.call">
-    <div class="step-container" id="0.34.0.call.0.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="0.34.0.call.0.66">
+      <div class="step-ref passed">66</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userPassword = randomPassword</span>
@@ -2563,7 +3171,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">672</div>
+    <div class="time-cell passed">1941</div>
   </div>
 
    
@@ -2572,23 +3180,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.40">13:26:12.379 request:
+  <div class="preformatted" data-parent="0.40">02:48:16.562 request:
 1 &gt; GET https://wlsxfjlaxxwgnbhmtgmw.supabase.co/functions/v1/banking-api/summary?from=2026-12-31&amp;to=2026-01-01
-1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzOGFlYTNkNy00MDhkLTQwMDEtYWFlNS04ZjNlNTg1MzZkMTYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg1OTU3OTcyLCJpYXQiOjE3ODU5NTQzNzIsImVtYWlsIjoidXNlcl8zYzczN2YxMEBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl8zYzczN2YxMEBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIzOGFlYTNkNy00MDhkLTQwMDEtYWFlNS04ZjNlNTg1MzZkMTYifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NTk1NDM3Mn1dLCJzZXNzaW9uX2lkIjoiMzhjOWQ3YTQtMmVkMS00Y2Y5LTgxNGEtYjBkMTFmMTYzZjgzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.N8fEx7HRWBgCwAdyQ-HV1VUKDbUijBOcvDyd-YO_3DXKPDNL3X_KYtJ3RSovlx-xxOHBex4XSfFF_jmxsH1KUg
+1 &gt; Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImRjZmFiYTI1LTcyYzUtNDE2Ni04OTZiLTZiMzExODAyNjVlMyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3dsc3hmamxheHh3Z25iaG10Z213LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIyMGM0MjQyMS00ODg3LTQyOTMtYmZjNi1iYmJmNDZmYjg0ZmMiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzg3MjE1Njk2LCJpYXQiOjE3ODcyMTIwOTYsImVtYWlsIjoidXNlcl9jMDU0MDJkMUBmaW50cmFjay5kZXYiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidXNlcl9jMDU0MDJkMUBmaW50cmFjay5kZXYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiIyMGM0MjQyMS00ODg3LTQyOTMtYmZjNi1iYmJmNDZmYjg0ZmMifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc4NzIxMjA5Nn1dLCJzZXNzaW9uX2lkIjoiNTUyM2E1NzUtM2ZlMS00Yzc0LTlkYjMtNGMyMjBmNmExMzM0IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.ak6jn756zxLoNdmx4nlOkLxDbJnYMPfOy9BPw3SQJxeVcV_36sDAJRHp_H0SMC3GSLT7Uy9mwLJpwNmkmAG9yw
 1 &gt; apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI
-1 &gt; Content-Type: application/json
 1 &gt; Host: wlsxfjlaxxwgnbhmtgmw.supabase.co
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:26:13.049 response time in milliseconds: 669
+02:48:18.499 response time in milliseconds: 1935
 1 &lt; 400
-1 &lt; Date: Wed, 05 Aug 2026 18:26:13 GMT
+1 &lt; Date: Thu, 20 Aug 2026 07:48:19 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Connection: keep-alive
-1 &lt; CF-Ray: a267d94cfd086e78-BOG
+1 &lt; CF-Ray: a2dfcb814c7e265e-BOG
 1 &lt; CF-Cache-Status: DYNAMIC
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Server: cloudflare
@@ -2596,17 +3203,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; access-control-allow-headers: Content-Type, Authorization, X-Client-Info, Apikey
 1 &lt; access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
-1 &lt; endpoint-load-metrics: application_utilization:12,named_metrics.queue_depth:12
+1 &lt; endpoint-load-metrics: application_utilization:8,named_metrics.queue_depth:8
 1 &lt; sb-gateway-version: 1
 1 &lt; sb-project-ref: wlsxfjlaxxwgnbhmtgmw
-1 &lt; sb-request-id: 019fd32d-0c1a-7ef3-9f62-402fabf2f544
-1 &lt; x-deno-execution-id: f2747ba4-c811-48b2-88f5-6d03a1a904fd
+1 &lt; sb-request-id: 01a01e24-6ccc-7f47-8e90-580901ac75b7
+1 &lt; x-deno-execution-id: 133bdbab-cb51-414a-a290-402a5c2b1359
 1 &lt; x-sb-edge-region: us-east-1
 1 &lt; x-served-by: supabase-edge-runtime
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; set-cookie: __cf_bm=ejG5Dcw1ugGikAujnhlcLp69bL6SESWMrVOa2xPBrcA-1785954372.6310492-1.0.1.1-ex8celpoIWj_jEJmDY_s26djcFeU29It.8y1qcDXDZDmlrvpoRBoAKkVkMLkr6r1mU41yE8Am8JZJIP4zP2xQ6oxgVN5e1wShkJo8VDDMu2wZ5MMRJLjY5EDr_CdYV.h; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:13 GMT
+1 &lt; set-cookie: __cf_bm=fjAukpFq5.GsH8o5m.TkCe_7TQ7CR.SoSjQwBXv4PRc-1787212098.7617238-1.0.1.1-ECrHr4u_jHJWy63MGWIPwJS1Xlp5qLgzJ296O29qnR_uSNXBJVK0zEtdrjFzn6PJXu78FLTlZWrLwfg8HQuy95TrVgXkU8eVXEaRcPhLYjzpo8HztUkh9ngarKCirvE_; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:19 GMT
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-1 &lt; Set-Cookie: __cf_bm=ejG5Dcw1ugGikAujnhlcLp69bL6SESWMrVOa2xPBrcA-1785954372.6310492-1.0.1.1-ex8celpoIWj_jEJmDY_s26djcFeU29It.8y1qcDXDZDmlrvpoRBoAKkVkMLkr6r1mU41yE8Am8JZJIP4zP2xQ6oxgVN5e1wShkJo8VDDMu2wZ5MMRJLjY5EDr_CdYV.h; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Wed, 05 Aug 2026 18:56:13 GMT
+1 &lt; Set-Cookie: __cf_bm=fjAukpFq5.GsH8o5m.TkCe_7TQ7CR.SoSjQwBXv4PRc-1787212098.7617238-1.0.1.1-ECrHr4u_jHJWy63MGWIPwJS1Xlp5qLgzJ296O29qnR_uSNXBJVK0zEtdrjFzn6PJXu78FLTlZWrLwfg8HQuy95TrVgXkU8eVXEaRcPhLYjzpo8HztUkh9ngarKCirvE_; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Thu, 20 Aug 2026 08:18:19 GMT
 {&quot;error&quot;:&quot;from date must be before or equal to to date&quot;}
 
 </div>   

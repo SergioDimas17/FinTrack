@@ -1,40 +1,34 @@
 function fn() {
   var env = karate.env || 'qa';
 
-  // 1. Obtener variables de entorno
   var rawEnvEmail = java.lang.System.getenv('K6_TEST_EMAIL') || karate.properties['K6_TEST_EMAIL'];
   var rawEnvPassword = java.lang.System.getenv('K6_TEST_PASSWORD') || karate.properties['K6_TEST_PASSWORD'];
   var rawBaseUrl = java.lang.System.getenv('BASE_URL');
 
-  // Validar que la URL sea válida y no esté censurada (***)
   if (!rawBaseUrl || rawBaseUrl.includes('***')) {
     karate.log('🚨 ALERTA: BASE_URL está censurada o vacía. Revisa tus Secrets en GitHub Actions.');
   }
 
-  // 2. Definición explícita de objetos de contexto
   var application = {
     name: 'FinTrack',
     version: '1.0'
   };
 
-  // 3. Objeto de configuración principal
-  var config = {
+ var config = {
     env: env,
     baseUrl: String(rawBaseUrl || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co').replace(/['"]/g, '').trim(),
-    supabaseAnonKey: String(java.lang.System.getenv('SUPABASE_ANON_KEY') || '***').replace(/['"]/g, '').trim(),
-    qaEmail: rawEnvEmail ? String(rawEnvEmail).replace(/['"]/g, '').trim() : 'pruebasQA@gmail.com',
+    // 🟢 AGREGAR ESTA LÍNEA PARA LAS EDGE FUNCTIONS:
+    functionsUrl: String(rawBaseUrl || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co').replace(/['"]/g, '').trim() + '/functions/v1',
+supabaseAnonKey: String(java.lang.System.getenv('SUPABASE_ANON_KEY') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indsc3hmamxheHh3Z25iaG10Z213Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI2OTk3NTEsImV4cCI6MjA5ODI3NTc1MX0.O6fe3bylzRtNmPYL1zXYo1mIhMBrG9vxvQgYP_Hw9DI').replace(/['"]/g, '').trim(),    qaEmail: rawEnvEmail ? String(rawEnvEmail).replace(/['"]/g, '').trim() : 'pruebasQA@gmail.com',
     qaPassword: rawEnvPassword ? String(rawEnvPassword).replace(/['"]/g, '').trim() : 'TestPassword123',
     application: application
   };
 
-  // 4. Configuración de headers globales
   karate.configure('headers', { 'apikey': config.supabaseAnonKey });
 
-  // 5. Delay preventivo para evitar Rate Limiting (429) en Supabase
-  karate.log('Esperando antes de crear usuario para evitar límite de tasa...');
+  // Pausa de cortesía para evitar ráfagas iniciales
   java.lang.Thread.sleep(2000);
 
-  // 6. Ejecución única del helper de autenticación
   var auth = karate.callSingle('classpath:common/helpers/create_user.feature', config);
 
   config.authToken = auth.accessToken;
