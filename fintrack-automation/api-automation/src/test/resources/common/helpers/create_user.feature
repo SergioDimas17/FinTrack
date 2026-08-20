@@ -8,7 +8,7 @@ Feature: Helper para creación de usuario dinámico y obtención de token
     
     # Configurar headers por defecto
     * header apikey = supabaseAnonKey
-    * header Content-Type = application/json
+    * header Content-Type = application/JSON
     
     # Intentar crear usuario con reintentos
     * def intentoCrearUsuario =
