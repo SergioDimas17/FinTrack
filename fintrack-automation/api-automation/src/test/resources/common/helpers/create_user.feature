@@ -2,59 +2,58 @@
 Feature: Helper para creación de usuario dinámico y obtención de token
 
   Scenario: Crear usuario y retornar credenciales
-    * url baseUrl
     * def randomEmail = 'user_' + java.util.UUID.randomUUID().toString().substring(0, 8) + '@fintrack.dev'
     * def randomPassword = 'TestPassword123'
-    * def maxReintentos = 5
-    * def delayInicial = 2000
-    * def intento = 0
-    * def respuesta = null
-
-    * karate.log('Intentando crear usuario: ' + randomEmail)
+    * url baseUrl
     
-    * def crearUsuario =
+    # Configurar headers por defecto
+    * header apikey = supabaseAnonKey
+    * header Content-Type = application/json
+    
+    # Intentar crear usuario con reintentos
+    * def intentoCrearUsuario =
     """
       function() {
-        var intento = 0;
         var maxReintentos = 5;
         var delayActual = 2000;
         
-        while (intento < maxReintentos) {
+        for (var i = 0; i < maxReintentos; i++) {
           try {
-            karate.log('Intento ' + (intento + 1) + ' de ' + maxReintentos);
+            karate.log('Intento ' + (i + 1) + ' de ' + maxReintentos);
             
-            var resultado = karate.http('POST', baseUrl + '/auth/v1/signup', 
-              { email: randomEmail, password: randomPassword },
-              { apikey: supabaseAnonKey, 'Content-Type': 'application/json' }
-            );
+            var resultado = karate.call('classpath:common/helpers/signup-request.feature', 
+              { email: randomEmail, password: randomPassword, baseUrl: baseUrl });
             
-            if (resultado.status === 200) {
+            if (resultado.status === 200 || resultado.statusCode === 200) {
               karate.log('✅ Usuario creado exitosamente');
               return resultado;
-            } else if (resultado.status === 429) {
-              karate.log('⚠️ Límite de tasa alcanzado. Esperando ' + delayActual + 'ms antes de reintentar...');
+            } else if (resultado.status === 429 || resultado.statusCode === 429) {
+              karate.log('⚠️ Límite de tasa. Esperando ' + delayActual + 'ms...');
               java.lang.Thread.sleep(delayActual);
-              delayActual = Math.min(delayActual * 2, 30000); // Máximo 30 segundos
-              intento++;
+              delayActual = Math.min(delayActual * 2, 30000);
             } else {
-              karate.log('❌ Error: ' + resultado.status);
-              return resultado;
+              karate.log('Error: ' + (resultado.status || resultado.statusCode));
+              if (i < maxReintentos - 1) {
+                java.lang.Thread.sleep(delayActual);
+                delayActual = Math.min(delayActual * 2, 30000);
+              }
             }
           } catch (e) {
-            karate.log('Excepción en intento ' + (intento + 1) + ': ' + e);
-            intento++;
-            java.lang.Thread.sleep(delayActual);
-            delayActual = Math.min(delayActual * 2, 30000);
+            karate.log('Excepción: ' + e.message);
+            if (i < maxReintentos - 1) {
+              java.lang.Thread.sleep(delayActual);
+              delayActual = Math.min(delayActual * 2, 30000);
+            }
           }
         }
-        throw new Error('Se alcanzó máximo de reintentos para crear usuario');
+        throw new Error('Máximo de reintentos alcanzado');
       }
     """
     
-    * def respuesta = call crearUsuario
-    * match respuesta.status == 200
+    * def respuesta = call intentoCrearUsuario
+    * match respuesta.statusCode == 200
     
-    * def accessToken = respuesta.response.access_token
+    * def accessToken = respuesta.access_token
     * def authHeader = 'Bearer ' + accessToken
     * def userEmail = randomEmail
     * def userPassword = randomPassword
