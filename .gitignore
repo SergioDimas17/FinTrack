@@ -27,3 +27,5 @@ dist-ssr
 **/build/
 **/zap-reports/
 **/karate-reports/
+**/target/
+**/karate-reports/
