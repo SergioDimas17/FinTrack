@@ -1,7 +1,7 @@
 function fn() {
   var env = karate.env || 'qa';
 
-  // 1. Obtener variables seguras inyectadas por GitHub Actions o tu SO local
+  // 1. Obtener variables seguras inyectadas por GitHub Actions o local
   var rawEnvEmail = java.lang.System.getenv('K6_TEST_EMAIL') || karate.properties['K6_TEST_EMAIL'];
   var rawEnvPassword = java.lang.System.getenv('K6_TEST_PASSWORD') || karate.properties['K6_TEST_PASSWORD'];
   var rawAnonKey = java.lang.System.getenv('SUPABASE_ANON_KEY') || karate.properties['SUPABASE_ANON_KEY'];
@@ -13,7 +13,7 @@ function fn() {
   var config = {
     env: env,
     baseUrl: cleanBaseUrl,
-    // 👇 SOLUCIÓN: Restauramos functionsUrl dinámicamente usando la URL limpia
+    // Restauramos functionsUrl dinámicamente usando la URL limpia
     functionsUrl: cleanBaseUrl ? cleanBaseUrl + '/functions/v1' : '',
     supabaseAnonKey: rawAnonKey ? String(rawAnonKey).replace(/['"]/g, '').trim() : '',
     qaEmail: rawEnvEmail ? String(rawEnvEmail).replace(/['"]/g, '').trim() : '',

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class en {
+public class LoginScreen {
 
     private final AndroidDriver driver;
     private final WebDriverWait wait;
@@ -19,7 +19,7 @@ public class en {
     private final By errorMessage = By.xpath("//*[contains(@class,'text-red') or contains(@role,'alert') or contains(text(),'invalid') or contains(text(),'incorrect') or contains(text(),'Error') or contains(text(),'error')]");
     private final By dashboardHeader = By.tagName("header");
 
-    public en(AndroidDriver driver) {
+    public LoginScreen(AndroidDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
