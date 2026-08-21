@@ -6,10 +6,10 @@ import { Rate } from 'k6/metrics';
 // Ramps 10 -> 20 VUs over 3 minutes. Exercises the full flow:
 // auth login -> GET accounts -> POST transfer.
 
-const BASE_URL = __ENV.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co';
-const ANON_KEY = __ENV.K6_ANON_KEY || '';
-const TEST_EMAIL = __ENV.K6_TEST_EMAIL || 'pruebasQA@gmail.com';
-const TEST_PASSWORD = __ENV.K6_TEST_PASSWORD || '';
+const BASE_URL = __ENV.BASE_URL || 'https://your-supabase-project.supabase.co';
+const ANON_KEY = __ENV.K6_ANON_KEY || 'your_supabase_anon_key_here';
+const TEST_EMAIL = __ENV.K6_TEST_EMAIL || 'your_email@example.com';
+const TEST_PASSWORD = __ENV.K6_TEST_PASSWORD || 'your_password_here';
 
 const loginFailureRate = new Rate('login_failures');
 

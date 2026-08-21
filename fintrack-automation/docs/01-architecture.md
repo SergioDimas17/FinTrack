@@ -46,7 +46,7 @@ fintrack-automation/
 ## Flujo de Datos (API)
 
 ```
-Karate Feature → karate-config.js → environments/qa.properties
+Karate Feature → karate-config.js → environments/operties
                                      ↓
                               baseUrl + anonKey
                                      ↓

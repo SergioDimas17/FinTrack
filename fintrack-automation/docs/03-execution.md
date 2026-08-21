@@ -76,7 +76,7 @@ k6 run scripts/spike.js
 ### Con variables de entorno
 
 ```bash
-K6_ANON_KEY=tu-anon-key K6_TEST_EMAIL=pruebasQA@gmail.com K6_TEST_PASSWORD=tu-password k6 run scripts/smoke.js
+K6_ANON_KEY=tu-anon-key K6_TEST_EMAIL=tu-email@example.com K6_TEST_PASSWORD=tu-password k6 run scripts/smoke.js
 ```
 
 ## Security (OWASP ZAP)

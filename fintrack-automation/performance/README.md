@@ -14,15 +14,15 @@ Load, stress, smoke, and spike tests for the FinTrack API using [k6](https://k6.
 
    | Variable           | Description                                  | Example                                  |
    |--------------------|----------------------------------------------|------------------------------------------|
-   | `K6_ANON_KEY`      | Supabase anon/public key (QA project)        | `eyJhbGciOi...`                          |
-   | `K6_TEST_EMAIL`    | Test user email                              | `pruebasQA@gmail.com`                    |
+   | `K6_ANON_KEY`      | Supabase anon/public key (QA project)        | `your_supabase_anon_key_here`                          |
+   | `K6_TEST_EMAIL`    | Test user email                              | `tu-correo@email.com`                    |
    | `K6_TEST_PASSWORD` | Test user password                           | `your-qa-password`                       |
-   | `BASE_URL`         | (Optional) Override the Supabase QA URL      | `https://wlsxfjlaxxwgnbhmtgmw.supabase.co` |
+   | `BASE_URL`         | (Optional) Override the Supabase QA URL      | `https://your-supabase-project.supabase.co` |
 
    Quick export:
    ```bash
    export K6_ANON_KEY="your-anon-key"
-   export K6_TEST_EMAIL="pruebasQA@gmail.com"
+   export K6_TEST_EMAIL="your_email@example.com"
    export K6_TEST_PASSWORD="your-qa-password"
    ```
 

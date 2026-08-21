@@ -43,9 +43,9 @@ cd fintrack-automation
 Crea un archivo `.env` en la raíz (no se commitea):
 
 ```bash
-TEST_USER_EMAIL=pruebasQA@gmail.com
-TEST_USER_PASSWORD=TuPassword123
-SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+TEST_USER_EMAIL=your_email@example.com
+TEST_USER_PASSWORD=your_password_here
+SUPABASE_ANON_KEY=your_supabase_anon_key_here
 ```
 
 ### GitHub Secrets (para CI/CD)
