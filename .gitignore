@@ -21,3 +21,9 @@ dist-ssr
 *.sln
 *.sw?
 .env
+*.env
+.env.local
+**/target/
+**/build/
+**/zap-reports/
+**/karate-reports/

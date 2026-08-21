@@ -45,8 +45,8 @@ jobs:
           -Dheadless=true
           -Dtest=SmokeTest
           -DwebUrl=https://fintech-micro-transf-6q7b.bolt.host
-          -DTEST_USER_EMAIL="${{ secrets.K6_TEST_EMAIL || 'pruebasQA@gmail.com' }}"
-          -DTEST_USER_PASSWORD="${{ secrets.K6_TEST_PASSWORD || 'pruebas123' }}"
+          -DTEST_USER_EMAIL="${{ secrets.K6_TEST_EMAIL }}"
+          -DTEST_USER_PASSWORD="${{ secrets.K6_TEST_PASSWORD }}"
 
   # =========================================================================
   # PASO 2: API AUTOMATION (KARATE)
@@ -74,7 +74,7 @@ jobs:
           -DK6_TEST_EMAIL="${{ secrets.K6_TEST_EMAIL }}"
           -DK6_TEST_PASSWORD="${{ secrets.K6_TEST_PASSWORD }}"
         env:
-          BASE_URL: ${{ secrets.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co' }}
+          BASE_URL: ${{ secrets.BASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
           K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
           K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
@@ -104,7 +104,7 @@ jobs:
       - name: Run k6 Load Test
         working-directory: fintrack-automation/performance/scripts
         env:
-          BASE_URL: ${{ secrets.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co' }}
+          BASE_URL: ${{ secrets.BASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.K6_ANON_KEY }}
           K6_TEST_EMAIL: ${{ secrets.K6_TEST_EMAIL }}
           K6_TEST_PASSWORD: ${{ secrets.K6_TEST_PASSWORD }}
@@ -134,7 +134,7 @@ jobs:
             -v ${{ github.workspace }}/zap-reports:/zap/wrk/:rw \
             -t ghcr.io/zaproxy/zaproxy:stable \
             zap-baseline.py \
-            -t "${{ secrets.BASE_URL || 'https://wlsxfjlaxxwgnbhmtgmw.supabase.co' }}" \
+            -t "${{ secrets.BASE_URL }}" \
             -r report_html.html \
             -J report_json.json \
             -w report_md.md \
